@@ -46,3 +46,36 @@ location / {
   }
 }
 ```
+
+### rootとindexディレクティブ
+
+rootディレクティブは、ドキュメントルートを指定する。
+
+```
+location / {
+  root /www/dir;
+  index index.html index.htm;
+}
+```
+
+### aliasディレクティブ
+
+以下の __root__ の場合は /files/a.html が示すファイルは /data/files/a.html となる。
+
+```
+location /files/ {
+  root /data/;
+}
+```
+
+以下の __alias__ の場合は /files/a.html が示すファイルは /data/a.html となる。
+
+```
+location /files/ {
+  root /data/;
+}
+```
+
+## URLの書き換え
+
+つづき
