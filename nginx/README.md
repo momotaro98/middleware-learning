@@ -78,4 +78,125 @@ location /files/ {
 
 ## URLの書き換え
 
-つづき
+> nginxは、URLの書き換えが発生すると、書き換え後の新たなURLを対象に、条件判定とURLの書き換えを再度行います。
+> 書き換えは10回までで超えると500エラーが返ります。
+
+### 判定
+
+#### パス名での判定
+
+```
+location ~ ^/path1/(.+\.(?<ext>gif|jpe?g|png))$ {
+  # /path1/test.gif
+  # ↓
+  # $1にtest.gif
+  # $2と$extにgifが入る
+}
+```
+
+#### map ディレクティブによる文字列マッチングの判定
+
+```
+map $http_user_agent $mobile {
+  default           0;
+  ~(Android|iPhone) 1;
+}
+server {
+  if ($mobile) {
+    # AndroidかiPhoneの場合
+  }
+}
+```
+
+### 書き換えの動作
+
+#### return ディレクティブによるリダイレクト
+
+```
+return 301 http://www.example.com/;
+return http://www.example.com/;
+```
+
+2つ目の省略の場合は302(Moved Temporarily)になる。
+
+#### rewriteディレクティブによる書き換え
+
+```
+location /noflag {
+  rewrite ~/noflag /a_noflag;
+  rewrite ~/a_noflag /b_noflag;
+}
+
+location /a_noflag {
+  rewrite ~/a_noflag /c_noflag;
+}
+```
+
+上記の場合、アクセス先は`/b_noflag`になる。
+
+```
+location /noflag {
+  rewrite ~/noflag /a_noflag last;
+  rewrite ~/a_noflag /b_noflag last;
+}
+
+location /a_noflag {
+  rewrite ~/a_noflag /c_noflag last;
+}
+```
+
+上記のlastフラグがある場合、アクセス先は`/c_noflag`になる。
+
+```
+location /noflag {
+  rewrite ~/noflag /a_noflag break;
+  rewrite ~/a_noflag /b_noflag break;
+}
+
+location /a_noflag {
+  rewrite ~/a_noflag /c_noflag break;
+}
+```
+
+上記のbreakフラグがある場合、アクセス先は`/a_noflag`になる。
+
+#### locationディレクティブの@プレフィックス
+
+> あくまでもパス名とは無関係に、コンテキストを定義するための書式です。
+
+```
+location / {
+  # ファイルが見つからなければWebアプリケーションへ
+  try_files $uri $uri/ @fallback;
+}
+location @fallback {
+  # Webアプリケーションに転送
+  proxy_pass http://backend;
+}
+```
+
+### 書き換え動作がわからなくなったときのロギング設定
+
+> rewrite_logディレクティブでログを出力するように設定すると、nginxは、エラーログに書き換えに関する情報を、書き出すようになります。ログレベルは、noticeです。
+
+```
+server {
+  rewrite_log on;
+  error_log /var/log/nginx/rewrite.log notice;
+}
+```
+
+# WordPressでやってみる
+
+TODO Later
+
+# 6章 TSL セキュリティ
+
+TODO Later
+
+# 7章 リバースプロキシ
+
+### リバースプロキシの基本設定
+
+#### upstreamコンテキストとseverコンテキストの設定
+ 
