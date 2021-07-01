@@ -199,4 +199,55 @@ TODO Later
 ### リバースプロキシの基本設定
 
 #### upstreamコンテキストとseverコンテキストの設定
- 
+
+```
+http {
+  upstream app1 {
+    server 192.168.1.10:8080;
+    server 192.168.1.11:80;
+    server 192.168.1.12:8080;
+  }
+
+  server {
+    listen 80;
+    location / {
+      proxy_pass http://app1;
+    }
+  }
+}
+``` 
+
+#### パス名を含んだproxy_pass
+
+```
+server {
+  location /path {
+    proxy_pass http://app1/next/;
+    # /path が /next/ に変換される
+    # /path1/test.gif へのアクセス → バックエンドの /next/1/test.gif に
+  }
+}
+```
+
+### バックエンドからの応答の書き換え
+
+バックエンドのWebサーバが返すリダイレクトをキャッチして対応する必要がある。
+
+#### proxy_redirect ディレクティブ
+
+```
+location /one/ {
+  proxy_pass http://backend/two/;
+  proxy_redirect http://backend/two/ http://example.com/one/; # default と同じ
+}
+
+location /three/ {
+  # URLの書き換え
+  rewrite ^/three/1 /three/2;
+  # http://example.com/three/file -> http://backend/four/2/file に変換
+  proxy_pass http://backend/four/;
+  # http://backend/four/2/redirect -> http://example.com/three/1/redirect に戻る
+  # default だと http://example.com/three/2/redirect に
+  proxy_redirect http://backend/four/2 http://example.com/three/1;
+}
+```
