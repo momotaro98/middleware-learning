@@ -238,7 +238,7 @@ server {
 ```
 location /one/ {
   proxy_pass http://backend/two/;
-  proxy_redirect http://backend/two/ http://example.com/one/; # default と同じ
+  proxy_redirect http://backend/two/ http://example.com/one/; # default と同じ (つまりこのケースはわざわざproxy_redirectを書かなくて良い)
 }
 
 location /three/ {
@@ -249,5 +249,113 @@ location /three/ {
   # http://backend/four/2/redirect -> http://example.com/three/1/redirect に戻る
   # default だと http://example.com/three/2/redirect に
   proxy_redirect http://backend/four/2 http://example.com/three/1;
+}
+```
+
+## キャッシュ処理とバッファ
+
+> リバースプロキシのキャッシュ処理をうまく使うと、バックエンドの負荷を下げるとともに性能を向上させることができます。リバースプロキシのキャッシュは次のような設定をします。
+
+```
+http {
+  proxy_cache_path /var/cache/nginx/rproxy
+                  levels=1:2 keys_zone=proxy1:10m
+                  inactive=1d;
+  
+  upstream backend {
+    server 192.168.1.10;
+  }
+
+  server {
+     ...
+    location / {
+      proxy_cache proxy1;
+      proxy_pass http://backend;
+    }
+  }
+}
+```
+
+#### proxy_cache_path ディレクティブ
+
+> proxy_cache_pathは、httpコンテキストに記述するディレクティブで、第1引数がキャッシュに使うディレクトリです。
+
+* keys_zone => ゾーン名とサイズを指定する。ゾーンとはnginxの複数のworkerで共有するメモリ領域のことで、ゾーンに名前を付けて区別することができる。
+* levels    => キャッシュディレクトリの構造を示す。
+* inactive  => キャッシュがアクセスされなくなってから捨てられるまでの時間を指定する。デフォルトは10分。
+
+#### proxy_cache ディレクティブ
+
+```
+server {
+   ...
+  location / {
+    proxy_cache proxy1;
+    proxy_cache_bypass $http_authentication $http_cookie; # キャッシュからレスポンスを返さない用ディレクティブ
+    proxy_no_cache $http_authentication $http_cookie;     # キャッシュに保存させない用ディレクティブ
+    proxy_pass http://backend;
+  }
+}
+```
+
+### バッファ処理
+
+> バッファは1つのリクエスト処理の中で使われます。
+> バックエンドからのレスポンスが終わると、クライアントへの転送が終わっていなくても、バックエンドとの接続を切ってしまい、バッファに貯めておいた残りのデータをクライアントに送るという動作になります。
+> これにより、バックエンド側がいつまでの接続されたままにならず、次のリクエストの処理ができるようになるのです。
+
+```
+server {
+  location / {
+    proxy_buffering on;
+    proxy_buffer_size 4k;
+    proxy_buffers 8 4k;
+    proxy_max_temp_file_size 1024m;
+    proxy_temp_file_write_size 8k;
+    proxy_busy_buffers_size 8k;
+  }
+}
+```
+
+## リバースプロキシとHTTPS
+
+タイプが2つある
+
+1. リバースプロキシでSSL/TLSを終端させるもの
+2. リバースプロキシではTCPの接続を中継するだけで、バックエンドまで暗号化された状態を保ってHTTPSへアクセスさせるもの
+
+### HTTPSのリバースプロキシ (NginxでHTTPSを紐解くパターン)
+
+```
+upstream backend {
+  server 192.168.1.10;
+  server 192.168.1.11;
+}
+
+server {
+  # HTTPSの設定
+  listen 443 ssl;
+  ssl_certificate /etc/pki/tls/certs/your-server crt;     # 証明書ファイルの場所
+  ssl_certificate_key /etc/pki/tls/certs/your-server.key; # 秘密鍵の場所
+
+  # 接続先バックエンドとURLパスの関連付け
+  location / {
+    proxy_pass http://backend;
+  }
+}
+```
+
+### TCPストリームのロードバランサ (NginxがHTTPSを紐解かずHTTPレイヤの中身を見ないパターン)
+
+```
+# nginx.conf
+http {
+  ...
+}
+
+# httpコンテキストの外に書く
+stream {
+  error_log /var/log/nginx/stream.log info;
+  include /etc/nginx/stream.d/*.conf;
 }
 ```
