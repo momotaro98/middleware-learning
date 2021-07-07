@@ -359,3 +359,78 @@ stream {
   include /etc/nginx/stream.d/*.conf;
 }
 ```
+
+## WebSocketとリバースプロキシ
+
+> WebSocketの双方向通信ではリクエスト/レスポンスの対応の仕組みをなくし、必要なときに双方向に通信ができる、生のソケットと同様の通信ができるようになります。
+> WebSocketはHTTPやHTTPSと同様に80番や443番のポートを使いますが、「http://」や「https://」ではなく、「ws://」や「wss://」で始まるURLを使ってアクセスします。
+
+> WebSocketも接続の最初はHTTPリクエストの形をしています。HTTPのUpgradeやSec-WebSocket-Protocolといったヘッダを使ってクライアントとサーバでネゴシエーションを行い、接続をWebSocketの接続に変更します。
+
+### WebSocketへの対応
+
+```
+http {
+  # $http_upgradeの中身が空かそうじゃないかで$connection_upgradeの中身が決まる
+  map $http_upgrade $connection_upgrade {
+    default upgrade;
+    ''      close;
+  }
+
+  server {
+    ...
+    location /chat/ {
+      proxy_pass http://backend;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection $connection_upgrade;
+    }
+  }
+}
+```
+
+> 上記の設定は、パス名が/chat/で始まるURLに対して、Upgradeヘッダが指定されていない場合はConnectionヘッダをcloseに設定し、それ以外はConnectionヘッダにupdradeを設定するという内容です。
+> また、WebSocketはHTTP/1.1の規格ですが、nginxはバックエンドとの通信はデフォルトでHTTP/1.0が使われるため、proxy_http_versionでHTTP/1.1を使うように設定します。
+
+# 8章 性能向上
+
+### 性能情報のモニタリング
+
+#### stub_statusの設定と出力
+
+> nginxでは、接続中のクライアント数などの情報をHTTPで取得できる、stub_statusというモジュールがあります。このstub_statusの出力に対応したプラグインを、muninやcactiにインストールすると、定期的にアクセスして情報を蓄積し、グラフ化することもできます。
+
+> stub_status が出力しているのは、サーバー内部の統計情報です。外部に公開する必要はないので、アクセス元を制限したり、アクセスログに混入させないようにすると良いでしょう。
+
+```
+server {
+  location /status {
+    stub_status;
+    access_log off;  # アクセスログを残さない
+    allow 127.0.0.1; # localhost からのアクセスのみを許可
+    deny all;
+  }
+}
+```
+
+stub_statusの出力は次のようなものです。
+
+```
+Active connections: 291
+server accepts handled requests
+ 16630948 16630948 3107465
+Reading: 6 Writing: 179 Waiting: 106
+```
+
+* Active connections: 現在の接続数
+* server accepts handled requests: nginxが起動してからの累積値
+  * 最初の値は、これまで接続してきたクライアントの接続数を示します。
+  * 次の値は、処理できた接続数を示します。
+  * 最後の値はこれまでに処理したリクエスト数です。
+* Reading: 現在ヘッダの受信街になっている接続数です。
+* Writing: レスポンスの送信中になっている接続数です。
+* Waiting: Keep-Aliveなどで接続を保った状態で、クライアントからのリクエストを待っている接続数です。
+
+#### レスポンス時間のログ出力
+
+`$request_time`という変数に秒単位で小数点以下3桁、ミリ秒の精度で設定されるため、log_formatディレクティブで`$request_time`を出力するようにします。
