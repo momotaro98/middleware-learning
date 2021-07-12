@@ -1,0 +1,4 @@
+innodb_buffer_pool_size=1G
+
+# ref https://dev.mysql.com/doc/refman/5.6/ja/innodb-auto-increment-configurable.html
+innodb_autoinc_lock_mode=2
