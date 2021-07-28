@@ -466,3 +466,47 @@ Reading: 6 Writing: 179 Waiting: 106
 ETagヘッダには更新を判定できる文字列を返し、その文字列が次にクライアントから If-None-Matchヘッダとして渡される。
 
 Last-ModifiedはリクエストでのIf-Modified-Sinceに対応する。
+
+#### ヘッダの付与
+
+通常、nginxでレスポンスヘッダを付けるには、add_headerディレクティブを使う。
+
+ただし、add_headerディレクティブでCache-ControlやETag、Expiresヘッダを付けることもできますが、キャッシュ制御に関しては専用のexpiresディレクティブがあるのでそちらを使うと便利です。
+
+#### 時刻情報の制御
+
+ExpiresとCache-Controlヘッダは、expiresディレクティブを使って制御できます。
+
+
+#### ファイルの更新時刻を起点とする設定
+
+expiresディレクティブで時間情報の前に「modified」を引数に設定すると、時刻の計算の起点が現時刻ではなくファイルの更新時刻になり、これも定期的に更新されるコンテンツには便利です。
+
+#### 例
+
+```
+server {
+  location / {
+    etag    off;
+    expires off;
+  }
+  location /images/ {
+    etag    on;
+    expires 10d;
+  }
+}
+```
+
+ファイルタイプ(html or jpeg or pdf)によってExpiresの値を変更したい場合は、次のようにmapディレクティブと組み合わせると直感的に記述できます。
+
+```
+map $sent_http_content_type $expires {
+  default         off;  # デフォルトはキャッシュしない
+  application/pdf 10d;  # PDFファイルは10日間キャッシュする
+  ~image/         max;  # 画像ファイルは目一杯キャッシュする
+}
+
+server {
+  expires $expires;
+}
+```
