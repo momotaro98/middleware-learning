@@ -1,0 +1,4 @@
+{ "index" : { "_index" : "rental", "_id" : "1" } }
+{ "rental_id" : "1" , "rental_date" : "2021-05-04T10:32:34Z" , "customer_id" : "1" , "customer_name" : "taro" }
+{ "index" : { "_index" : "rental", "_id" : "2" } }
+{ "rental_id" : "2" , "rental_date" : "2021-05-04T10:34:34Z" , "customer_id" : "2" , "customer_name" : "jiro" }

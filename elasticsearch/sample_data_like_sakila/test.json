@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "properties": {
+      "rental_id": {
+        "type": "long"
+      },
+      "rental_date": {
+        "type": "date"
+      },
+      "customer_id": {
+        "type": "long"
+      },
+      "customer_name": {
+        "type": "text"
+      }
+    }
+  }
+}
