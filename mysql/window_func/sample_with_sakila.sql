@@ -17,29 +17,41 @@
 -- order by rental.customer_id, rental.rental_date asc
 
 --  -- クエリ2
-select rental_id, rental_date, customer_id
-FROM (
-	SELECT
-    r.rental_id,
-	r.rental_date,
-		r.customer_id,
-		@customer_rank:=CASE
-			WHEN @current_customer IS NULL THEN 1
-			WHEN @current_customer = r.customer_id THEN @customer_rank
-			ELSE @customer_rank + 1
-		END customer_rank,
-		@current_customer:=r.customer_id
-	FROM
-		sakila.rental r
-	WHERE
-		r.rental_date BETWEEN '2005-05-28 00:00:00' AND '2005-06-03 00:00:00'
-	ORDER BY r.customer_id , r.rental_date ASC
-) ranked
-WHERE customer_rank <= 5
+-- select rental_id, rental_date, customer_id
+-- FROM (
+-- 	SELECT 
+--     r.rental_id,
+-- 	r.rental_date,
+-- 		r.customer_id,
+-- 		@customer_rank:=CASE
+-- 			WHEN @current_customer IS NULL THEN 1
+-- 			WHEN @current_customer = r.customer_id THEN @customer_rank
+-- 			ELSE @customer_rank + 1
+-- 		END customer_rank,
+-- 		@current_customer:=r.customer_id
+-- 	FROM
+-- 		sakila.rental r
+-- 	WHERE
+-- 		r.rental_date BETWEEN '2005-05-28 00:00:00' AND '2005-06-03 00:00:00'
+-- 	ORDER BY r.customer_id , r.rental_date ASC
+-- ) ranked
+-- WHERE customer_rank <= 5
 
 -- set @current_customer = null;
 -- set @customer_rank = null;
 
 -- -- クエリ3 MySQL8のみ動作 ウィンドウ関数の利用
--- TBP
-
+-- SELECT rental_id, rental_date, customer_id
+-- FROM (
+-- 	SELECT 
+-- 		r.rental_id,
+-- 		r.rental_date,
+-- 		r.customer_id,
+-- 		DENSE_RANK() over(order by r.customer_id) as customer_rank 
+-- 	FROM
+-- 		sakila.rental r
+-- 	WHERE
+-- 		r.rental_date BETWEEN '2005-05-28 00:00:00' AND '2005-06-03 00:00:00'
+-- 	ORDER BY r.customer_id , r.rental_date ASC
+-- ) ranked
+-- WHERE customer_rank <= 5
