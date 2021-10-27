@@ -40,18 +40,18 @@
 -- set @current_customer = null;
 -- set @customer_rank = null;
 
--- -- クエリ3 MySQL8のみ動作 ウィンドウ関数の利用
--- SELECT rental_id, rental_date, customer_id
--- FROM (
--- 	SELECT 
--- 		r.rental_id,
--- 		r.rental_date,
--- 		r.customer_id,
--- 		DENSE_RANK() over(order by r.customer_id) as customer_rank 
--- 	FROM
--- 		sakila.rental r
--- 	WHERE
--- 		r.rental_date BETWEEN '2005-05-28 00:00:00' AND '2005-06-03 00:00:00'
--- 	ORDER BY r.customer_id , r.rental_date ASC
--- ) ranked
--- WHERE customer_rank <= 5
+-- クエリ3 MySQL8のみ動作 ウィンドウ関数の利用
+SELECT rental_id, rental_date, customer_id
+FROM (
+	SELECT 
+		r.rental_id,
+		r.rental_date,
+		r.customer_id,
+		DENSE_RANK() over(order by r.customer_id) as customer_rank 
+	FROM
+		sakila.rental r
+	WHERE
+		r.rental_date BETWEEN '2005-05-28 00:00:00' AND '2005-06-03 00:00:00'
+	ORDER BY r.customer_id , r.rental_date ASC
+) ranked
+WHERE customer_rank <= 5

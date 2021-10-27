@@ -1,6 +1,1342 @@
-{ "index" : { "_index" : "rental", "_id" : "1" } }
-{ "rental_id" : "1" , "rental_date" : "2021-05-04T10:32:34Z" , "customer_id" : "1" , "customer_name" : "taro" }
-{ "index" : { "_index" : "rental", "_id" : "2" } }
-{ "rental_id" : "2" , "rental_date" : "2021-05-04T10:34:34Z" , "customer_id" : "2" , "customer_name" : "jiro" }
-{ "index" : { "_index" : "rental", "_id" : "3" } }
-{ "rental_id" : "3" , "rental_date" : "2021-05-04T10:35:34Z" , "customer_id" : "3" , "customer_name" : "saburo" }
+{ "index" : { "_index" : "rental", "_id" : "487" } }
+{ "rental_id" : "487" , "rental_date" : "2005-05-28T00:00:30Z" , "customer_id" : "569" , "customer_name" : "DAVE" }
+{ "index" : { "_index" : "rental", "_id" : "488" } }
+{ "rental_id" : "488" , "rental_date" : "2005-05-28T00:07:50Z" , "customer_id" : "168" , "customer_name" : "REGINA" }
+{ "index" : { "_index" : "rental", "_id" : "489" } }
+{ "rental_id" : "489" , "rental_date" : "2005-05-28T00:09:12Z" , "customer_id" : "476" , "customer_name" : "DERRICK" }
+{ "index" : { "_index" : "rental", "_id" : "490" } }
+{ "rental_id" : "490" , "rental_date" : "2005-05-28T00:09:56Z" , "customer_id" : "95" , "customer_name" : "PAULA" }
+{ "index" : { "_index" : "rental", "_id" : "491" } }
+{ "rental_id" : "491" , "rental_date" : "2005-05-28T00:13:35Z" , "customer_id" : "196" , "customer_name" : "ALMA" }
+{ "index" : { "_index" : "rental", "_id" : "492" } }
+{ "rental_id" : "492" , "rental_date" : "2005-05-28T00:24:58Z" , "customer_id" : "228" , "customer_name" : "ALLISON" }
+{ "index" : { "_index" : "rental", "_id" : "493" } }
+{ "rental_id" : "493" , "rental_date" : "2005-05-28T00:34:11Z" , "customer_id" : "501" , "customer_name" : "RUBEN" }
+{ "index" : { "_index" : "rental", "_id" : "494" } }
+{ "rental_id" : "494" , "rental_date" : "2005-05-28T00:39:31Z" , "customer_id" : "64" , "customer_name" : "JUDITH" }
+{ "index" : { "_index" : "rental", "_id" : "495" } }
+{ "rental_id" : "495" , "rental_date" : "2005-05-28T00:40:48Z" , "customer_id" : "526" , "customer_name" : "KARL" }
+{ "index" : { "_index" : "rental", "_id" : "496" } }
+{ "rental_id" : "496" , "rental_date" : "2005-05-28T00:43:41Z" , "customer_id" : "56" , "customer_name" : "GLORIA" }
+{ "index" : { "_index" : "rental", "_id" : "497" } }
+{ "rental_id" : "497" , "rental_date" : "2005-05-28T00:54:39Z" , "customer_id" : "20" , "customer_name" : "SHARON" }
+{ "index" : { "_index" : "rental", "_id" : "498" } }
+{ "rental_id" : "498" , "rental_date" : "2005-05-28T01:01:21Z" , "customer_id" : "287" , "customer_name" : "BECKY" }
+{ "index" : { "_index" : "rental", "_id" : "499" } }
+{ "rental_id" : "499" , "rental_date" : "2005-05-28T01:05:07Z" , "customer_id" : "199" , "customer_name" : "BETH" }
+{ "index" : { "_index" : "rental", "_id" : "500" } }
+{ "rental_id" : "500" , "rental_date" : "2005-05-28T01:05:25Z" , "customer_id" : "145" , "customer_name" : "LUCILLE" }
+{ "index" : { "_index" : "rental", "_id" : "501" } }
+{ "rental_id" : "501" , "rental_date" : "2005-05-28T01:09:36Z" , "customer_id" : "162" , "customer_name" : "LAUREN" }
+{ "index" : { "_index" : "rental", "_id" : "502" } }
+{ "rental_id" : "502" , "rental_date" : "2005-05-28T01:34:43Z" , "customer_id" : "179" , "customer_name" : "DANA" }
+{ "index" : { "_index" : "rental", "_id" : "503" } }
+{ "rental_id" : "503" , "rental_date" : "2005-05-28T01:35:25Z" , "customer_id" : "288" , "customer_name" : "BOBBIE" }
+{ "index" : { "_index" : "rental", "_id" : "504" } }
+{ "rental_id" : "504" , "rental_date" : "2005-05-28T02:05:34Z" , "customer_id" : "170" , "customer_name" : "BEATRICE" }
+{ "index" : { "_index" : "rental", "_id" : "505" } }
+{ "rental_id" : "505" , "rental_date" : "2005-05-28T02:06:37Z" , "customer_id" : "111" , "customer_name" : "CARMEN" }
+{ "index" : { "_index" : "rental", "_id" : "506" } }
+{ "rental_id" : "506" , "rental_date" : "2005-05-28T02:09:19Z" , "customer_id" : "469" , "customer_name" : "WESLEY" }
+{ "index" : { "_index" : "rental", "_id" : "507" } }
+{ "rental_id" : "507" , "rental_date" : "2005-05-28T02:31:19Z" , "customer_id" : "421" , "customer_name" : "LEE" }
+{ "index" : { "_index" : "rental", "_id" : "508" } }
+{ "rental_id" : "508" , "rental_date" : "2005-05-28T02:40:50Z" , "customer_id" : "434" , "customer_name" : "EDDIE" }
+{ "index" : { "_index" : "rental", "_id" : "509" } }
+{ "rental_id" : "509" , "rental_date" : "2005-05-28T02:51:12Z" , "customer_id" : "147" , "customer_name" : "JOANNE" }
+{ "index" : { "_index" : "rental", "_id" : "510" } }
+{ "rental_id" : "510" , "rental_date" : "2005-05-28T02:52:14Z" , "customer_id" : "113" , "customer_name" : "CINDY" }
+{ "index" : { "_index" : "rental", "_id" : "511" } }
+{ "rental_id" : "511" , "rental_date" : "2005-05-28T03:04:04Z" , "customer_id" : "296" , "customer_name" : "RAMONA" }
+{ "index" : { "_index" : "rental", "_id" : "512" } }
+{ "rental_id" : "512" , "rental_date" : "2005-05-28T03:07:50Z" , "customer_id" : "231" , "customer_name" : "GEORGIA" }
+{ "index" : { "_index" : "rental", "_id" : "513" } }
+{ "rental_id" : "513" , "rental_date" : "2005-05-28T03:08:10Z" , "customer_id" : "489" , "customer_name" : "RICARDO" }
+{ "index" : { "_index" : "rental", "_id" : "514" } }
+{ "rental_id" : "514" , "rental_date" : "2005-05-28T03:09:28Z" , "customer_id" : "597" , "customer_name" : "FREDDIE" }
+{ "index" : { "_index" : "rental", "_id" : "515" } }
+{ "rental_id" : "515" , "rental_date" : "2005-05-28T03:10:10Z" , "customer_id" : "110" , "customer_name" : "TIFFANY" }
+{ "index" : { "_index" : "rental", "_id" : "516" } }
+{ "rental_id" : "516" , "rental_date" : "2005-05-28T03:11:47Z" , "customer_id" : "400" , "customer_name" : "BRYAN" }
+{ "index" : { "_index" : "rental", "_id" : "517" } }
+{ "rental_id" : "517" , "rental_date" : "2005-05-28T03:17:57Z" , "customer_id" : "403" , "customer_name" : "MIKE" }
+{ "index" : { "_index" : "rental", "_id" : "518" } }
+{ "rental_id" : "518" , "rental_date" : "2005-05-28T03:18:02Z" , "customer_id" : "480" , "customer_name" : "COREY" }
+{ "index" : { "_index" : "rental", "_id" : "519" } }
+{ "rental_id" : "519" , "rental_date" : "2005-05-28T03:22:33Z" , "customer_id" : "245" , "customer_name" : "COURTNEY" }
+{ "index" : { "_index" : "rental", "_id" : "520" } }
+{ "rental_id" : "520" , "rental_date" : "2005-05-28T03:27:37Z" , "customer_id" : "161" , "customer_name" : "GERALDINE" }
+{ "index" : { "_index" : "rental", "_id" : "521" } }
+{ "rental_id" : "521" , "rental_date" : "2005-05-28T03:32:22Z" , "customer_id" : "374" , "customer_name" : "JEREMY" }
+{ "index" : { "_index" : "rental", "_id" : "522" } }
+{ "rental_id" : "522" , "rental_date" : "2005-05-28T03:33:20Z" , "customer_id" : "382" , "customer_name" : "VICTOR" }
+{ "index" : { "_index" : "rental", "_id" : "523" } }
+{ "rental_id" : "523" , "rental_date" : "2005-05-28T03:53:26Z" , "customer_id" : "138" , "customer_name" : "HAZEL" }
+{ "index" : { "_index" : "rental", "_id" : "524" } }
+{ "rental_id" : "524" , "rental_date" : "2005-05-28T03:57:28Z" , "customer_id" : "223" , "customer_name" : "MELINDA" }
+{ "index" : { "_index" : "rental", "_id" : "525" } }
+{ "rental_id" : "525" , "rental_date" : "2005-05-28T04:25:33Z" , "customer_id" : "14" , "customer_name" : "BETTY" }
+{ "index" : { "_index" : "rental", "_id" : "526" } }
+{ "rental_id" : "526" , "rental_date" : "2005-05-28T04:27:37Z" , "customer_id" : "408" , "customer_name" : "MANUEL" }
+{ "index" : { "_index" : "rental", "_id" : "527" } }
+{ "rental_id" : "527" , "rental_date" : "2005-05-28T04:28:38Z" , "customer_id" : "169" , "customer_name" : "ERICA" }
+{ "index" : { "_index" : "rental", "_id" : "528" } }
+{ "rental_id" : "528" , "rental_date" : "2005-05-28T04:30:05Z" , "customer_id" : "359" , "customer_name" : "WILLIE" }
+{ "index" : { "_index" : "rental", "_id" : "529" } }
+{ "rental_id" : "529" , "rental_date" : "2005-05-28T04:34:17Z" , "customer_id" : "469" , "customer_name" : "WESLEY" }
+{ "index" : { "_index" : "rental", "_id" : "530" } }
+{ "rental_id" : "530" , "rental_date" : "2005-05-28T05:13:01Z" , "customer_id" : "312" , "customer_name" : "MARK" }
+{ "index" : { "_index" : "rental", "_id" : "531" } }
+{ "rental_id" : "531" , "rental_date" : "2005-05-28T05:23:38Z" , "customer_id" : "589" , "customer_name" : "TRACY" }
+{ "index" : { "_index" : "rental", "_id" : "532" } }
+{ "rental_id" : "532" , "rental_date" : "2005-05-28T05:36:58Z" , "customer_id" : "120" , "customer_name" : "SYLVIA" }
+{ "index" : { "_index" : "rental", "_id" : "533" } }
+{ "rental_id" : "533" , "rental_date" : "2005-05-28T06:14:46Z" , "customer_id" : "528" , "customer_name" : "CLAUDE" }
+{ "index" : { "_index" : "rental", "_id" : "534" } }
+{ "rental_id" : "534" , "rental_date" : "2005-05-28T06:15:25Z" , "customer_id" : "184" , "customer_name" : "VIVIAN" }
+{ "index" : { "_index" : "rental", "_id" : "535" } }
+{ "rental_id" : "535" , "rental_date" : "2005-05-28T06:16:32Z" , "customer_id" : "307" , "customer_name" : "JOSEPH" }
+{ "index" : { "_index" : "rental", "_id" : "536" } }
+{ "rental_id" : "536" , "rental_date" : "2005-05-28T06:17:33Z" , "customer_id" : "514" , "customer_name" : "FRANKLIN" }
+{ "index" : { "_index" : "rental", "_id" : "537" } }
+{ "rental_id" : "537" , "rental_date" : "2005-05-28T06:20:55Z" , "customer_id" : "315" , "customer_name" : "KENNETH" }
+{ "index" : { "_index" : "rental", "_id" : "538" } }
+{ "rental_id" : "538" , "rental_date" : "2005-05-28T06:21:05Z" , "customer_id" : "110" , "customer_name" : "TIFFANY" }
+{ "index" : { "_index" : "rental", "_id" : "539" } }
+{ "rental_id" : "539" , "rental_date" : "2005-05-28T06:26:16Z" , "customer_id" : "161" , "customer_name" : "GERALDINE" }
+{ "index" : { "_index" : "rental", "_id" : "540" } }
+{ "rental_id" : "540" , "rental_date" : "2005-05-28T06:40:25Z" , "customer_id" : "119" , "customer_name" : "SHERRY" }
+{ "index" : { "_index" : "rental", "_id" : "541" } }
+{ "rental_id" : "541" , "rental_date" : "2005-05-28T06:41:58Z" , "customer_id" : "535" , "customer_name" : "JAVIER" }
+{ "index" : { "_index" : "rental", "_id" : "542" } }
+{ "rental_id" : "542" , "rental_date" : "2005-05-28T06:42:13Z" , "customer_id" : "261" , "customer_name" : "DEANNA" }
+{ "index" : { "_index" : "rental", "_id" : "543" } }
+{ "rental_id" : "543" , "rental_date" : "2005-05-28T06:43:34Z" , "customer_id" : "493" , "customer_name" : "BRENT" }
+{ "index" : { "_index" : "rental", "_id" : "544" } }
+{ "rental_id" : "544" , "rental_date" : "2005-05-28T07:03:00Z" , "customer_id" : "311" , "customer_name" : "PAUL" }
+{ "index" : { "_index" : "rental", "_id" : "545" } }
+{ "rental_id" : "545" , "rental_date" : "2005-05-28T07:10:20Z" , "customer_id" : "54" , "customer_name" : "TERESA" }
+{ "index" : { "_index" : "rental", "_id" : "546" } }
+{ "rental_id" : "546" , "rental_date" : "2005-05-28T07:16:25Z" , "customer_id" : "20" , "customer_name" : "SHARON" }
+{ "index" : { "_index" : "rental", "_id" : "547" } }
+{ "rental_id" : "547" , "rental_date" : "2005-05-28T07:24:28Z" , "customer_id" : "506" , "customer_name" : "LESLIE" }
+{ "index" : { "_index" : "rental", "_id" : "548" } }
+{ "rental_id" : "548" , "rental_date" : "2005-05-28T07:34:56Z" , "customer_id" : "450" , "customer_name" : "JAY" }
+{ "index" : { "_index" : "rental", "_id" : "549" } }
+{ "rental_id" : "549" , "rental_date" : "2005-05-28T07:35:37Z" , "customer_id" : "159" , "customer_name" : "JILL" }
+{ "index" : { "_index" : "rental", "_id" : "550" } }
+{ "rental_id" : "550" , "rental_date" : "2005-05-28T07:39:16Z" , "customer_id" : "432" , "customer_name" : "EDWIN" }
+{ "index" : { "_index" : "rental", "_id" : "551" } }
+{ "rental_id" : "551" , "rental_date" : "2005-05-28T07:44:18Z" , "customer_id" : "315" , "customer_name" : "KENNETH" }
+{ "index" : { "_index" : "rental", "_id" : "552" } }
+{ "rental_id" : "552" , "rental_date" : "2005-05-28T07:53:38Z" , "customer_id" : "106" , "customer_name" : "CONNIE" }
+{ "index" : { "_index" : "rental", "_id" : "553" } }
+{ "rental_id" : "553" , "rental_date" : "2005-05-28T08:14:44Z" , "customer_id" : "176" , "customer_name" : "JUNE" }
+{ "index" : { "_index" : "rental", "_id" : "554" } }
+{ "rental_id" : "554" , "rental_date" : "2005-05-28T08:23:16Z" , "customer_id" : "376" , "customer_name" : "RANDY" }
+{ "index" : { "_index" : "rental", "_id" : "555" } }
+{ "rental_id" : "555" , "rental_date" : "2005-05-28T08:31:14Z" , "customer_id" : "55" , "customer_name" : "DORIS" }
+{ "index" : { "_index" : "rental", "_id" : "556" } }
+{ "rental_id" : "556" , "rental_date" : "2005-05-28T08:31:36Z" , "customer_id" : "22" , "customer_name" : "LAURA" }
+{ "index" : { "_index" : "rental", "_id" : "557" } }
+{ "rental_id" : "557" , "rental_date" : "2005-05-28T08:36:22Z" , "customer_id" : "444" , "customer_name" : "MARCUS" }
+{ "index" : { "_index" : "rental", "_id" : "558" } }
+{ "rental_id" : "558" , "rental_date" : "2005-05-28T08:38:43Z" , "customer_id" : "442" , "customer_name" : "LEROY" }
+{ "index" : { "_index" : "rental", "_id" : "559" } }
+{ "rental_id" : "559" , "rental_date" : "2005-05-28T08:39:02Z" , "customer_id" : "572" , "customer_name" : "SIDNEY" }
+{ "index" : { "_index" : "rental", "_id" : "560" } }
+{ "rental_id" : "560" , "rental_date" : "2005-05-28T08:53:02Z" , "customer_id" : "463" , "customer_name" : "DARRELL" }
+{ "index" : { "_index" : "rental", "_id" : "561" } }
+{ "rental_id" : "561" , "rental_date" : "2005-05-28T08:54:06Z" , "customer_id" : "77" , "customer_name" : "JANE" }
+{ "index" : { "_index" : "rental", "_id" : "562" } }
+{ "rental_id" : "562" , "rental_date" : "2005-05-28T09:01:21Z" , "customer_id" : "102" , "customer_name" : "CRYSTAL" }
+{ "index" : { "_index" : "rental", "_id" : "563" } }
+{ "rental_id" : "563" , "rental_date" : "2005-05-28T09:10:49Z" , "customer_id" : "324" , "customer_name" : "GARY" }
+{ "index" : { "_index" : "rental", "_id" : "564" } }
+{ "rental_id" : "564" , "rental_date" : "2005-05-28T09:12:09Z" , "customer_id" : "282" , "customer_name" : "JENNY" }
+{ "index" : { "_index" : "rental", "_id" : "565" } }
+{ "rental_id" : "565" , "rental_date" : "2005-05-28T09:26:31Z" , "customer_id" : "288" , "customer_name" : "BOBBIE" }
+{ "index" : { "_index" : "rental", "_id" : "566" } }
+{ "rental_id" : "566" , "rental_date" : "2005-05-28T09:51:39Z" , "customer_id" : "253" , "customer_name" : "TERRY" }
+{ "index" : { "_index" : "rental", "_id" : "567" } }
+{ "rental_id" : "567" , "rental_date" : "2005-05-28T09:56:20Z" , "customer_id" : "184" , "customer_name" : "VIVIAN" }
+{ "index" : { "_index" : "rental", "_id" : "568" } }
+{ "rental_id" : "568" , "rental_date" : "2005-05-28T09:57:36Z" , "customer_id" : "155" , "customer_name" : "GAIL" }
+{ "index" : { "_index" : "rental", "_id" : "569" } }
+{ "rental_id" : "569" , "rental_date" : "2005-05-28T10:12:41Z" , "customer_id" : "56" , "customer_name" : "GLORIA" }
+{ "index" : { "_index" : "rental", "_id" : "570" } }
+{ "rental_id" : "570" , "rental_date" : "2005-05-28T10:15:04Z" , "customer_id" : "21" , "customer_name" : "MICHELLE" }
+{ "index" : { "_index" : "rental", "_id" : "571" } }
+{ "rental_id" : "571" , "rental_date" : "2005-05-28T10:17:41Z" , "customer_id" : "516" , "customer_name" : "ELMER" }
+{ "index" : { "_index" : "rental", "_id" : "572" } }
+{ "rental_id" : "572" , "rental_date" : "2005-05-28T10:30:13Z" , "customer_id" : "337" , "customer_name" : "JERRY" }
+{ "index" : { "_index" : "rental", "_id" : "573" } }
+{ "rental_id" : "573" , "rental_date" : "2005-05-28T10:35:23Z" , "customer_id" : "1" , "customer_name" : "MARY" }
+{ "index" : { "_index" : "rental", "_id" : "574" } }
+{ "rental_id" : "574" , "rental_date" : "2005-05-28T10:44:28Z" , "customer_id" : "76" , "customer_name" : "IRENE" }
+{ "index" : { "_index" : "rental", "_id" : "575" } }
+{ "rental_id" : "575" , "rental_date" : "2005-05-28T10:56:09Z" , "customer_id" : "142" , "customer_name" : "APRIL" }
+{ "index" : { "_index" : "rental", "_id" : "576" } }
+{ "rental_id" : "576" , "rental_date" : "2005-05-28T10:56:10Z" , "customer_id" : "588" , "customer_name" : "MARION" }
+{ "index" : { "_index" : "rental", "_id" : "577" } }
+{ "rental_id" : "577" , "rental_date" : "2005-05-28T11:09:14Z" , "customer_id" : "6" , "customer_name" : "JENNIFER" }
+{ "index" : { "_index" : "rental", "_id" : "578" } }
+{ "rental_id" : "578" , "rental_date" : "2005-05-28T11:15:48Z" , "customer_id" : "173" , "customer_name" : "AUDREY" }
+{ "index" : { "_index" : "rental", "_id" : "579" } }
+{ "rental_id" : "579" , "rental_date" : "2005-05-28T11:19:23Z" , "customer_id" : "181" , "customer_name" : "ANA" }
+{ "index" : { "_index" : "rental", "_id" : "580" } }
+{ "rental_id" : "580" , "rental_date" : "2005-05-28T11:19:53Z" , "customer_id" : "17" , "customer_name" : "DONNA" }
+{ "index" : { "_index" : "rental", "_id" : "581" } }
+{ "rental_id" : "581" , "rental_date" : "2005-05-28T11:20:29Z" , "customer_id" : "186" , "customer_name" : "HOLLY" }
+{ "index" : { "_index" : "rental", "_id" : "582" } }
+{ "rental_id" : "582" , "rental_date" : "2005-05-28T11:33:46Z" , "customer_id" : "198" , "customer_name" : "ELSIE" }
+{ "index" : { "_index" : "rental", "_id" : "583" } }
+{ "rental_id" : "583" , "rental_date" : "2005-05-28T11:48:55Z" , "customer_id" : "386" , "customer_name" : "TODD" }
+{ "index" : { "_index" : "rental", "_id" : "584" } }
+{ "rental_id" : "584" , "rental_date" : "2005-05-28T11:49:00Z" , "customer_id" : "69" , "customer_name" : "JUDY" }
+{ "index" : { "_index" : "rental", "_id" : "585" } }
+{ "rental_id" : "585" , "rental_date" : "2005-05-28T11:50:45Z" , "customer_id" : "490" , "customer_name" : "SAM" }
+{ "index" : { "_index" : "rental", "_id" : "586" } }
+{ "rental_id" : "586" , "rental_date" : "2005-05-28T12:03:00Z" , "customer_id" : "77" , "customer_name" : "JANE" }
+{ "index" : { "_index" : "rental", "_id" : "587" } }
+{ "rental_id" : "587" , "rental_date" : "2005-05-28T12:05:33Z" , "customer_id" : "64" , "customer_name" : "JUDITH" }
+{ "index" : { "_index" : "rental", "_id" : "588" } }
+{ "rental_id" : "588" , "rental_date" : "2005-05-28T12:08:37Z" , "customer_id" : "89" , "customer_name" : "JULIA" }
+{ "index" : { "_index" : "rental", "_id" : "589" } }
+{ "rental_id" : "589" , "rental_date" : "2005-05-28T12:27:50Z" , "customer_id" : "308" , "customer_name" : "THOMAS" }
+{ "index" : { "_index" : "rental", "_id" : "590" } }
+{ "rental_id" : "590" , "rental_date" : "2005-05-28T13:06:50Z" , "customer_id" : "462" , "customer_name" : "WARREN" }
+{ "index" : { "_index" : "rental", "_id" : "591" } }
+{ "rental_id" : "591" , "rental_date" : "2005-05-28T13:11:04Z" , "customer_id" : "19" , "customer_name" : "RUTH" }
+{ "index" : { "_index" : "rental", "_id" : "592" } }
+{ "rental_id" : "592" , "rental_date" : "2005-05-28T13:21:08Z" , "customer_id" : "244" , "customer_name" : "VIOLA" }
+{ "index" : { "_index" : "rental", "_id" : "593" } }
+{ "rental_id" : "593" , "rental_date" : "2005-05-28T13:33:23Z" , "customer_id" : "16" , "customer_name" : "SANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "594" } }
+{ "rental_id" : "594" , "rental_date" : "2005-05-28T13:41:56Z" , "customer_id" : "538" , "customer_name" : "TED" }
+{ "index" : { "_index" : "rental", "_id" : "595" } }
+{ "rental_id" : "595" , "rental_date" : "2005-05-28T13:59:54Z" , "customer_id" : "294" , "customer_name" : "SHELLY" }
+{ "index" : { "_index" : "rental", "_id" : "596" } }
+{ "rental_id" : "596" , "rental_date" : "2005-05-28T14:00:03Z" , "customer_id" : "589" , "customer_name" : "TRACY" }
+{ "index" : { "_index" : "rental", "_id" : "597" } }
+{ "rental_id" : "597" , "rental_date" : "2005-05-28T14:01:02Z" , "customer_id" : "249" , "customer_name" : "DORA" }
+{ "index" : { "_index" : "rental", "_id" : "598" } }
+{ "rental_id" : "598" , "rental_date" : "2005-05-28T14:04:50Z" , "customer_id" : "159" , "customer_name" : "JILL" }
+{ "index" : { "_index" : "rental", "_id" : "599" } }
+{ "rental_id" : "599" , "rental_date" : "2005-05-28T14:05:57Z" , "customer_id" : "393" , "customer_name" : "PHILIP" }
+{ "index" : { "_index" : "rental", "_id" : "600" } }
+{ "rental_id" : "600" , "rental_date" : "2005-05-28T14:08:19Z" , "customer_id" : "332" , "customer_name" : "STEPHEN" }
+{ "index" : { "_index" : "rental", "_id" : "601" } }
+{ "rental_id" : "601" , "rental_date" : "2005-05-28T14:08:22Z" , "customer_id" : "429" , "customer_name" : "FREDERICK" }
+{ "index" : { "_index" : "rental", "_id" : "602" } }
+{ "rental_id" : "602" , "rental_date" : "2005-05-28T14:15:54Z" , "customer_id" : "590" , "customer_name" : "SETH" }
+{ "index" : { "_index" : "rental", "_id" : "603" } }
+{ "rental_id" : "603" , "rental_date" : "2005-05-28T14:27:51Z" , "customer_id" : "537" , "customer_name" : "CLINTON" }
+{ "index" : { "_index" : "rental", "_id" : "604" } }
+{ "rental_id" : "604" , "rental_date" : "2005-05-28T14:37:07Z" , "customer_id" : "426" , "customer_name" : "BRADLEY" }
+{ "index" : { "_index" : "rental", "_id" : "605" } }
+{ "rental_id" : "605" , "rental_date" : "2005-05-28T14:39:10Z" , "customer_id" : "501" , "customer_name" : "RUBEN" }
+{ "index" : { "_index" : "rental", "_id" : "606" } }
+{ "rental_id" : "606" , "rental_date" : "2005-05-28T14:48:39Z" , "customer_id" : "299" , "customer_name" : "JAMES" }
+{ "index" : { "_index" : "rental", "_id" : "607" } }
+{ "rental_id" : "607" , "rental_date" : "2005-05-28T15:02:41Z" , "customer_id" : "554" , "customer_name" : "DWAYNE" }
+{ "index" : { "_index" : "rental", "_id" : "608" } }
+{ "rental_id" : "608" , "rental_date" : "2005-05-28T15:03:44Z" , "customer_id" : "494" , "customer_name" : "RAMON" }
+{ "index" : { "_index" : "rental", "_id" : "609" } }
+{ "rental_id" : "609" , "rental_date" : "2005-05-28T15:04:02Z" , "customer_id" : "150" , "customer_name" : "DANIELLE" }
+{ "index" : { "_index" : "rental", "_id" : "610" } }
+{ "rental_id" : "610" , "rental_date" : "2005-05-28T15:15:25Z" , "customer_id" : "500" , "customer_name" : "REGINALD" }
+{ "index" : { "_index" : "rental", "_id" : "611" } }
+{ "rental_id" : "611" , "rental_date" : "2005-05-28T15:18:18Z" , "customer_id" : "580" , "customer_name" : "ROSS" }
+{ "index" : { "_index" : "rental", "_id" : "612" } }
+{ "rental_id" : "612" , "rental_date" : "2005-05-28T15:24:54Z" , "customer_id" : "161" , "customer_name" : "GERALDINE" }
+{ "index" : { "_index" : "rental", "_id" : "613" } }
+{ "rental_id" : "613" , "rental_date" : "2005-05-28T15:27:22Z" , "customer_id" : "595" , "customer_name" : "TERRENCE" }
+{ "index" : { "_index" : "rental", "_id" : "614" } }
+{ "rental_id" : "614" , "rental_date" : "2005-05-28T15:33:28Z" , "customer_id" : "307" , "customer_name" : "JOSEPH" }
+{ "index" : { "_index" : "rental", "_id" : "615" } }
+{ "rental_id" : "615" , "rental_date" : "2005-05-28T15:35:52Z" , "customer_id" : "533" , "customer_name" : "JESSIE" }
+{ "index" : { "_index" : "rental", "_id" : "616" } }
+{ "rental_id" : "616" , "rental_date" : "2005-05-28T15:45:39Z" , "customer_id" : "471" , "customer_name" : "DEAN" }
+{ "index" : { "_index" : "rental", "_id" : "617" } }
+{ "rental_id" : "617" , "rental_date" : "2005-05-28T15:49:14Z" , "customer_id" : "372" , "customer_name" : "STEVE" }
+{ "index" : { "_index" : "rental", "_id" : "618" } }
+{ "rental_id" : "618" , "rental_date" : "2005-05-28T15:50:07Z" , "customer_id" : "248" , "customer_name" : "CAROLINE" }
+{ "index" : { "_index" : "rental", "_id" : "619" } }
+{ "rental_id" : "619" , "rental_date" : "2005-05-28T15:52:26Z" , "customer_id" : "407" , "customer_name" : "DALE" }
+{ "index" : { "_index" : "rental", "_id" : "620" } }
+{ "rental_id" : "620" , "rental_date" : "2005-05-28T15:54:45Z" , "customer_id" : "321" , "customer_name" : "KEVIN" }
+{ "index" : { "_index" : "rental", "_id" : "621" } }
+{ "rental_id" : "621" , "rental_date" : "2005-05-28T15:58:12Z" , "customer_id" : "239" , "customer_name" : "MINNIE" }
+{ "index" : { "_index" : "rental", "_id" : "622" } }
+{ "rental_id" : "622" , "rental_date" : "2005-05-28T15:58:22Z" , "customer_id" : "109" , "customer_name" : "EDNA" }
+{ "index" : { "_index" : "rental", "_id" : "623" } }
+{ "rental_id" : "623" , "rental_date" : "2005-05-28T16:01:28Z" , "customer_id" : "495" , "customer_name" : "CHARLIE" }
+{ "index" : { "_index" : "rental", "_id" : "624" } }
+{ "rental_id" : "624" , "rental_date" : "2005-05-28T16:13:22Z" , "customer_id" : "569" , "customer_name" : "DAVE" }
+{ "index" : { "_index" : "rental", "_id" : "625" } }
+{ "rental_id" : "625" , "rental_date" : "2005-05-28T16:35:46Z" , "customer_id" : "596" , "customer_name" : "ENRIQUE" }
+{ "index" : { "_index" : "rental", "_id" : "626" } }
+{ "rental_id" : "626" , "rental_date" : "2005-05-28T16:58:09Z" , "customer_id" : "584" , "customer_name" : "SALVADOR" }
+{ "index" : { "_index" : "rental", "_id" : "627" } }
+{ "rental_id" : "627" , "rental_date" : "2005-05-28T17:04:43Z" , "customer_id" : "241" , "customer_name" : "HEIDI" }
+{ "index" : { "_index" : "rental", "_id" : "628" } }
+{ "rental_id" : "628" , "rental_date" : "2005-05-28T17:05:46Z" , "customer_id" : "173" , "customer_name" : "AUDREY" }
+{ "index" : { "_index" : "rental", "_id" : "629" } }
+{ "rental_id" : "629" , "rental_date" : "2005-05-28T17:19:15Z" , "customer_id" : "94" , "customer_name" : "NORMA" }
+{ "index" : { "_index" : "rental", "_id" : "630" } }
+{ "rental_id" : "630" , "rental_date" : "2005-05-28T17:24:51Z" , "customer_id" : "417" , "customer_name" : "TRAVIS" }
+{ "index" : { "_index" : "rental", "_id" : "631" } }
+{ "rental_id" : "631" , "rental_date" : "2005-05-28T17:36:32Z" , "customer_id" : "503" , "customer_name" : "ANGEL" }
+{ "index" : { "_index" : "rental", "_id" : "632" } }
+{ "rental_id" : "632" , "rental_date" : "2005-05-28T17:37:50Z" , "customer_id" : "442" , "customer_name" : "LEROY" }
+{ "index" : { "_index" : "rental", "_id" : "633" } }
+{ "rental_id" : "633" , "rental_date" : "2005-05-28T17:37:59Z" , "customer_id" : "360" , "customer_name" : "RALPH" }
+{ "index" : { "_index" : "rental", "_id" : "634" } }
+{ "rental_id" : "634" , "rental_date" : "2005-05-28T17:40:35Z" , "customer_id" : "428" , "customer_name" : "HERBERT" }
+{ "index" : { "_index" : "rental", "_id" : "635" } }
+{ "rental_id" : "635" , "rental_date" : "2005-05-28T17:46:57Z" , "customer_id" : "42" , "customer_name" : "CAROLYN" }
+{ "index" : { "_index" : "rental", "_id" : "636" } }
+{ "rental_id" : "636" , "rental_date" : "2005-05-28T17:47:58Z" , "customer_id" : "239" , "customer_name" : "MINNIE" }
+{ "index" : { "_index" : "rental", "_id" : "637" } }
+{ "rental_id" : "637" , "rental_date" : "2005-05-28T18:14:29Z" , "customer_id" : "250" , "customer_name" : "JO" }
+{ "index" : { "_index" : "rental", "_id" : "638" } }
+{ "rental_id" : "638" , "rental_date" : "2005-05-28T18:24:43Z" , "customer_id" : "372" , "customer_name" : "STEVE" }
+{ "index" : { "_index" : "rental", "_id" : "639" } }
+{ "rental_id" : "639" , "rental_date" : "2005-05-28T18:25:02Z" , "customer_id" : "198" , "customer_name" : "ELSIE" }
+{ "index" : { "_index" : "rental", "_id" : "640" } }
+{ "rental_id" : "640" , "rental_date" : "2005-05-28T18:43:26Z" , "customer_id" : "465" , "customer_name" : "FLOYD" }
+{ "index" : { "_index" : "rental", "_id" : "641" } }
+{ "rental_id" : "641" , "rental_date" : "2005-05-28T18:45:47Z" , "customer_id" : "396" , "customer_name" : "EARL" }
+{ "index" : { "_index" : "rental", "_id" : "642" } }
+{ "rental_id" : "642" , "rental_date" : "2005-05-28T18:49:12Z" , "customer_id" : "157" , "customer_name" : "DARLENE" }
+{ "index" : { "_index" : "rental", "_id" : "643" } }
+{ "rental_id" : "643" , "rental_date" : "2005-05-28T18:52:11Z" , "customer_id" : "240" , "customer_name" : "MARLENE" }
+{ "index" : { "_index" : "rental", "_id" : "644" } }
+{ "rental_id" : "644" , "rental_date" : "2005-05-28T18:59:12Z" , "customer_id" : "316" , "customer_name" : "STEVEN" }
+{ "index" : { "_index" : "rental", "_id" : "645" } }
+{ "rental_id" : "645" , "rental_date" : "2005-05-28T19:14:09Z" , "customer_id" : "505" , "customer_name" : "RAFAEL" }
+{ "index" : { "_index" : "rental", "_id" : "646" } }
+{ "rental_id" : "646" , "rental_date" : "2005-05-28T19:16:14Z" , "customer_id" : "185" , "customer_name" : "ROBERTA" }
+{ "index" : { "_index" : "rental", "_id" : "647" } }
+{ "rental_id" : "647" , "rental_date" : "2005-05-28T19:22:52Z" , "customer_id" : "569" , "customer_name" : "DAVE" }
+{ "index" : { "_index" : "rental", "_id" : "648" } }
+{ "rental_id" : "648" , "rental_date" : "2005-05-28T19:25:54Z" , "customer_id" : "253" , "customer_name" : "TERRY" }
+{ "index" : { "_index" : "rental", "_id" : "649" } }
+{ "rental_id" : "649" , "rental_date" : "2005-05-28T19:35:45Z" , "customer_id" : "197" , "customer_name" : "SUE" }
+{ "index" : { "_index" : "rental", "_id" : "650" } }
+{ "rental_id" : "650" , "rental_date" : "2005-05-28T19:45:40Z" , "customer_id" : "281" , "customer_name" : "LEONA" }
+{ "index" : { "_index" : "rental", "_id" : "651" } }
+{ "rental_id" : "651" , "rental_date" : "2005-05-28T19:46:50Z" , "customer_id" : "266" , "customer_name" : "NORA" }
+{ "index" : { "_index" : "rental", "_id" : "652" } }
+{ "rental_id" : "652" , "rental_date" : "2005-05-28T20:08:47Z" , "customer_id" : "43" , "customer_name" : "CHRISTINE" }
+{ "index" : { "_index" : "rental", "_id" : "653" } }
+{ "rental_id" : "653" , "rental_date" : "2005-05-28T20:12:20Z" , "customer_id" : "327" , "customer_name" : "LARRY" }
+{ "index" : { "_index" : "rental", "_id" : "654" } }
+{ "rental_id" : "654" , "rental_date" : "2005-05-28T20:15:30Z" , "customer_id" : "23" , "customer_name" : "SARAH" }
+{ "index" : { "_index" : "rental", "_id" : "655" } }
+{ "rental_id" : "655" , "rental_date" : "2005-05-28T20:16:20Z" , "customer_id" : "287" , "customer_name" : "BECKY" }
+{ "index" : { "_index" : "rental", "_id" : "656" } }
+{ "rental_id" : "656" , "rental_date" : "2005-05-28T20:18:24Z" , "customer_id" : "437" , "customer_name" : "RANDALL" }
+{ "index" : { "_index" : "rental", "_id" : "657" } }
+{ "rental_id" : "657" , "rental_date" : "2005-05-28T20:23:09Z" , "customer_id" : "65" , "customer_name" : "ROSE" }
+{ "index" : { "_index" : "rental", "_id" : "658" } }
+{ "rental_id" : "658" , "rental_date" : "2005-05-28T20:23:23Z" , "customer_id" : "103" , "customer_name" : "GLADYS" }
+{ "index" : { "_index" : "rental", "_id" : "659" } }
+{ "rental_id" : "659" , "rental_date" : "2005-05-28T20:27:53Z" , "customer_id" : "207" , "customer_name" : "GERTRUDE" }
+{ "index" : { "_index" : "rental", "_id" : "660" } }
+{ "rental_id" : "660" , "rental_date" : "2005-05-28T20:53:31Z" , "customer_id" : "578" , "customer_name" : "WILLARD" }
+{ "index" : { "_index" : "rental", "_id" : "661" } }
+{ "rental_id" : "661" , "rental_date" : "2005-05-28T21:01:25Z" , "customer_id" : "51" , "customer_name" : "ALICE" }
+{ "index" : { "_index" : "rental", "_id" : "662" } }
+{ "rental_id" : "662" , "rental_date" : "2005-05-28T21:09:31Z" , "customer_id" : "166" , "customer_name" : "LYNN" }
+{ "index" : { "_index" : "rental", "_id" : "663" } }
+{ "rental_id" : "663" , "rental_date" : "2005-05-28T21:23:02Z" , "customer_id" : "176" , "customer_name" : "JUNE" }
+{ "index" : { "_index" : "rental", "_id" : "664" } }
+{ "rental_id" : "664" , "rental_date" : "2005-05-28T21:31:08Z" , "customer_id" : "523" , "customer_name" : "HARVEY" }
+{ "index" : { "_index" : "rental", "_id" : "665" } }
+{ "rental_id" : "665" , "rental_date" : "2005-05-28T21:38:39Z" , "customer_id" : "415" , "customer_name" : "GLENN" }
+{ "index" : { "_index" : "rental", "_id" : "666" } }
+{ "rental_id" : "666" , "rental_date" : "2005-05-28T21:48:51Z" , "customer_id" : "437" , "customer_name" : "RANDALL" }
+{ "index" : { "_index" : "rental", "_id" : "667" } }
+{ "rental_id" : "667" , "rental_date" : "2005-05-28T21:49:02Z" , "customer_id" : "596" , "customer_name" : "ENRIQUE" }
+{ "index" : { "_index" : "rental", "_id" : "668" } }
+{ "rental_id" : "668" , "rental_date" : "2005-05-28T21:54:45Z" , "customer_id" : "484" , "customer_name" : "ROBERTO" }
+{ "index" : { "_index" : "rental", "_id" : "669" } }
+{ "rental_id" : "669" , "rental_date" : "2005-05-28T22:03:25Z" , "customer_id" : "313" , "customer_name" : "DONALD" }
+{ "index" : { "_index" : "rental", "_id" : "670" } }
+{ "rental_id" : "670" , "rental_date" : "2005-05-28T22:04:03Z" , "customer_id" : "201" , "customer_name" : "VICKI" }
+{ "index" : { "_index" : "rental", "_id" : "671" } }
+{ "rental_id" : "671" , "rental_date" : "2005-05-28T22:04:30Z" , "customer_id" : "14" , "customer_name" : "BETTY" }
+{ "index" : { "_index" : "rental", "_id" : "672" } }
+{ "rental_id" : "672" , "rental_date" : "2005-05-28T22:05:29Z" , "customer_id" : "306" , "customer_name" : "CHARLES" }
+{ "index" : { "_index" : "rental", "_id" : "673" } }
+{ "rental_id" : "673" , "rental_date" : "2005-05-28T22:07:30Z" , "customer_id" : "468" , "customer_name" : "TIM" }
+{ "index" : { "_index" : "rental", "_id" : "674" } }
+{ "rental_id" : "674" , "rental_date" : "2005-05-28T22:11:35Z" , "customer_id" : "87" , "customer_name" : "WANDA" }
+{ "index" : { "_index" : "rental", "_id" : "675" } }
+{ "rental_id" : "675" , "rental_date" : "2005-05-28T22:22:44Z" , "customer_id" : "338" , "customer_name" : "DENNIS" }
+{ "index" : { "_index" : "rental", "_id" : "676" } }
+{ "rental_id" : "676" , "rental_date" : "2005-05-28T22:27:51Z" , "customer_id" : "490" , "customer_name" : "SAM" }
+{ "index" : { "_index" : "rental", "_id" : "677" } }
+{ "rental_id" : "677" , "rental_date" : "2005-05-28T23:00:08Z" , "customer_id" : "194" , "customer_name" : "KRISTEN" }
+{ "index" : { "_index" : "rental", "_id" : "678" } }
+{ "rental_id" : "678" , "rental_date" : "2005-05-28T23:15:48Z" , "customer_id" : "269" , "customer_name" : "CASSANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "679" } }
+{ "rental_id" : "679" , "rental_date" : "2005-05-28T23:24:57Z" , "customer_id" : "526" , "customer_name" : "KARL" }
+{ "index" : { "_index" : "rental", "_id" : "680" } }
+{ "rental_id" : "680" , "rental_date" : "2005-05-28T23:27:26Z" , "customer_id" : "482" , "customer_name" : "MAURICE" }
+{ "index" : { "_index" : "rental", "_id" : "681" } }
+{ "rental_id" : "681" , "rental_date" : "2005-05-28T23:39:44Z" , "customer_id" : "531" , "customer_name" : "JAMIE" }
+{ "index" : { "_index" : "rental", "_id" : "682" } }
+{ "rental_id" : "682" , "rental_date" : "2005-05-28T23:53:18Z" , "customer_id" : "148" , "customer_name" : "ELEANOR" }
+{ "index" : { "_index" : "rental", "_id" : "683" } }
+{ "rental_id" : "683" , "rental_date" : "2005-05-29T00:09:48Z" , "customer_id" : "197" , "customer_name" : "SUE" }
+{ "index" : { "_index" : "rental", "_id" : "684" } }
+{ "rental_id" : "684" , "rental_date" : "2005-05-29T00:13:15Z" , "customer_id" : "461" , "customer_name" : "DEREK" }
+{ "index" : { "_index" : "rental", "_id" : "685" } }
+{ "rental_id" : "685" , "rental_date" : "2005-05-29T00:17:51Z" , "customer_id" : "172" , "customer_name" : "BERNICE" }
+{ "index" : { "_index" : "rental", "_id" : "686" } }
+{ "rental_id" : "686" , "rental_date" : "2005-05-29T00:27:10Z" , "customer_id" : "411" , "customer_name" : "NORMAN" }
+{ "index" : { "_index" : "rental", "_id" : "687" } }
+{ "rental_id" : "687" , "rental_date" : "2005-05-29T00:32:09Z" , "customer_id" : "250" , "customer_name" : "JO" }
+{ "index" : { "_index" : "rental", "_id" : "688" } }
+{ "rental_id" : "688" , "rental_date" : "2005-05-29T00:45:24Z" , "customer_id" : "162" , "customer_name" : "LAUREN" }
+{ "index" : { "_index" : "rental", "_id" : "689" } }
+{ "rental_id" : "689" , "rental_date" : "2005-05-29T00:46:53Z" , "customer_id" : "571" , "customer_name" : "JOHNNIE" }
+{ "index" : { "_index" : "rental", "_id" : "690" } }
+{ "rental_id" : "690" , "rental_date" : "2005-05-29T00:54:53Z" , "customer_id" : "85" , "customer_name" : "ANNE" }
+{ "index" : { "_index" : "rental", "_id" : "691" } }
+{ "rental_id" : "691" , "rental_date" : "2005-05-29T01:01:26Z" , "customer_id" : "433" , "customer_name" : "DON" }
+{ "index" : { "_index" : "rental", "_id" : "692" } }
+{ "rental_id" : "692" , "rental_date" : "2005-05-29T01:32:10Z" , "customer_id" : "18" , "customer_name" : "CAROL" }
+{ "index" : { "_index" : "rental", "_id" : "693" } }
+{ "rental_id" : "693" , "rental_date" : "2005-05-29T01:42:31Z" , "customer_id" : "190" , "customer_name" : "YOLANDA" }
+{ "index" : { "_index" : "rental", "_id" : "694" } }
+{ "rental_id" : "694" , "rental_date" : "2005-05-29T01:49:43Z" , "customer_id" : "399" , "customer_name" : "DANNY" }
+{ "index" : { "_index" : "rental", "_id" : "695" } }
+{ "rental_id" : "695" , "rental_date" : "2005-05-29T01:50:53Z" , "customer_id" : "528" , "customer_name" : "CLAUDE" }
+{ "index" : { "_index" : "rental", "_id" : "696" } }
+{ "rental_id" : "696" , "rental_date" : "2005-05-29T01:59:10Z" , "customer_id" : "19" , "customer_name" : "RUTH" }
+{ "index" : { "_index" : "rental", "_id" : "697" } }
+{ "rental_id" : "697" , "rental_date" : "2005-05-29T02:04:04Z" , "customer_id" : "387" , "customer_name" : "JESSE" }
+{ "index" : { "_index" : "rental", "_id" : "698" } }
+{ "rental_id" : "698" , "rental_date" : "2005-05-29T02:10:52Z" , "customer_id" : "109" , "customer_name" : "EDNA" }
+{ "index" : { "_index" : "rental", "_id" : "699" } }
+{ "rental_id" : "699" , "rental_date" : "2005-05-29T02:11:44Z" , "customer_id" : "246" , "customer_name" : "MARIAN" }
+{ "index" : { "_index" : "rental", "_id" : "700" } }
+{ "rental_id" : "700" , "rental_date" : "2005-05-29T02:18:54Z" , "customer_id" : "117" , "customer_name" : "EDITH" }
+{ "index" : { "_index" : "rental", "_id" : "701" } }
+{ "rental_id" : "701" , "rental_date" : "2005-05-29T02:26:27Z" , "customer_id" : "112" , "customer_name" : "ROSA" }
+{ "index" : { "_index" : "rental", "_id" : "702" } }
+{ "rental_id" : "702" , "rental_date" : "2005-05-29T02:27:30Z" , "customer_id" : "475" , "customer_name" : "PEDRO" }
+{ "index" : { "_index" : "rental", "_id" : "703" } }
+{ "rental_id" : "703" , "rental_date" : "2005-05-29T02:29:36Z" , "customer_id" : "269" , "customer_name" : "CASSANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "704" } }
+{ "rental_id" : "704" , "rental_date" : "2005-05-29T02:44:43Z" , "customer_id" : "330" , "customer_name" : "SCOTT" }
+{ "index" : { "_index" : "rental", "_id" : "705" } }
+{ "rental_id" : "705" , "rental_date" : "2005-05-29T02:48:52Z" , "customer_id" : "257" , "customer_name" : "MARSHA" }
+{ "index" : { "_index" : "rental", "_id" : "706" } }
+{ "rental_id" : "706" , "rental_date" : "2005-05-29T03:05:49Z" , "customer_id" : "60" , "customer_name" : "MILDRED" }
+{ "index" : { "_index" : "rental", "_id" : "707" } }
+{ "rental_id" : "707" , "rental_date" : "2005-05-29T03:18:19Z" , "customer_id" : "252" , "customer_name" : "MATTIE" }
+{ "index" : { "_index" : "rental", "_id" : "708" } }
+{ "rental_id" : "708" , "rental_date" : "2005-05-29T03:23:47Z" , "customer_id" : "127" , "customer_name" : "ELAINE" }
+{ "index" : { "_index" : "rental", "_id" : "709" } }
+{ "rental_id" : "709" , "rental_date" : "2005-05-29T03:48:01Z" , "customer_id" : "479" , "customer_name" : "ZACHARY" }
+{ "index" : { "_index" : "rental", "_id" : "710" } }
+{ "rental_id" : "710" , "rental_date" : "2005-05-29T03:48:36Z" , "customer_id" : "518" , "customer_name" : "GABRIEL" }
+{ "index" : { "_index" : "rental", "_id" : "711" } }
+{ "rental_id" : "711" , "rental_date" : "2005-05-29T03:49:03Z" , "customer_id" : "215" , "customer_name" : "JESSIE" }
+{ "index" : { "_index" : "rental", "_id" : "712" } }
+{ "rental_id" : "712" , "rental_date" : "2005-05-29T04:02:24Z" , "customer_id" : "313" , "customer_name" : "DONALD" }
+{ "index" : { "_index" : "rental", "_id" : "713" } }
+{ "rental_id" : "713" , "rental_date" : "2005-05-29T04:10:17Z" , "customer_id" : "507" , "customer_name" : "EDGAR" }
+{ "index" : { "_index" : "rental", "_id" : "714" } }
+{ "rental_id" : "714" , "rental_date" : "2005-05-29T04:15:21Z" , "customer_id" : "452" , "customer_name" : "TOM" }
+{ "index" : { "_index" : "rental", "_id" : "715" } }
+{ "rental_id" : "715" , "rental_date" : "2005-05-29T04:22:41Z" , "customer_id" : "545" , "customer_name" : "JULIO" }
+{ "index" : { "_index" : "rental", "_id" : "716" } }
+{ "rental_id" : "716" , "rental_date" : "2005-05-29T04:35:29Z" , "customer_id" : "36" , "customer_name" : "KATHLEEN" }
+{ "index" : { "_index" : "rental", "_id" : "717" } }
+{ "rental_id" : "717" , "rental_date" : "2005-05-29T04:37:44Z" , "customer_id" : "412" , "customer_name" : "ALLEN" }
+{ "index" : { "_index" : "rental", "_id" : "718" } }
+{ "rental_id" : "718" , "rental_date" : "2005-05-29T04:52:23Z" , "customer_id" : "498" , "customer_name" : "GENE" }
+{ "index" : { "_index" : "rental", "_id" : "719" } }
+{ "rental_id" : "719" , "rental_date" : "2005-05-29T05:16:05Z" , "customer_id" : "245" , "customer_name" : "COURTNEY" }
+{ "index" : { "_index" : "rental", "_id" : "720" } }
+{ "rental_id" : "720" , "rental_date" : "2005-05-29T05:17:30Z" , "customer_id" : "480" , "customer_name" : "COREY" }
+{ "index" : { "_index" : "rental", "_id" : "721" } }
+{ "rental_id" : "721" , "rental_date" : "2005-05-29T05:28:47Z" , "customer_id" : "44" , "customer_name" : "MARIE" }
+{ "index" : { "_index" : "rental", "_id" : "722" } }
+{ "rental_id" : "722" , "rental_date" : "2005-05-29T05:30:31Z" , "customer_id" : "259" , "customer_name" : "LENA" }
+{ "index" : { "_index" : "rental", "_id" : "723" } }
+{ "rental_id" : "723" , "rental_date" : "2005-05-29T05:34:44Z" , "customer_id" : "309" , "customer_name" : "CHRISTOPHER" }
+{ "index" : { "_index" : "rental", "_id" : "724" } }
+{ "rental_id" : "724" , "rental_date" : "2005-05-29T05:53:23Z" , "customer_id" : "416" , "customer_name" : "JEFFERY" }
+{ "index" : { "_index" : "rental", "_id" : "725" } }
+{ "rental_id" : "725" , "rental_date" : "2005-05-29T06:03:41Z" , "customer_id" : "245" , "customer_name" : "COURTNEY" }
+{ "index" : { "_index" : "rental", "_id" : "726" } }
+{ "rental_id" : "726" , "rental_date" : "2005-05-29T06:05:29Z" , "customer_id" : "452" , "customer_name" : "TOM" }
+{ "index" : { "_index" : "rental", "_id" : "727" } }
+{ "rental_id" : "727" , "rental_date" : "2005-05-29T06:08:15Z" , "customer_id" : "484" , "customer_name" : "ROBERTO" }
+{ "index" : { "_index" : "rental", "_id" : "728" } }
+{ "rental_id" : "728" , "rental_date" : "2005-05-29T06:12:38Z" , "customer_id" : "551" , "customer_name" : "CLAYTON" }
+{ "index" : { "_index" : "rental", "_id" : "729" } }
+{ "rental_id" : "729" , "rental_date" : "2005-05-29T06:35:13Z" , "customer_id" : "323" , "customer_name" : "MATTHEW" }
+{ "index" : { "_index" : "rental", "_id" : "730" } }
+{ "rental_id" : "730" , "rental_date" : "2005-05-29T07:00:59Z" , "customer_id" : "197" , "customer_name" : "SUE" }
+{ "index" : { "_index" : "rental", "_id" : "731" } }
+{ "rental_id" : "731" , "rental_date" : "2005-05-29T07:25:16Z" , "customer_id" : "5" , "customer_name" : "ELIZABETH" }
+{ "index" : { "_index" : "rental", "_id" : "732" } }
+{ "rental_id" : "732" , "rental_date" : "2005-05-29T07:32:51Z" , "customer_id" : "447" , "customer_name" : "CLIFFORD" }
+{ "index" : { "_index" : "rental", "_id" : "733" } }
+{ "rental_id" : "733" , "rental_date" : "2005-05-29T07:35:21Z" , "customer_id" : "363" , "customer_name" : "ROY" }
+{ "index" : { "_index" : "rental", "_id" : "734" } }
+{ "rental_id" : "734" , "rental_date" : "2005-05-29T07:38:52Z" , "customer_id" : "538" , "customer_name" : "TED" }
+{ "index" : { "_index" : "rental", "_id" : "735" } }
+{ "rental_id" : "735" , "rental_date" : "2005-05-29T08:08:13Z" , "customer_id" : "454" , "customer_name" : "ALEX" }
+{ "index" : { "_index" : "rental", "_id" : "736" } }
+{ "rental_id" : "736" , "rental_date" : "2005-05-29T08:10:07Z" , "customer_id" : "276" , "customer_name" : "BRANDY" }
+{ "index" : { "_index" : "rental", "_id" : "737" } }
+{ "rental_id" : "737" , "rental_date" : "2005-05-29T08:11:31Z" , "customer_id" : "589" , "customer_name" : "TRACY" }
+{ "index" : { "_index" : "rental", "_id" : "738" } }
+{ "rental_id" : "738" , "rental_date" : "2005-05-29T08:20:08Z" , "customer_id" : "256" , "customer_name" : "MABEL" }
+{ "index" : { "_index" : "rental", "_id" : "739" } }
+{ "rental_id" : "739" , "rental_date" : "2005-05-29T08:28:18Z" , "customer_id" : "84" , "customer_name" : "SARA" }
+{ "index" : { "_index" : "rental", "_id" : "740" } }
+{ "rental_id" : "740" , "rental_date" : "2005-05-29T08:30:36Z" , "customer_id" : "89" , "customer_name" : "JULIA" }
+{ "index" : { "_index" : "rental", "_id" : "741" } }
+{ "rental_id" : "741" , "rental_date" : "2005-05-29T08:35:49Z" , "customer_id" : "495" , "customer_name" : "CHARLIE" }
+{ "index" : { "_index" : "rental", "_id" : "742" } }
+{ "rental_id" : "742" , "rental_date" : "2005-05-29T08:36:30Z" , "customer_id" : "483" , "customer_name" : "VERNON" }
+{ "index" : { "_index" : "rental", "_id" : "743" } }
+{ "rental_id" : "743" , "rental_date" : "2005-05-29T08:39:02Z" , "customer_id" : "548" , "customer_name" : "ALLAN" }
+{ "index" : { "_index" : "rental", "_id" : "744" } }
+{ "rental_id" : "744" , "rental_date" : "2005-05-29T09:13:08Z" , "customer_id" : "420" , "customer_name" : "JACOB" }
+{ "index" : { "_index" : "rental", "_id" : "745" } }
+{ "rental_id" : "745" , "rental_date" : "2005-05-29T09:22:57Z" , "customer_id" : "152" , "customer_name" : "ALICIA" }
+{ "index" : { "_index" : "rental", "_id" : "746" } }
+{ "rental_id" : "746" , "rental_date" : "2005-05-29T09:25:10Z" , "customer_id" : "130" , "customer_name" : "CHARLOTTE" }
+{ "index" : { "_index" : "rental", "_id" : "747" } }
+{ "rental_id" : "747" , "rental_date" : "2005-05-29T09:26:34Z" , "customer_id" : "291" , "customer_name" : "TONI" }
+{ "index" : { "_index" : "rental", "_id" : "748" } }
+{ "rental_id" : "748" , "rental_date" : "2005-05-29T09:27:00Z" , "customer_id" : "7" , "customer_name" : "MARIA" }
+{ "index" : { "_index" : "rental", "_id" : "749" } }
+{ "rental_id" : "749" , "rental_date" : "2005-05-29T09:33:33Z" , "customer_id" : "375" , "customer_name" : "AARON" }
+{ "index" : { "_index" : "rental", "_id" : "750" } }
+{ "rental_id" : "750" , "rental_date" : "2005-05-29T09:41:40Z" , "customer_id" : "269" , "customer_name" : "CASSANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "751" } }
+{ "rental_id" : "751" , "rental_date" : "2005-05-29T09:55:43Z" , "customer_id" : "53" , "customer_name" : "HEATHER" }
+{ "index" : { "_index" : "rental", "_id" : "752" } }
+{ "rental_id" : "752" , "rental_date" : "2005-05-29T10:14:15Z" , "customer_id" : "126" , "customer_name" : "ELLEN" }
+{ "index" : { "_index" : "rental", "_id" : "753" } }
+{ "rental_id" : "753" , "rental_date" : "2005-05-29T10:16:42Z" , "customer_id" : "135" , "customer_name" : "JUANITA" }
+{ "index" : { "_index" : "rental", "_id" : "754" } }
+{ "rental_id" : "754" , "rental_date" : "2005-05-29T10:18:59Z" , "customer_id" : "281" , "customer_name" : "LEONA" }
+{ "index" : { "_index" : "rental", "_id" : "755" } }
+{ "rental_id" : "755" , "rental_date" : "2005-05-29T10:26:29Z" , "customer_id" : "576" , "customer_name" : "MORRIS" }
+{ "index" : { "_index" : "rental", "_id" : "756" } }
+{ "rental_id" : "756" , "rental_date" : "2005-05-29T10:28:45Z" , "customer_id" : "201" , "customer_name" : "VICKI" }
+{ "index" : { "_index" : "rental", "_id" : "757" } }
+{ "rental_id" : "757" , "rental_date" : "2005-05-29T10:29:47Z" , "customer_id" : "435" , "customer_name" : "RICKY" }
+{ "index" : { "_index" : "rental", "_id" : "758" } }
+{ "rental_id" : "758" , "rental_date" : "2005-05-29T10:31:56Z" , "customer_id" : "563" , "customer_name" : "KEN" }
+{ "index" : { "_index" : "rental", "_id" : "759" } }
+{ "rental_id" : "759" , "rental_date" : "2005-05-29T10:57:57Z" , "customer_id" : "179" , "customer_name" : "DANA" }
+{ "index" : { "_index" : "rental", "_id" : "760" } }
+{ "rental_id" : "760" , "rental_date" : "2005-05-29T11:07:25Z" , "customer_id" : "77" , "customer_name" : "JANE" }
+{ "index" : { "_index" : "rental", "_id" : "761" } }
+{ "rental_id" : "761" , "rental_date" : "2005-05-29T11:09:01Z" , "customer_id" : "58" , "customer_name" : "JEAN" }
+{ "index" : { "_index" : "rental", "_id" : "762" } }
+{ "rental_id" : "762" , "rental_date" : "2005-05-29T11:15:51Z" , "customer_id" : "146" , "customer_name" : "JAMIE" }
+{ "index" : { "_index" : "rental", "_id" : "763" } }
+{ "rental_id" : "763" , "rental_date" : "2005-05-29T11:32:15Z" , "customer_id" : "50" , "customer_name" : "DIANE" }
+{ "index" : { "_index" : "rental", "_id" : "764" } }
+{ "rental_id" : "764" , "rental_date" : "2005-05-29T11:37:35Z" , "customer_id" : "149" , "customer_name" : "VALERIE" }
+{ "index" : { "_index" : "rental", "_id" : "765" } }
+{ "rental_id" : "765" , "rental_date" : "2005-05-29T11:38:34Z" , "customer_id" : "69" , "customer_name" : "JUDY" }
+{ "index" : { "_index" : "rental", "_id" : "766" } }
+{ "rental_id" : "766" , "rental_date" : "2005-05-29T11:47:02Z" , "customer_id" : "383" , "customer_name" : "MARTIN" }
+{ "index" : { "_index" : "rental", "_id" : "767" } }
+{ "rental_id" : "767" , "rental_date" : "2005-05-29T12:20:19Z" , "customer_id" : "67" , "customer_name" : "KELLY" }
+{ "index" : { "_index" : "rental", "_id" : "768" } }
+{ "rental_id" : "768" , "rental_date" : "2005-05-29T12:30:46Z" , "customer_id" : "566" , "customer_name" : "CASEY" }
+{ "index" : { "_index" : "rental", "_id" : "769" } }
+{ "rental_id" : "769" , "rental_date" : "2005-05-29T12:51:44Z" , "customer_id" : "575" , "customer_name" : "ISAAC" }
+{ "index" : { "_index" : "rental", "_id" : "770" } }
+{ "rental_id" : "770" , "rental_date" : "2005-05-29T12:56:50Z" , "customer_id" : "405" , "customer_name" : "LEONARD" }
+{ "index" : { "_index" : "rental", "_id" : "771" } }
+{ "rental_id" : "771" , "rental_date" : "2005-05-29T12:59:14Z" , "customer_id" : "476" , "customer_name" : "DERRICK" }
+{ "index" : { "_index" : "rental", "_id" : "772" } }
+{ "rental_id" : "772" , "rental_date" : "2005-05-29T13:08:06Z" , "customer_id" : "556" , "customer_name" : "ARMANDO" }
+{ "index" : { "_index" : "rental", "_id" : "773" } }
+{ "rental_id" : "773" , "rental_date" : "2005-05-29T13:18:05Z" , "customer_id" : "563" , "customer_name" : "KEN" }
+{ "index" : { "_index" : "rental", "_id" : "774" } }
+{ "rental_id" : "774" , "rental_date" : "2005-05-29T13:19:43Z" , "customer_id" : "575" , "customer_name" : "ISAAC" }
+{ "index" : { "_index" : "rental", "_id" : "775" } }
+{ "rental_id" : "775" , "rental_date" : "2005-05-29T13:23:26Z" , "customer_id" : "124" , "customer_name" : "SHEILA" }
+{ "index" : { "_index" : "rental", "_id" : "776" } }
+{ "rental_id" : "776" , "rental_date" : "2005-05-29T13:35:35Z" , "customer_id" : "113" , "customer_name" : "CINDY" }
+{ "index" : { "_index" : "rental", "_id" : "777" } }
+{ "rental_id" : "777" , "rental_date" : "2005-05-29T14:07:58Z" , "customer_id" : "360" , "customer_name" : "RALPH" }
+{ "index" : { "_index" : "rental", "_id" : "778" } }
+{ "rental_id" : "778" , "rental_date" : "2005-05-29T14:09:53Z" , "customer_id" : "535" , "customer_name" : "JAVIER" }
+{ "index" : { "_index" : "rental", "_id" : "779" } }
+{ "rental_id" : "779" , "rental_date" : "2005-05-29T14:17:17Z" , "customer_id" : "105" , "customer_name" : "DAWN" }
+{ "index" : { "_index" : "rental", "_id" : "780" } }
+{ "rental_id" : "780" , "rental_date" : "2005-05-29T14:18:32Z" , "customer_id" : "300" , "customer_name" : "JOHN" }
+{ "index" : { "_index" : "rental", "_id" : "781" } }
+{ "rental_id" : "781" , "rental_date" : "2005-05-29T14:23:58Z" , "customer_id" : "313" , "customer_name" : "DONALD" }
+{ "index" : { "_index" : "rental", "_id" : "782" } }
+{ "rental_id" : "782" , "rental_date" : "2005-05-29T14:38:57Z" , "customer_id" : "596" , "customer_name" : "ENRIQUE" }
+{ "index" : { "_index" : "rental", "_id" : "783" } }
+{ "rental_id" : "783" , "rental_date" : "2005-05-29T14:41:18Z" , "customer_id" : "53" , "customer_name" : "HEATHER" }
+{ "index" : { "_index" : "rental", "_id" : "784" } }
+{ "rental_id" : "784" , "rental_date" : "2005-05-29T14:44:22Z" , "customer_id" : "352" , "customer_name" : "ALBERT" }
+{ "index" : { "_index" : "rental", "_id" : "785" } }
+{ "rental_id" : "785" , "rental_date" : "2005-05-29T15:08:41Z" , "customer_id" : "72" , "customer_name" : "THERESA" }
+{ "index" : { "_index" : "rental", "_id" : "786" } }
+{ "rental_id" : "786" , "rental_date" : "2005-05-29T15:17:28Z" , "customer_id" : "439" , "customer_name" : "ALEXANDER" }
+{ "index" : { "_index" : "rental", "_id" : "787" } }
+{ "rental_id" : "787" , "rental_date" : "2005-05-29T16:03:03Z" , "customer_id" : "27" , "customer_name" : "SHIRLEY" }
+{ "index" : { "_index" : "rental", "_id" : "788" } }
+{ "rental_id" : "788" , "rental_date" : "2005-05-29T16:13:55Z" , "customer_id" : "562" , "customer_name" : "WALLACE" }
+{ "index" : { "_index" : "rental", "_id" : "789" } }
+{ "rental_id" : "789" , "rental_date" : "2005-05-29T16:17:07Z" , "customer_id" : "553" , "customer_name" : "MAX" }
+{ "index" : { "_index" : "rental", "_id" : "790" } }
+{ "rental_id" : "790" , "rental_date" : "2005-05-29T16:19:29Z" , "customer_id" : "593" , "customer_name" : "RENE" }
+{ "index" : { "_index" : "rental", "_id" : "791" } }
+{ "rental_id" : "791" , "rental_date" : "2005-05-29T16:30:42Z" , "customer_id" : "284" , "customer_name" : "SONIA" }
+{ "index" : { "_index" : "rental", "_id" : "792" } }
+{ "rental_id" : "792" , "rental_date" : "2005-05-29T16:32:10Z" , "customer_id" : "261" , "customer_name" : "DEANNA" }
+{ "index" : { "_index" : "rental", "_id" : "793" } }
+{ "rental_id" : "793" , "rental_date" : "2005-05-29T16:44:08Z" , "customer_id" : "528" , "customer_name" : "CLAUDE" }
+{ "index" : { "_index" : "rental", "_id" : "794" } }
+{ "rental_id" : "794" , "rental_date" : "2005-05-29T16:44:11Z" , "customer_id" : "50" , "customer_name" : "DIANE" }
+{ "index" : { "_index" : "rental", "_id" : "795" } }
+{ "rental_id" : "795" , "rental_date" : "2005-05-29T16:57:39Z" , "customer_id" : "551" , "customer_name" : "CLAYTON" }
+{ "index" : { "_index" : "rental", "_id" : "796" } }
+{ "rental_id" : "796" , "rental_date" : "2005-05-29T16:59:44Z" , "customer_id" : "26" , "customer_name" : "JESSICA" }
+{ "index" : { "_index" : "rental", "_id" : "797" } }
+{ "rental_id" : "797" , "rental_date" : "2005-05-29T17:12:17Z" , "customer_id" : "244" , "customer_name" : "VIOLA" }
+{ "index" : { "_index" : "rental", "_id" : "798" } }
+{ "rental_id" : "798" , "rental_date" : "2005-05-29T17:23:43Z" , "customer_id" : "134" , "customer_name" : "EMMA" }
+{ "index" : { "_index" : "rental", "_id" : "799" } }
+{ "rental_id" : "799" , "rental_date" : "2005-05-29T17:24:48Z" , "customer_id" : "429" , "customer_name" : "FREDERICK" }
+{ "index" : { "_index" : "rental", "_id" : "800" } }
+{ "rental_id" : "800" , "rental_date" : "2005-05-29T17:28:12Z" , "customer_id" : "472" , "customer_name" : "GREG" }
+{ "index" : { "_index" : "rental", "_id" : "801" } }
+{ "rental_id" : "801" , "rental_date" : "2005-05-29T17:35:50Z" , "customer_id" : "402" , "customer_name" : "LUIS" }
+{ "index" : { "_index" : "rental", "_id" : "802" } }
+{ "rental_id" : "802" , "rental_date" : "2005-05-29T17:38:59Z" , "customer_id" : "350" , "customer_name" : "JUAN" }
+{ "index" : { "_index" : "rental", "_id" : "803" } }
+{ "rental_id" : "803" , "rental_date" : "2005-05-29T17:52:30Z" , "customer_id" : "32" , "customer_name" : "AMY" }
+{ "index" : { "_index" : "rental", "_id" : "804" } }
+{ "rental_id" : "804" , "rental_date" : "2005-05-29T18:10:24Z" , "customer_id" : "171" , "customer_name" : "DOLORES" }
+{ "index" : { "_index" : "rental", "_id" : "805" } }
+{ "rental_id" : "805" , "rental_date" : "2005-05-29T18:18:18Z" , "customer_id" : "232" , "customer_name" : "CONSTANCE" }
+{ "index" : { "_index" : "rental", "_id" : "806" } }
+{ "rental_id" : "806" , "rental_date" : "2005-05-29T18:31:30Z" , "customer_id" : "435" , "customer_name" : "RICKY" }
+{ "index" : { "_index" : "rental", "_id" : "807" } }
+{ "rental_id" : "807" , "rental_date" : "2005-05-29T18:50:50Z" , "customer_id" : "235" , "customer_name" : "JACKIE" }
+{ "index" : { "_index" : "rental", "_id" : "808" } }
+{ "rental_id" : "808" , "rental_date" : "2005-05-29T19:08:20Z" , "customer_id" : "104" , "customer_name" : "RITA" }
+{ "index" : { "_index" : "rental", "_id" : "809" } }
+{ "rental_id" : "809" , "rental_date" : "2005-05-29T19:10:20Z" , "customer_id" : "222" , "customer_name" : "DELORES" }
+{ "index" : { "_index" : "rental", "_id" : "810" } }
+{ "rental_id" : "810" , "rental_date" : "2005-05-29T19:12:04Z" , "customer_id" : "346" , "customer_name" : "ARTHUR" }
+{ "index" : { "_index" : "rental", "_id" : "811" } }
+{ "rental_id" : "811" , "rental_date" : "2005-05-29T19:30:42Z" , "customer_id" : "401" , "customer_name" : "TONY" }
+{ "index" : { "_index" : "rental", "_id" : "812" } }
+{ "rental_id" : "812" , "rental_date" : "2005-05-29T20:00:30Z" , "customer_id" : "225" , "customer_name" : "ARLENE" }
+{ "index" : { "_index" : "rental", "_id" : "813" } }
+{ "rental_id" : "813" , "rental_date" : "2005-05-29T20:14:34Z" , "customer_id" : "344" , "customer_name" : "HENRY" }
+{ "index" : { "_index" : "rental", "_id" : "814" } }
+{ "rental_id" : "814" , "rental_date" : "2005-05-29T20:16:12Z" , "customer_id" : "134" , "customer_name" : "EMMA" }
+{ "index" : { "_index" : "rental", "_id" : "815" } }
+{ "rental_id" : "815" , "rental_date" : "2005-05-29T20:24:28Z" , "customer_id" : "14" , "customer_name" : "BETTY" }
+{ "index" : { "_index" : "rental", "_id" : "816" } }
+{ "rental_id" : "816" , "rental_date" : "2005-05-29T20:26:39Z" , "customer_id" : "474" , "customer_name" : "DUSTIN" }
+{ "index" : { "_index" : "rental", "_id" : "817" } }
+{ "rental_id" : "817" , "rental_date" : "2005-05-29T20:39:14Z" , "customer_id" : "554" , "customer_name" : "DWAYNE" }
+{ "index" : { "_index" : "rental", "_id" : "818" } }
+{ "rental_id" : "818" , "rental_date" : "2005-05-29T20:47:53Z" , "customer_id" : "321" , "customer_name" : "KEVIN" }
+{ "index" : { "_index" : "rental", "_id" : "819" } }
+{ "rental_id" : "819" , "rental_date" : "2005-05-29T21:00:32Z" , "customer_id" : "511" , "customer_name" : "CHESTER" }
+{ "index" : { "_index" : "rental", "_id" : "820" } }
+{ "rental_id" : "820" , "rental_date" : "2005-05-29T21:07:22Z" , "customer_id" : "22" , "customer_name" : "LAURA" }
+{ "index" : { "_index" : "rental", "_id" : "821" } }
+{ "rental_id" : "821" , "rental_date" : "2005-05-29T21:31:12Z" , "customer_id" : "348" , "customer_name" : "ROGER" }
+{ "index" : { "_index" : "rental", "_id" : "822" } }
+{ "rental_id" : "822" , "rental_date" : "2005-05-29T21:36:00Z" , "customer_id" : "480" , "customer_name" : "COREY" }
+{ "index" : { "_index" : "rental", "_id" : "823" } }
+{ "rental_id" : "823" , "rental_date" : "2005-05-29T21:39:37Z" , "customer_id" : "441" , "customer_name" : "MARIO" }
+{ "index" : { "_index" : "rental", "_id" : "824" } }
+{ "rental_id" : "824" , "rental_date" : "2005-05-29T21:45:32Z" , "customer_id" : "357" , "customer_name" : "KEITH" }
+{ "index" : { "_index" : "rental", "_id" : "825" } }
+{ "rental_id" : "825" , "rental_date" : "2005-05-29T21:49:41Z" , "customer_id" : "371" , "customer_name" : "BILLY" }
+{ "index" : { "_index" : "rental", "_id" : "826" } }
+{ "rental_id" : "826" , "rental_date" : "2005-05-29T21:56:15Z" , "customer_id" : "207" , "customer_name" : "GERTRUDE" }
+{ "index" : { "_index" : "rental", "_id" : "827" } }
+{ "rental_id" : "827" , "rental_date" : "2005-05-29T21:58:43Z" , "customer_id" : "573" , "customer_name" : "BYRON" }
+{ "index" : { "_index" : "rental", "_id" : "828" } }
+{ "rental_id" : "828" , "rental_date" : "2005-05-29T22:14:55Z" , "customer_id" : "217" , "customer_name" : "AGNES" }
+{ "index" : { "_index" : "rental", "_id" : "829" } }
+{ "rental_id" : "829" , "rental_date" : "2005-05-29T22:16:42Z" , "customer_id" : "371" , "customer_name" : "BILLY" }
+{ "index" : { "_index" : "rental", "_id" : "830" } }
+{ "rental_id" : "830" , "rental_date" : "2005-05-29T22:43:55Z" , "customer_id" : "3" , "customer_name" : "LINDA" }
+{ "index" : { "_index" : "rental", "_id" : "831" } }
+{ "rental_id" : "831" , "rental_date" : "2005-05-29T22:50:25Z" , "customer_id" : "509" , "customer_name" : "RAUL" }
+{ "index" : { "_index" : "rental", "_id" : "832" } }
+{ "rental_id" : "832" , "rental_date" : "2005-05-29T22:51:20Z" , "customer_id" : "159" , "customer_name" : "JILL" }
+{ "index" : { "_index" : "rental", "_id" : "833" } }
+{ "rental_id" : "833" , "rental_date" : "2005-05-29T23:21:56Z" , "customer_id" : "417" , "customer_name" : "TRAVIS" }
+{ "index" : { "_index" : "rental", "_id" : "834" } }
+{ "rental_id" : "834" , "rental_date" : "2005-05-29T23:24:30Z" , "customer_id" : "84" , "customer_name" : "SARA" }
+{ "index" : { "_index" : "rental", "_id" : "835" } }
+{ "rental_id" : "835" , "rental_date" : "2005-05-29T23:37:00Z" , "customer_id" : "381" , "customer_name" : "BOBBY" }
+{ "index" : { "_index" : "rental", "_id" : "836" } }
+{ "rental_id" : "836" , "rental_date" : "2005-05-29T23:56:42Z" , "customer_id" : "368" , "customer_name" : "HARRY" }
+{ "index" : { "_index" : "rental", "_id" : "837" } }
+{ "rental_id" : "837" , "rental_date" : "2005-05-30T00:02:08Z" , "customer_id" : "172" , "customer_name" : "BERNICE" }
+{ "index" : { "_index" : "rental", "_id" : "838" } }
+{ "rental_id" : "838" , "rental_date" : "2005-05-30T00:27:57Z" , "customer_id" : "504" , "customer_name" : "NATHANIEL" }
+{ "index" : { "_index" : "rental", "_id" : "839" } }
+{ "rental_id" : "839" , "rental_date" : "2005-05-30T00:28:12Z" , "customer_id" : "337" , "customer_name" : "JERRY" }
+{ "index" : { "_index" : "rental", "_id" : "840" } }
+{ "rental_id" : "840" , "rental_date" : "2005-05-30T00:28:41Z" , "customer_id" : "79" , "customer_name" : "RACHEL" }
+{ "index" : { "_index" : "rental", "_id" : "841" } }
+{ "rental_id" : "841" , "rental_date" : "2005-05-30T00:31:17Z" , "customer_id" : "387" , "customer_name" : "JESSE" }
+{ "index" : { "_index" : "rental", "_id" : "842" } }
+{ "rental_id" : "842" , "rental_date" : "2005-05-30T00:32:04Z" , "customer_id" : "238" , "customer_name" : "NELLIE" }
+{ "index" : { "_index" : "rental", "_id" : "843" } }
+{ "rental_id" : "843" , "rental_date" : "2005-05-30T00:44:24Z" , "customer_id" : "313" , "customer_name" : "DONALD" }
+{ "index" : { "_index" : "rental", "_id" : "844" } }
+{ "rental_id" : "844" , "rental_date" : "2005-05-30T00:58:20Z" , "customer_id" : "429" , "customer_name" : "FREDERICK" }
+{ "index" : { "_index" : "rental", "_id" : "845" } }
+{ "rental_id" : "845" , "rental_date" : "2005-05-30T01:17:25Z" , "customer_id" : "72" , "customer_name" : "THERESA" }
+{ "index" : { "_index" : "rental", "_id" : "846" } }
+{ "rental_id" : "846" , "rental_date" : "2005-05-30T01:17:45Z" , "customer_id" : "49" , "customer_name" : "JOYCE" }
+{ "index" : { "_index" : "rental", "_id" : "847" } }
+{ "rental_id" : "847" , "rental_date" : "2005-05-30T01:18:15Z" , "customer_id" : "380" , "customer_name" : "RUSSELL" }
+{ "index" : { "_index" : "rental", "_id" : "848" } }
+{ "rental_id" : "848" , "rental_date" : "2005-05-30T01:19:53Z" , "customer_id" : "436" , "customer_name" : "TROY" }
+{ "index" : { "_index" : "rental", "_id" : "849" } }
+{ "rental_id" : "849" , "rental_date" : "2005-05-30T01:23:07Z" , "customer_id" : "449" , "customer_name" : "OSCAR" }
+{ "index" : { "_index" : "rental", "_id" : "850" } }
+{ "rental_id" : "850" , "rental_date" : "2005-05-30T01:35:12Z" , "customer_id" : "517" , "customer_name" : "BRAD" }
+{ "index" : { "_index" : "rental", "_id" : "851" } }
+{ "rental_id" : "851" , "rental_date" : "2005-05-30T01:35:15Z" , "customer_id" : "530" , "customer_name" : "DARRYL" }
+{ "index" : { "_index" : "rental", "_id" : "852" } }
+{ "rental_id" : "852" , "rental_date" : "2005-05-30T01:36:57Z" , "customer_id" : "549" , "customer_name" : "NELSON" }
+{ "index" : { "_index" : "rental", "_id" : "853" } }
+{ "rental_id" : "853" , "rental_date" : "2005-05-30T01:43:31Z" , "customer_id" : "122" , "customer_name" : "THELMA" }
+{ "index" : { "_index" : "rental", "_id" : "854" } }
+{ "rental_id" : "854" , "rental_date" : "2005-05-30T01:56:11Z" , "customer_id" : "369" , "customer_name" : "FRED" }
+{ "index" : { "_index" : "rental", "_id" : "855" } }
+{ "rental_id" : "855" , "rental_date" : "2005-05-30T02:00:28Z" , "customer_id" : "406" , "customer_name" : "NATHAN" }
+{ "index" : { "_index" : "rental", "_id" : "856" } }
+{ "rental_id" : "856" , "rental_date" : "2005-05-30T02:01:21Z" , "customer_id" : "53" , "customer_name" : "HEATHER" }
+{ "index" : { "_index" : "rental", "_id" : "857" } }
+{ "rental_id" : "857" , "rental_date" : "2005-05-30T02:01:23Z" , "customer_id" : "204" , "customer_name" : "ROSEMARY" }
+{ "index" : { "_index" : "rental", "_id" : "858" } }
+{ "rental_id" : "858" , "rental_date" : "2005-05-30T02:10:32Z" , "customer_id" : "358" , "customer_name" : "SAMUEL" }
+{ "index" : { "_index" : "rental", "_id" : "859" } }
+{ "rental_id" : "859" , "rental_date" : "2005-05-30T02:36:20Z" , "customer_id" : "79" , "customer_name" : "RACHEL" }
+{ "index" : { "_index" : "rental", "_id" : "860" } }
+{ "rental_id" : "860" , "rental_date" : "2005-05-30T02:45:16Z" , "customer_id" : "276" , "customer_name" : "BRANDY" }
+{ "index" : { "_index" : "rental", "_id" : "861" } }
+{ "rental_id" : "861" , "rental_date" : "2005-05-30T02:48:32Z" , "customer_id" : "502" , "customer_name" : "BRETT" }
+{ "index" : { "_index" : "rental", "_id" : "862" } }
+{ "rental_id" : "862" , "rental_date" : "2005-05-30T03:09:11Z" , "customer_id" : "328" , "customer_name" : "JEFFREY" }
+{ "index" : { "_index" : "rental", "_id" : "863" } }
+{ "rental_id" : "863" , "rental_date" : "2005-05-30T03:14:59Z" , "customer_id" : "379" , "customer_name" : "CARLOS" }
+{ "index" : { "_index" : "rental", "_id" : "864" } }
+{ "rental_id" : "864" , "rental_date" : "2005-05-30T03:27:17Z" , "customer_id" : "544" , "customer_name" : "CODY" }
+{ "index" : { "_index" : "rental", "_id" : "865" } }
+{ "rental_id" : "865" , "rental_date" : "2005-05-30T03:39:44Z" , "customer_id" : "154" , "customer_name" : "MICHELE" }
+{ "index" : { "_index" : "rental", "_id" : "866" } }
+{ "rental_id" : "866" , "rental_date" : "2005-05-30T03:43:54Z" , "customer_id" : "8" , "customer_name" : "SUSAN" }
+{ "index" : { "_index" : "rental", "_id" : "867" } }
+{ "rental_id" : "867" , "rental_date" : "2005-05-30T03:54:43Z" , "customer_id" : "99" , "customer_name" : "EMILY" }
+{ "index" : { "_index" : "rental", "_id" : "868" } }
+{ "rental_id" : "868" , "rental_date" : "2005-05-30T04:19:55Z" , "customer_id" : "28" , "customer_name" : "CYNTHIA" }
+{ "index" : { "_index" : "rental", "_id" : "869" } }
+{ "rental_id" : "869" , "rental_date" : "2005-05-30T04:22:06Z" , "customer_id" : "296" , "customer_name" : "RAMONA" }
+{ "index" : { "_index" : "rental", "_id" : "870" } }
+{ "rental_id" : "870" , "rental_date" : "2005-05-30T04:25:47Z" , "customer_id" : "391" , "customer_name" : "CLARENCE" }
+{ "index" : { "_index" : "rental", "_id" : "871" } }
+{ "rental_id" : "871" , "rental_date" : "2005-05-30T05:01:30Z" , "customer_id" : "303" , "customer_name" : "WILLIAM" }
+{ "index" : { "_index" : "rental", "_id" : "872" } }
+{ "rental_id" : "872" , "rental_date" : "2005-05-30T05:03:04Z" , "customer_id" : "548" , "customer_name" : "ALLAN" }
+{ "index" : { "_index" : "rental", "_id" : "873" } }
+{ "rental_id" : "873" , "rental_date" : "2005-05-30T05:15:20Z" , "customer_id" : "375" , "customer_name" : "AARON" }
+{ "index" : { "_index" : "rental", "_id" : "874" } }
+{ "rental_id" : "874" , "rental_date" : "2005-05-30T05:36:21Z" , "customer_id" : "52" , "customer_name" : "JULIE" }
+{ "index" : { "_index" : "rental", "_id" : "875" } }
+{ "rental_id" : "875" , "rental_date" : "2005-05-30T05:38:24Z" , "customer_id" : "326" , "customer_name" : "JOSE" }
+{ "index" : { "_index" : "rental", "_id" : "876" } }
+{ "rental_id" : "876" , "rental_date" : "2005-05-30T05:41:22Z" , "customer_id" : "339" , "customer_name" : "WALTER" }
+{ "index" : { "_index" : "rental", "_id" : "877" } }
+{ "rental_id" : "877" , "rental_date" : "2005-05-30T05:48:59Z" , "customer_id" : "9" , "customer_name" : "MARGARET" }
+{ "index" : { "_index" : "rental", "_id" : "878" } }
+{ "rental_id" : "878" , "rental_date" : "2005-05-30T05:49:13Z" , "customer_id" : "323" , "customer_name" : "MATTHEW" }
+{ "index" : { "_index" : "rental", "_id" : "879" } }
+{ "rental_id" : "879" , "rental_date" : "2005-05-30T05:49:42Z" , "customer_id" : "482" , "customer_name" : "MAURICE" }
+{ "index" : { "_index" : "rental", "_id" : "880" } }
+{ "rental_id" : "880" , "rental_date" : "2005-05-30T06:12:33Z" , "customer_id" : "460" , "customer_name" : "LEON" }
+{ "index" : { "_index" : "rental", "_id" : "881" } }
+{ "rental_id" : "881" , "rental_date" : "2005-05-30T06:15:36Z" , "customer_id" : "242" , "customer_name" : "GLENDA" }
+{ "index" : { "_index" : "rental", "_id" : "882" } }
+{ "rental_id" : "882" , "rental_date" : "2005-05-30T06:16:06Z" , "customer_id" : "477" , "customer_name" : "DAN" }
+{ "index" : { "_index" : "rental", "_id" : "883" } }
+{ "rental_id" : "883" , "rental_date" : "2005-05-30T06:21:05Z" , "customer_id" : "399" , "customer_name" : "DANNY" }
+{ "index" : { "_index" : "rental", "_id" : "884" } }
+{ "rental_id" : "884" , "rental_date" : "2005-05-30T06:41:32Z" , "customer_id" : "17" , "customer_name" : "DONNA" }
+{ "index" : { "_index" : "rental", "_id" : "885" } }
+{ "rental_id" : "885" , "rental_date" : "2005-05-30T06:54:28Z" , "customer_id" : "62" , "customer_name" : "JOAN" }
+{ "index" : { "_index" : "rental", "_id" : "886" } }
+{ "rental_id" : "886" , "rental_date" : "2005-05-30T06:54:51Z" , "customer_id" : "393" , "customer_name" : "PHILIP" }
+{ "index" : { "_index" : "rental", "_id" : "887" } }
+{ "rental_id" : "887" , "rental_date" : "2005-05-30T07:10:00Z" , "customer_id" : "16" , "customer_name" : "SANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "888" } }
+{ "rental_id" : "888" , "rental_date" : "2005-05-30T07:13:14Z" , "customer_id" : "128" , "customer_name" : "MARJORIE" }
+{ "index" : { "_index" : "rental", "_id" : "889" } }
+{ "rental_id" : "889" , "rental_date" : "2005-05-30T07:14:53Z" , "customer_id" : "114" , "customer_name" : "GRACE" }
+{ "index" : { "_index" : "rental", "_id" : "890" } }
+{ "rental_id" : "890" , "rental_date" : "2005-05-30T07:43:04Z" , "customer_id" : "349" , "customer_name" : "JOE" }
+{ "index" : { "_index" : "rental", "_id" : "891" } }
+{ "rental_id" : "891" , "rental_date" : "2005-05-30T07:43:12Z" , "customer_id" : "391" , "customer_name" : "CLARENCE" }
+{ "index" : { "_index" : "rental", "_id" : "892" } }
+{ "rental_id" : "892" , "rental_date" : "2005-05-30T08:02:56Z" , "customer_id" : "274" , "customer_name" : "NAOMI" }
+{ "index" : { "_index" : "rental", "_id" : "893" } }
+{ "rental_id" : "893" , "rental_date" : "2005-05-30T08:06:59Z" , "customer_id" : "502" , "customer_name" : "BRETT" }
+{ "index" : { "_index" : "rental", "_id" : "894" } }
+{ "rental_id" : "894" , "rental_date" : "2005-05-30T08:31:31Z" , "customer_id" : "400" , "customer_name" : "BRYAN" }
+{ "index" : { "_index" : "rental", "_id" : "895" } }
+{ "rental_id" : "895" , "rental_date" : "2005-05-30T08:50:43Z" , "customer_id" : "192" , "customer_name" : "LAURIE" }
+{ "index" : { "_index" : "rental", "_id" : "896" } }
+{ "rental_id" : "896" , "rental_date" : "2005-05-30T09:03:52Z" , "customer_id" : "207" , "customer_name" : "GERTRUDE" }
+{ "index" : { "_index" : "rental", "_id" : "897" } }
+{ "rental_id" : "897" , "rental_date" : "2005-05-30T09:10:01Z" , "customer_id" : "432" , "customer_name" : "EDWIN" }
+{ "index" : { "_index" : "rental", "_id" : "898" } }
+{ "rental_id" : "898" , "rental_date" : "2005-05-30T09:26:19Z" , "customer_id" : "384" , "customer_name" : "ERNEST" }
+{ "index" : { "_index" : "rental", "_id" : "899" } }
+{ "rental_id" : "899" , "rental_date" : "2005-05-30T09:29:30Z" , "customer_id" : "156" , "customer_name" : "BERTHA" }
+{ "index" : { "_index" : "rental", "_id" : "900" } }
+{ "rental_id" : "900" , "rental_date" : "2005-05-30T09:38:41Z" , "customer_id" : "586" , "customer_name" : "KIRK" }
+{ "index" : { "_index" : "rental", "_id" : "901" } }
+{ "rental_id" : "901" , "rental_date" : "2005-05-30T09:40:40Z" , "customer_id" : "259" , "customer_name" : "LENA" }
+{ "index" : { "_index" : "rental", "_id" : "902" } }
+{ "rental_id" : "902" , "rental_date" : "2005-05-30T09:53:36Z" , "customer_id" : "561" , "customer_name" : "IAN" }
+{ "index" : { "_index" : "rental", "_id" : "903" } }
+{ "rental_id" : "903" , "rental_date" : "2005-05-30T10:11:29Z" , "customer_id" : "197" , "customer_name" : "SUE" }
+{ "index" : { "_index" : "rental", "_id" : "904" } }
+{ "rental_id" : "904" , "rental_date" : "2005-05-30T10:19:42Z" , "customer_id" : "44" , "customer_name" : "MARIE" }
+{ "index" : { "_index" : "rental", "_id" : "905" } }
+{ "rental_id" : "905" , "rental_date" : "2005-05-30T10:25:00Z" , "customer_id" : "50" , "customer_name" : "DIANE" }
+{ "index" : { "_index" : "rental", "_id" : "906" } }
+{ "rental_id" : "906" , "rental_date" : "2005-05-30T10:30:38Z" , "customer_id" : "549" , "customer_name" : "NELSON" }
+{ "index" : { "_index" : "rental", "_id" : "907" } }
+{ "rental_id" : "907" , "rental_date" : "2005-05-30T10:37:27Z" , "customer_id" : "506" , "customer_name" : "LESLIE" }
+{ "index" : { "_index" : "rental", "_id" : "908" } }
+{ "rental_id" : "908" , "rental_date" : "2005-05-30T10:38:37Z" , "customer_id" : "85" , "customer_name" : "ANNE" }
+{ "index" : { "_index" : "rental", "_id" : "909" } }
+{ "rental_id" : "909" , "rental_date" : "2005-05-30T10:43:38Z" , "customer_id" : "486" , "customer_name" : "GLEN" }
+{ "index" : { "_index" : "rental", "_id" : "910" } }
+{ "rental_id" : "910" , "rental_date" : "2005-05-30T10:46:16Z" , "customer_id" : "374" , "customer_name" : "JEREMY" }
+{ "index" : { "_index" : "rental", "_id" : "911" } }
+{ "rental_id" : "911" , "rental_date" : "2005-05-30T10:50:22Z" , "customer_id" : "366" , "customer_name" : "BRANDON" }
+{ "index" : { "_index" : "rental", "_id" : "912" } }
+{ "rental_id" : "912" , "rental_date" : "2005-05-30T10:58:33Z" , "customer_id" : "390" , "customer_name" : "SHAWN" }
+{ "index" : { "_index" : "rental", "_id" : "913" } }
+{ "rental_id" : "913" , "rental_date" : "2005-05-30T11:04:58Z" , "customer_id" : "369" , "customer_name" : "FRED" }
+{ "index" : { "_index" : "rental", "_id" : "914" } }
+{ "rental_id" : "914" , "rental_date" : "2005-05-30T11:06:00Z" , "customer_id" : "596" , "customer_name" : "ENRIQUE" }
+{ "index" : { "_index" : "rental", "_id" : "915" } }
+{ "rental_id" : "915" , "rental_date" : "2005-05-30T11:20:27Z" , "customer_id" : "115" , "customer_name" : "WENDY" }
+{ "index" : { "_index" : "rental", "_id" : "916" } }
+{ "rental_id" : "916" , "rental_date" : "2005-05-30T11:25:01Z" , "customer_id" : "6" , "customer_name" : "JENNIFER" }
+{ "index" : { "_index" : "rental", "_id" : "917" } }
+{ "rental_id" : "917" , "rental_date" : "2005-05-30T11:27:06Z" , "customer_id" : "385" , "customer_name" : "PHILLIP" }
+{ "index" : { "_index" : "rental", "_id" : "918" } }
+{ "rental_id" : "918" , "rental_date" : "2005-05-30T11:32:24Z" , "customer_id" : "197" , "customer_name" : "SUE" }
+{ "index" : { "_index" : "rental", "_id" : "919" } }
+{ "rental_id" : "919" , "rental_date" : "2005-05-30T11:35:06Z" , "customer_id" : "374" , "customer_name" : "JEREMY" }
+{ "index" : { "_index" : "rental", "_id" : "920" } }
+{ "rental_id" : "920" , "rental_date" : "2005-05-30T11:44:01Z" , "customer_id" : "584" , "customer_name" : "SALVADOR" }
+{ "index" : { "_index" : "rental", "_id" : "921" } }
+{ "rental_id" : "921" , "rental_date" : "2005-05-30T11:53:09Z" , "customer_id" : "508" , "customer_name" : "MILTON" }
+{ "index" : { "_index" : "rental", "_id" : "922" } }
+{ "rental_id" : "922" , "rental_date" : "2005-05-30T11:55:55Z" , "customer_id" : "550" , "customer_name" : "GUY" }
+{ "index" : { "_index" : "rental", "_id" : "923" } }
+{ "rental_id" : "923" , "rental_date" : "2005-05-30T11:58:50Z" , "customer_id" : "37" , "customer_name" : "PAMELA" }
+{ "index" : { "_index" : "rental", "_id" : "924" } }
+{ "rental_id" : "924" , "rental_date" : "2005-05-30T12:10:59Z" , "customer_id" : "293" , "customer_name" : "MAE" }
+{ "index" : { "_index" : "rental", "_id" : "925" } }
+{ "rental_id" : "925" , "rental_date" : "2005-05-30T12:13:52Z" , "customer_id" : "137" , "customer_name" : "RHONDA" }
+{ "index" : { "_index" : "rental", "_id" : "926" } }
+{ "rental_id" : "926" , "rental_date" : "2005-05-30T12:15:54Z" , "customer_id" : "76" , "customer_name" : "IRENE" }
+{ "index" : { "_index" : "rental", "_id" : "927" } }
+{ "rental_id" : "927" , "rental_date" : "2005-05-30T12:16:40Z" , "customer_id" : "167" , "customer_name" : "SALLY" }
+{ "index" : { "_index" : "rental", "_id" : "928" } }
+{ "rental_id" : "928" , "rental_date" : "2005-05-30T12:27:14Z" , "customer_id" : "79" , "customer_name" : "RACHEL" }
+{ "index" : { "_index" : "rental", "_id" : "929" } }
+{ "rental_id" : "929" , "rental_date" : "2005-05-30T12:32:39Z" , "customer_id" : "536" , "customer_name" : "FERNANDO" }
+{ "index" : { "_index" : "rental", "_id" : "930" } }
+{ "rental_id" : "930" , "rental_date" : "2005-05-30T12:44:57Z" , "customer_id" : "141" , "customer_name" : "DEBBIE" }
+{ "index" : { "_index" : "rental", "_id" : "931" } }
+{ "rental_id" : "931" , "rental_date" : "2005-05-30T12:53:01Z" , "customer_id" : "421" , "customer_name" : "LEE" }
+{ "index" : { "_index" : "rental", "_id" : "932" } }
+{ "rental_id" : "932" , "rental_date" : "2005-05-30T12:55:36Z" , "customer_id" : "198" , "customer_name" : "ELSIE" }
+{ "index" : { "_index" : "rental", "_id" : "933" } }
+{ "rental_id" : "933" , "rental_date" : "2005-05-30T13:08:45Z" , "customer_id" : "66" , "customer_name" : "JANICE" }
+{ "index" : { "_index" : "rental", "_id" : "934" } }
+{ "rental_id" : "934" , "rental_date" : "2005-05-30T13:24:46Z" , "customer_id" : "60" , "customer_name" : "MILDRED" }
+{ "index" : { "_index" : "rental", "_id" : "935" } }
+{ "rental_id" : "935" , "rental_date" : "2005-05-30T13:29:36Z" , "customer_id" : "256" , "customer_name" : "MABEL" }
+{ "index" : { "_index" : "rental", "_id" : "936" } }
+{ "rental_id" : "936" , "rental_date" : "2005-05-30T13:52:49Z" , "customer_id" : "469" , "customer_name" : "WESLEY" }
+{ "index" : { "_index" : "rental", "_id" : "937" } }
+{ "rental_id" : "937" , "rental_date" : "2005-05-30T14:47:31Z" , "customer_id" : "304" , "customer_name" : "DAVID" }
+{ "index" : { "_index" : "rental", "_id" : "938" } }
+{ "rental_id" : "938" , "rental_date" : "2005-05-30T14:47:31Z" , "customer_id" : "46" , "customer_name" : "CATHERINE" }
+{ "index" : { "_index" : "rental", "_id" : "939" } }
+{ "rental_id" : "939" , "rental_date" : "2005-05-30T14:49:34Z" , "customer_id" : "367" , "customer_name" : "ADAM" }
+{ "index" : { "_index" : "rental", "_id" : "940" } }
+{ "rental_id" : "940" , "rental_date" : "2005-05-30T15:01:02Z" , "customer_id" : "534" , "customer_name" : "CHRISTIAN" }
+{ "index" : { "_index" : "rental", "_id" : "941" } }
+{ "rental_id" : "941" , "rental_date" : "2005-05-30T15:02:25Z" , "customer_id" : "562" , "customer_name" : "WALLACE" }
+{ "index" : { "_index" : "rental", "_id" : "942" } }
+{ "rental_id" : "942" , "rental_date" : "2005-05-30T15:05:47Z" , "customer_id" : "473" , "customer_name" : "JORGE" }
+{ "index" : { "_index" : "rental", "_id" : "943" } }
+{ "rental_id" : "943" , "rental_date" : "2005-05-30T15:20:19Z" , "customer_id" : "57" , "customer_name" : "EVELYN" }
+{ "index" : { "_index" : "rental", "_id" : "944" } }
+{ "rental_id" : "944" , "rental_date" : "2005-05-30T15:26:24Z" , "customer_id" : "131" , "customer_name" : "MONICA" }
+{ "index" : { "_index" : "rental", "_id" : "945" } }
+{ "rental_id" : "945" , "rental_date" : "2005-05-30T15:33:17Z" , "customer_id" : "357" , "customer_name" : "KEITH" }
+{ "index" : { "_index" : "rental", "_id" : "946" } }
+{ "rental_id" : "946" , "rental_date" : "2005-05-30T15:35:08Z" , "customer_id" : "486" , "customer_name" : "GLEN" }
+{ "index" : { "_index" : "rental", "_id" : "947" } }
+{ "rental_id" : "947" , "rental_date" : "2005-05-30T15:36:57Z" , "customer_id" : "62" , "customer_name" : "JOAN" }
+{ "index" : { "_index" : "rental", "_id" : "948" } }
+{ "rental_id" : "948" , "rental_date" : "2005-05-30T15:44:27Z" , "customer_id" : "245" , "customer_name" : "COURTNEY" }
+{ "index" : { "_index" : "rental", "_id" : "949" } }
+{ "rental_id" : "949" , "rental_date" : "2005-05-30T15:50:39Z" , "customer_id" : "368" , "customer_name" : "HARRY" }
+{ "index" : { "_index" : "rental", "_id" : "950" } }
+{ "rental_id" : "950" , "rental_date" : "2005-05-30T16:06:08Z" , "customer_id" : "83" , "customer_name" : "LOUISE" }
+{ "index" : { "_index" : "rental", "_id" : "951" } }
+{ "rental_id" : "951" , "rental_date" : "2005-05-30T16:10:35Z" , "customer_id" : "59" , "customer_name" : "CHERYL" }
+{ "index" : { "_index" : "rental", "_id" : "952" } }
+{ "rental_id" : "952" , "rental_date" : "2005-05-30T16:28:07Z" , "customer_id" : "311" , "customer_name" : "PAUL" }
+{ "index" : { "_index" : "rental", "_id" : "953" } }
+{ "rental_id" : "953" , "rental_date" : "2005-05-30T16:34:02Z" , "customer_id" : "210" , "customer_name" : "ELLA" }
+{ "index" : { "_index" : "rental", "_id" : "954" } }
+{ "rental_id" : "954" , "rental_date" : "2005-05-30T16:57:29Z" , "customer_id" : "297" , "customer_name" : "SHERRI" }
+{ "index" : { "_index" : "rental", "_id" : "955" } }
+{ "rental_id" : "955" , "rental_date" : "2005-05-30T16:59:03Z" , "customer_id" : "301" , "customer_name" : "ROBERT" }
+{ "index" : { "_index" : "rental", "_id" : "956" } }
+{ "rental_id" : "956" , "rental_date" : "2005-05-30T17:30:28Z" , "customer_id" : "296" , "customer_name" : "RAMONA" }
+{ "index" : { "_index" : "rental", "_id" : "957" } }
+{ "rental_id" : "957" , "rental_date" : "2005-05-30T17:53:29Z" , "customer_id" : "440" , "customer_name" : "BERNARD" }
+{ "index" : { "_index" : "rental", "_id" : "958" } }
+{ "rental_id" : "958" , "rental_date" : "2005-05-30T17:58:03Z" , "customer_id" : "186" , "customer_name" : "HOLLY" }
+{ "index" : { "_index" : "rental", "_id" : "959" } }
+{ "rental_id" : "959" , "rental_date" : "2005-05-30T18:07:00Z" , "customer_id" : "535" , "customer_name" : "JAVIER" }
+{ "index" : { "_index" : "rental", "_id" : "960" } }
+{ "rental_id" : "960" , "rental_date" : "2005-05-30T18:13:23Z" , "customer_id" : "445" , "customer_name" : "MICHEAL" }
+{ "index" : { "_index" : "rental", "_id" : "961" } }
+{ "rental_id" : "961" , "rental_date" : "2005-05-30T18:16:44Z" , "customer_id" : "588" , "customer_name" : "MARION" }
+{ "index" : { "_index" : "rental", "_id" : "962" } }
+{ "rental_id" : "962" , "rental_date" : "2005-05-30T18:45:17Z" , "customer_id" : "520" , "customer_name" : "MITCHELL" }
+{ "index" : { "_index" : "rental", "_id" : "963" } }
+{ "rental_id" : "963" , "rental_date" : "2005-05-30T18:52:53Z" , "customer_id" : "225" , "customer_name" : "ARLENE" }
+{ "index" : { "_index" : "rental", "_id" : "964" } }
+{ "rental_id" : "964" , "rental_date" : "2005-05-30T18:53:21Z" , "customer_id" : "287" , "customer_name" : "BECKY" }
+{ "index" : { "_index" : "rental", "_id" : "965" } }
+{ "rental_id" : "965" , "rental_date" : "2005-05-30T19:00:14Z" , "customer_id" : "502" , "customer_name" : "BRETT" }
+{ "index" : { "_index" : "rental", "_id" : "966" } }
+{ "rental_id" : "966" , "rental_date" : "2005-05-30T19:00:37Z" , "customer_id" : "496" , "customer_name" : "TYLER" }
+{ "index" : { "_index" : "rental", "_id" : "967" } }
+{ "rental_id" : "967" , "rental_date" : "2005-05-30T19:12:06Z" , "customer_id" : "330" , "customer_name" : "SCOTT" }
+{ "index" : { "_index" : "rental", "_id" : "968" } }
+{ "rental_id" : "968" , "rental_date" : "2005-05-30T19:20:03Z" , "customer_id" : "576" , "customer_name" : "MORRIS" }
+{ "index" : { "_index" : "rental", "_id" : "969" } }
+{ "rental_id" : "969" , "rental_date" : "2005-05-30T19:23:48Z" , "customer_id" : "551" , "customer_name" : "CLAYTON" }
+{ "index" : { "_index" : "rental", "_id" : "970" } }
+{ "rental_id" : "970" , "rental_date" : "2005-05-30T19:50:28Z" , "customer_id" : "307" , "customer_name" : "JOSEPH" }
+{ "index" : { "_index" : "rental", "_id" : "971" } }
+{ "rental_id" : "971" , "rental_date" : "2005-05-30T20:10:52Z" , "customer_id" : "561" , "customer_name" : "IAN" }
+{ "index" : { "_index" : "rental", "_id" : "972" } }
+{ "rental_id" : "972" , "rental_date" : "2005-05-30T20:21:07Z" , "customer_id" : "411" , "customer_name" : "NORMAN" }
+{ "index" : { "_index" : "rental", "_id" : "973" } }
+{ "rental_id" : "973" , "rental_date" : "2005-05-30T20:27:45Z" , "customer_id" : "473" , "customer_name" : "JORGE" }
+{ "index" : { "_index" : "rental", "_id" : "974" } }
+{ "rental_id" : "974" , "rental_date" : "2005-05-30T20:28:42Z" , "customer_id" : "596" , "customer_name" : "ENRIQUE" }
+{ "index" : { "_index" : "rental", "_id" : "975" } }
+{ "rental_id" : "975" , "rental_date" : "2005-05-30T21:07:15Z" , "customer_id" : "7" , "customer_name" : "MARIA" }
+{ "index" : { "_index" : "rental", "_id" : "976" } }
+{ "rental_id" : "976" , "rental_date" : "2005-05-30T21:11:19Z" , "customer_id" : "581" , "customer_name" : "VIRGIL" }
+{ "index" : { "_index" : "rental", "_id" : "977" } }
+{ "rental_id" : "977" , "rental_date" : "2005-05-30T21:22:26Z" , "customer_id" : "394" , "customer_name" : "CHRIS" }
+{ "index" : { "_index" : "rental", "_id" : "978" } }
+{ "rental_id" : "978" , "rental_date" : "2005-05-30T21:30:52Z" , "customer_id" : "154" , "customer_name" : "MICHELE" }
+{ "index" : { "_index" : "rental", "_id" : "979" } }
+{ "rental_id" : "979" , "rental_date" : "2005-05-30T21:37:11Z" , "customer_id" : "279" , "customer_name" : "DIANNE" }
+{ "index" : { "_index" : "rental", "_id" : "980" } }
+{ "rental_id" : "980" , "rental_date" : "2005-05-30T21:45:19Z" , "customer_id" : "273" , "customer_name" : "PRISCILLA" }
+{ "index" : { "_index" : "rental", "_id" : "981" } }
+{ "rental_id" : "981" , "rental_date" : "2005-05-30T21:52:42Z" , "customer_id" : "326" , "customer_name" : "JOSE" }
+{ "index" : { "_index" : "rental", "_id" : "982" } }
+{ "rental_id" : "982" , "rental_date" : "2005-05-30T22:15:24Z" , "customer_id" : "524" , "customer_name" : "JARED" }
+{ "index" : { "_index" : "rental", "_id" : "983" } }
+{ "rental_id" : "983" , "rental_date" : "2005-05-30T22:15:51Z" , "customer_id" : "115" , "customer_name" : "WENDY" }
+{ "index" : { "_index" : "rental", "_id" : "984" } }
+{ "rental_id" : "984" , "rental_date" : "2005-05-30T22:17:17Z" , "customer_id" : "262" , "customer_name" : "PATSY" }
+{ "index" : { "_index" : "rental", "_id" : "985" } }
+{ "rental_id" : "985" , "rental_date" : "2005-05-30T22:18:35Z" , "customer_id" : "564" , "customer_name" : "BOB" }
+{ "index" : { "_index" : "rental", "_id" : "986" } }
+{ "rental_id" : "986" , "rental_date" : "2005-05-30T22:22:52Z" , "customer_id" : "253" , "customer_name" : "TERRY" }
+{ "index" : { "_index" : "rental", "_id" : "987" } }
+{ "rental_id" : "987" , "rental_date" : "2005-05-30T22:59:12Z" , "customer_id" : "11" , "customer_name" : "LISA" }
+{ "index" : { "_index" : "rental", "_id" : "988" } }
+{ "rental_id" : "988" , "rental_date" : "2005-05-30T23:08:03Z" , "customer_id" : "12" , "customer_name" : "NANCY" }
+{ "index" : { "_index" : "rental", "_id" : "989" } }
+{ "rental_id" : "989" , "rental_date" : "2005-05-30T23:11:51Z" , "customer_id" : "83" , "customer_name" : "LOUISE" }
+{ "index" : { "_index" : "rental", "_id" : "990" } }
+{ "rental_id" : "990" , "rental_date" : "2005-05-30T23:25:14Z" , "customer_id" : "311" , "customer_name" : "PAUL" }
+{ "index" : { "_index" : "rental", "_id" : "991" } }
+{ "rental_id" : "991" , "rental_date" : "2005-05-30T23:29:22Z" , "customer_id" : "593" , "customer_name" : "RENE" }
+{ "index" : { "_index" : "rental", "_id" : "992" } }
+{ "rental_id" : "992" , "rental_date" : "2005-05-30T23:47:56Z" , "customer_id" : "123" , "customer_name" : "SHANNON" }
+{ "index" : { "_index" : "rental", "_id" : "993" } }
+{ "rental_id" : "993" , "rental_date" : "2005-05-30T23:54:19Z" , "customer_id" : "513" , "customer_name" : "DUANE" }
+{ "index" : { "_index" : "rental", "_id" : "994" } }
+{ "rental_id" : "994" , "rental_date" : "2005-05-30T23:55:36Z" , "customer_id" : "472" , "customer_name" : "GREG" }
+{ "index" : { "_index" : "rental", "_id" : "995" } }
+{ "rental_id" : "995" , "rental_date" : "2005-05-31T00:06:02Z" , "customer_id" : "150" , "customer_name" : "DANIELLE" }
+{ "index" : { "_index" : "rental", "_id" : "996" } }
+{ "rental_id" : "996" , "rental_date" : "2005-05-31T00:06:20Z" , "customer_id" : "331" , "customer_name" : "ERIC" }
+{ "index" : { "_index" : "rental", "_id" : "997" } }
+{ "rental_id" : "997" , "rental_date" : "2005-05-31T00:08:25Z" , "customer_id" : "216" , "customer_name" : "NATALIE" }
+{ "index" : { "_index" : "rental", "_id" : "998" } }
+{ "rental_id" : "998" , "rental_date" : "2005-05-31T00:16:57Z" , "customer_id" : "389" , "customer_name" : "ALAN" }
+{ "index" : { "_index" : "rental", "_id" : "999" } }
+{ "rental_id" : "999" , "rental_date" : "2005-05-31T00:25:10Z" , "customer_id" : "413" , "customer_name" : "MARVIN" }
+{ "index" : { "_index" : "rental", "_id" : "1000" } }
+{ "rental_id" : "1000" , "rental_date" : "2005-05-31T00:25:56Z" , "customer_id" : "332" , "customer_name" : "STEPHEN" }
+{ "index" : { "_index" : "rental", "_id" : "1001" } }
+{ "rental_id" : "1001" , "rental_date" : "2005-05-31T00:46:31Z" , "customer_id" : "64" , "customer_name" : "JUDITH" }
+{ "index" : { "_index" : "rental", "_id" : "1002" } }
+{ "rental_id" : "1002" , "rental_date" : "2005-05-31T00:47:56Z" , "customer_id" : "397" , "customer_name" : "JIMMY" }
+{ "index" : { "_index" : "rental", "_id" : "1003" } }
+{ "rental_id" : "1003" , "rental_date" : "2005-05-31T00:48:20Z" , "customer_id" : "161" , "customer_name" : "GERALDINE" }
+{ "index" : { "_index" : "rental", "_id" : "1004" } }
+{ "rental_id" : "1004" , "rental_date" : "2005-05-31T00:48:36Z" , "customer_id" : "565" , "customer_name" : "JAIME" }
+{ "index" : { "_index" : "rental", "_id" : "1005" } }
+{ "rental_id" : "1005" , "rental_date" : "2005-05-31T00:53:25Z" , "customer_id" : "551" , "customer_name" : "CLAYTON" }
+{ "index" : { "_index" : "rental", "_id" : "1006" } }
+{ "rental_id" : "1006" , "rental_date" : "2005-05-31T00:57:08Z" , "customer_id" : "222" , "customer_name" : "DELORES" }
+{ "index" : { "_index" : "rental", "_id" : "1007" } }
+{ "rental_id" : "1007" , "rental_date" : "2005-05-31T01:02:28Z" , "customer_id" : "24" , "customer_name" : "KIMBERLY" }
+{ "index" : { "_index" : "rental", "_id" : "1008" } }
+{ "rental_id" : "1008" , "rental_date" : "2005-05-31T01:18:56Z" , "customer_id" : "599" , "customer_name" : "AUSTIN" }
+{ "index" : { "_index" : "rental", "_id" : "1009" } }
+{ "rental_id" : "1009" , "rental_date" : "2005-05-31T01:47:35Z" , "customer_id" : "485" , "customer_name" : "CLYDE" }
+{ "index" : { "_index" : "rental", "_id" : "1010" } }
+{ "rental_id" : "1010" , "rental_date" : "2005-05-31T01:57:32Z" , "customer_id" : "49" , "customer_name" : "JOYCE" }
+{ "index" : { "_index" : "rental", "_id" : "1011" } }
+{ "rental_id" : "1011" , "rental_date" : "2005-05-31T02:05:39Z" , "customer_id" : "164" , "customer_name" : "JOANN" }
+{ "index" : { "_index" : "rental", "_id" : "1012" } }
+{ "rental_id" : "1012" , "rental_date" : "2005-05-31T02:18:05Z" , "customer_id" : "291" , "customer_name" : "TONI" }
+{ "index" : { "_index" : "rental", "_id" : "1013" } }
+{ "rental_id" : "1013" , "rental_date" : "2005-05-31T02:37:00Z" , "customer_id" : "384" , "customer_name" : "ERNEST" }
+{ "index" : { "_index" : "rental", "_id" : "1014" } }
+{ "rental_id" : "1014" , "rental_date" : "2005-05-31T02:39:16Z" , "customer_id" : "280" , "customer_name" : "TRACEY" }
+{ "index" : { "_index" : "rental", "_id" : "1015" } }
+{ "rental_id" : "1015" , "rental_date" : "2005-05-31T02:44:57Z" , "customer_id" : "526" , "customer_name" : "KARL" }
+{ "index" : { "_index" : "rental", "_id" : "1016" } }
+{ "rental_id" : "1016" , "rental_date" : "2005-05-31T02:49:43Z" , "customer_id" : "204" , "customer_name" : "ROSEMARY" }
+{ "index" : { "_index" : "rental", "_id" : "1017" } }
+{ "rental_id" : "1017" , "rental_date" : "2005-05-31T02:53:36Z" , "customer_id" : "16" , "customer_name" : "SANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "1018" } }
+{ "rental_id" : "1018" , "rental_date" : "2005-05-31T02:53:42Z" , "customer_id" : "594" , "customer_name" : "EDUARDO" }
+{ "index" : { "_index" : "rental", "_id" : "1019" } }
+{ "rental_id" : "1019" , "rental_date" : "2005-05-31T03:05:07Z" , "customer_id" : "279" , "customer_name" : "DIANNE" }
+{ "index" : { "_index" : "rental", "_id" : "1020" } }
+{ "rental_id" : "1020" , "rental_date" : "2005-05-31T03:06:08Z" , "customer_id" : "138" , "customer_name" : "HAZEL" }
+{ "index" : { "_index" : "rental", "_id" : "1021" } }
+{ "rental_id" : "1021" , "rental_date" : "2005-05-31T03:16:15Z" , "customer_id" : "541" , "customer_name" : "DARREN" }
+{ "index" : { "_index" : "rental", "_id" : "1022" } }
+{ "rental_id" : "1022" , "rental_date" : "2005-05-31T03:16:45Z" , "customer_id" : "239" , "customer_name" : "MINNIE" }
+{ "index" : { "_index" : "rental", "_id" : "1023" } }
+{ "rental_id" : "1023" , "rental_date" : "2005-05-31T03:26:50Z" , "customer_id" : "227" , "customer_name" : "COLLEEN" }
+{ "index" : { "_index" : "rental", "_id" : "1024" } }
+{ "rental_id" : "1024" , "rental_date" : "2005-05-31T03:30:19Z" , "customer_id" : "457" , "customer_name" : "BILL" }
+{ "index" : { "_index" : "rental", "_id" : "1025" } }
+{ "rental_id" : "1025" , "rental_date" : "2005-05-31T03:41:37Z" , "customer_id" : "93" , "customer_name" : "PHYLLIS" }
+{ "index" : { "_index" : "rental", "_id" : "1026" } }
+{ "rental_id" : "1026" , "rental_date" : "2005-05-31T03:45:26Z" , "customer_id" : "107" , "customer_name" : "FLORENCE" }
+{ "index" : { "_index" : "rental", "_id" : "1027" } }
+{ "rental_id" : "1027" , "rental_date" : "2005-05-31T03:46:19Z" , "customer_id" : "55" , "customer_name" : "DORIS" }
+{ "index" : { "_index" : "rental", "_id" : "1028" } }
+{ "rental_id" : "1028" , "rental_date" : "2005-05-31T03:48:05Z" , "customer_id" : "51" , "customer_name" : "ALICE" }
+{ "index" : { "_index" : "rental", "_id" : "1029" } }
+{ "rental_id" : "1029" , "rental_date" : "2005-05-31T03:52:02Z" , "customer_id" : "50" , "customer_name" : "DIANE" }
+{ "index" : { "_index" : "rental", "_id" : "1030" } }
+{ "rental_id" : "1030" , "rental_date" : "2005-05-31T04:06:47Z" , "customer_id" : "267" , "customer_name" : "MARGIE" }
+{ "index" : { "_index" : "rental", "_id" : "1031" } }
+{ "rental_id" : "1031" , "rental_date" : "2005-05-31T04:23:01Z" , "customer_id" : "416" , "customer_name" : "JEFFERY" }
+{ "index" : { "_index" : "rental", "_id" : "1032" } }
+{ "rental_id" : "1032" , "rental_date" : "2005-05-31T04:28:43Z" , "customer_id" : "236" , "customer_name" : "MARCIA" }
+{ "index" : { "_index" : "rental", "_id" : "1033" } }
+{ "rental_id" : "1033" , "rental_date" : "2005-05-31T04:50:07Z" , "customer_id" : "25" , "customer_name" : "DEBORAH" }
+{ "index" : { "_index" : "rental", "_id" : "1034" } }
+{ "rental_id" : "1034" , "rental_date" : "2005-05-31T04:53:40Z" , "customer_id" : "293" , "customer_name" : "MAE" }
+{ "index" : { "_index" : "rental", "_id" : "1035" } }
+{ "rental_id" : "1035" , "rental_date" : "2005-05-31T05:01:09Z" , "customer_id" : "362" , "customer_name" : "NICHOLAS" }
+{ "index" : { "_index" : "rental", "_id" : "1036" } }
+{ "rental_id" : "1036" , "rental_date" : "2005-05-31T05:21:10Z" , "customer_id" : "438" , "customer_name" : "BARRY" }
+{ "index" : { "_index" : "rental", "_id" : "1037" } }
+{ "rental_id" : "1037" , "rental_date" : "2005-05-31T05:22:25Z" , "customer_id" : "569" , "customer_name" : "DAVE" }
+{ "index" : { "_index" : "rental", "_id" : "1038" } }
+{ "rental_id" : "1038" , "rental_date" : "2005-05-31T05:23:47Z" , "customer_id" : "385" , "customer_name" : "PHILLIP" }
+{ "index" : { "_index" : "rental", "_id" : "1039" } }
+{ "rental_id" : "1039" , "rental_date" : "2005-05-31T05:32:29Z" , "customer_id" : "124" , "customer_name" : "SHEILA" }
+{ "index" : { "_index" : "rental", "_id" : "1040" } }
+{ "rental_id" : "1040" , "rental_date" : "2005-05-31T05:35:16Z" , "customer_id" : "270" , "customer_name" : "LEAH" }
+{ "index" : { "_index" : "rental", "_id" : "1041" } }
+{ "rental_id" : "1041" , "rental_date" : "2005-05-31T05:46:23Z" , "customer_id" : "272" , "customer_name" : "KAY" }
+{ "index" : { "_index" : "rental", "_id" : "1042" } }
+{ "rental_id" : "1042" , "rental_date" : "2005-05-31T05:53:00Z" , "customer_id" : "506" , "customer_name" : "LESLIE" }
+{ "index" : { "_index" : "rental", "_id" : "1043" } }
+{ "rental_id" : "1043" , "rental_date" : "2005-05-31T06:11:40Z" , "customer_id" : "412" , "customer_name" : "ALLEN" }
+{ "index" : { "_index" : "rental", "_id" : "1044" } }
+{ "rental_id" : "1044" , "rental_date" : "2005-05-31T06:24:44Z" , "customer_id" : "70" , "customer_name" : "CHRISTINA" }
+{ "index" : { "_index" : "rental", "_id" : "1045" } }
+{ "rental_id" : "1045" , "rental_date" : "2005-05-31T06:29:01Z" , "customer_id" : "594" , "customer_name" : "EDUARDO" }
+{ "index" : { "_index" : "rental", "_id" : "1046" } }
+{ "rental_id" : "1046" , "rental_date" : "2005-05-31T06:42:30Z" , "customer_id" : "179" , "customer_name" : "DANA" }
+{ "index" : { "_index" : "rental", "_id" : "1047" } }
+{ "rental_id" : "1047" , "rental_date" : "2005-05-31T06:45:57Z" , "customer_id" : "72" , "customer_name" : "THERESA" }
+{ "index" : { "_index" : "rental", "_id" : "1048" } }
+{ "rental_id" : "1048" , "rental_date" : "2005-05-31T06:49:53Z" , "customer_id" : "55" , "customer_name" : "DORIS" }
+{ "index" : { "_index" : "rental", "_id" : "1049" } }
+{ "rental_id" : "1049" , "rental_date" : "2005-05-31T06:57:04Z" , "customer_id" : "312" , "customer_name" : "MARK" }
+{ "index" : { "_index" : "rental", "_id" : "1050" } }
+{ "rental_id" : "1050" , "rental_date" : "2005-05-31T07:01:27Z" , "customer_id" : "303" , "customer_name" : "WILLIAM" }
+{ "index" : { "_index" : "rental", "_id" : "1051" } }
+{ "rental_id" : "1051" , "rental_date" : "2005-05-31T07:02:09Z" , "customer_id" : "246" , "customer_name" : "MARIAN" }
+{ "index" : { "_index" : "rental", "_id" : "1052" } }
+{ "rental_id" : "1052" , "rental_date" : "2005-05-31T07:07:03Z" , "customer_id" : "156" , "customer_name" : "BERTHA" }
+{ "index" : { "_index" : "rental", "_id" : "1053" } }
+{ "rental_id" : "1053" , "rental_date" : "2005-05-31T07:12:44Z" , "customer_id" : "196" , "customer_name" : "ALMA" }
+{ "index" : { "_index" : "rental", "_id" : "1054" } }
+{ "rental_id" : "1054" , "rental_date" : "2005-05-31T07:33:25Z" , "customer_id" : "126" , "customer_name" : "ELLEN" }
+{ "index" : { "_index" : "rental", "_id" : "1055" } }
+{ "rental_id" : "1055" , "rental_date" : "2005-05-31T07:47:18Z" , "customer_id" : "108" , "customer_name" : "TRACY" }
+{ "index" : { "_index" : "rental", "_id" : "1056" } }
+{ "rental_id" : "1056" , "rental_date" : "2005-05-31T07:48:07Z" , "customer_id" : "519" , "customer_name" : "RON" }
+{ "index" : { "_index" : "rental", "_id" : "1057" } }
+{ "rental_id" : "1057" , "rental_date" : "2005-05-31T07:58:06Z" , "customer_id" : "124" , "customer_name" : "SHEILA" }
+{ "index" : { "_index" : "rental", "_id" : "1058" } }
+{ "rental_id" : "1058" , "rental_date" : "2005-05-31T08:04:17Z" , "customer_id" : "116" , "customer_name" : "VICTORIA" }
+{ "index" : { "_index" : "rental", "_id" : "1059" } }
+{ "rental_id" : "1059" , "rental_date" : "2005-05-31T08:20:43Z" , "customer_id" : "241" , "customer_name" : "HEIDI" }
+{ "index" : { "_index" : "rental", "_id" : "1060" } }
+{ "rental_id" : "1060" , "rental_date" : "2005-05-31T08:21:43Z" , "customer_id" : "570" , "customer_name" : "IVAN" }
+{ "index" : { "_index" : "rental", "_id" : "1061" } }
+{ "rental_id" : "1061" , "rental_date" : "2005-05-31T08:27:58Z" , "customer_id" : "109" , "customer_name" : "EDNA" }
+{ "index" : { "_index" : "rental", "_id" : "1062" } }
+{ "rental_id" : "1062" , "rental_date" : "2005-05-31T08:38:20Z" , "customer_id" : "176" , "customer_name" : "JUNE" }
+{ "index" : { "_index" : "rental", "_id" : "1063" } }
+{ "rental_id" : "1063" , "rental_date" : "2005-05-31T08:44:29Z" , "customer_id" : "7" , "customer_name" : "MARIA" }
+{ "index" : { "_index" : "rental", "_id" : "1064" } }
+{ "rental_id" : "1064" , "rental_date" : "2005-05-31T08:50:07Z" , "customer_id" : "460" , "customer_name" : "LEON" }
+{ "index" : { "_index" : "rental", "_id" : "1065" } }
+{ "rental_id" : "1065" , "rental_date" : "2005-05-31T08:54:56Z" , "customer_id" : "316" , "customer_name" : "STEVEN" }
+{ "index" : { "_index" : "rental", "_id" : "1066" } }
+{ "rental_id" : "1066" , "rental_date" : "2005-05-31T09:07:33Z" , "customer_id" : "541" , "customer_name" : "DARREN" }
+{ "index" : { "_index" : "rental", "_id" : "1067" } }
+{ "rental_id" : "1067" , "rental_date" : "2005-05-31T09:12:13Z" , "customer_id" : "32" , "customer_name" : "AMY" }
+{ "index" : { "_index" : "rental", "_id" : "1068" } }
+{ "rental_id" : "1068" , "rental_date" : "2005-05-31T09:32:15Z" , "customer_id" : "443" , "customer_name" : "FRANCISCO" }
+{ "index" : { "_index" : "rental", "_id" : "1069" } }
+{ "rental_id" : "1069" , "rental_date" : "2005-05-31T09:32:31Z" , "customer_id" : "251" , "customer_name" : "VICKIE" }
+{ "index" : { "_index" : "rental", "_id" : "1070" } }
+{ "rental_id" : "1070" , "rental_date" : "2005-05-31T09:39:56Z" , "customer_id" : "228" , "customer_name" : "ALLISON" }
+{ "index" : { "_index" : "rental", "_id" : "1071" } }
+{ "rental_id" : "1071" , "rental_date" : "2005-05-31T09:48:56Z" , "customer_id" : "174" , "customer_name" : "YVONNE" }
+{ "index" : { "_index" : "rental", "_id" : "1072" } }
+{ "rental_id" : "1072" , "rental_date" : "2005-05-31T09:52:50Z" , "customer_id" : "272" , "customer_name" : "KAY" }
+{ "index" : { "_index" : "rental", "_id" : "1073" } }
+{ "rental_id" : "1073" , "rental_date" : "2005-05-31T09:55:04Z" , "customer_id" : "146" , "customer_name" : "JAMIE" }
+{ "index" : { "_index" : "rental", "_id" : "1074" } }
+{ "rental_id" : "1074" , "rental_date" : "2005-05-31T10:04:42Z" , "customer_id" : "503" , "customer_name" : "ANGEL" }
+{ "index" : { "_index" : "rental", "_id" : "1075" } }
+{ "rental_id" : "1075" , "rental_date" : "2005-05-31T10:13:34Z" , "customer_id" : "9" , "customer_name" : "MARGARET" }
+{ "index" : { "_index" : "rental", "_id" : "1076" } }
+{ "rental_id" : "1076" , "rental_date" : "2005-05-31T10:14:31Z" , "customer_id" : "214" , "customer_name" : "KRISTIN" }
+{ "index" : { "_index" : "rental", "_id" : "1077" } }
+{ "rental_id" : "1077" , "rental_date" : "2005-05-31T10:22:54Z" , "customer_id" : "24" , "customer_name" : "KIMBERLY" }
+{ "index" : { "_index" : "rental", "_id" : "1078" } }
+{ "rental_id" : "1078" , "rental_date" : "2005-05-31T10:28:33Z" , "customer_id" : "230" , "customer_name" : "JOY" }
+{ "index" : { "_index" : "rental", "_id" : "1079" } }
+{ "rental_id" : "1079" , "rental_date" : "2005-05-31T10:48:17Z" , "customer_id" : "312" , "customer_name" : "MARK" }
+{ "index" : { "_index" : "rental", "_id" : "1080" } }
+{ "rental_id" : "1080" , "rental_date" : "2005-05-31T10:55:26Z" , "customer_id" : "215" , "customer_name" : "JESSIE" }
+{ "index" : { "_index" : "rental", "_id" : "1081" } }
+{ "rental_id" : "1081" , "rental_date" : "2005-05-31T10:56:32Z" , "customer_id" : "404" , "customer_name" : "STANLEY" }
+{ "index" : { "_index" : "rental", "_id" : "1082" } }
+{ "rental_id" : "1082" , "rental_date" : "2005-05-31T11:02:01Z" , "customer_id" : "239" , "customer_name" : "MINNIE" }
+{ "index" : { "_index" : "rental", "_id" : "1083" } }
+{ "rental_id" : "1083" , "rental_date" : "2005-05-31T11:04:48Z" , "customer_id" : "556" , "customer_name" : "ARMANDO" }
+{ "index" : { "_index" : "rental", "_id" : "1084" } }
+{ "rental_id" : "1084" , "rental_date" : "2005-05-31T11:10:17Z" , "customer_id" : "12" , "customer_name" : "NANCY" }
+{ "index" : { "_index" : "rental", "_id" : "1085" } }
+{ "rental_id" : "1085" , "rental_date" : "2005-05-31T11:15:43Z" , "customer_id" : "5" , "customer_name" : "ELIZABETH" }
+{ "index" : { "_index" : "rental", "_id" : "1086" } }
+{ "rental_id" : "1086" , "rental_date" : "2005-05-31T11:17:37Z" , "customer_id" : "549" , "customer_name" : "NELSON" }
+{ "index" : { "_index" : "rental", "_id" : "1087" } }
+{ "rental_id" : "1087" , "rental_date" : "2005-05-31T11:18:08Z" , "customer_id" : "169" , "customer_name" : "ERICA" }
+{ "index" : { "_index" : "rental", "_id" : "1088" } }
+{ "rental_id" : "1088" , "rental_date" : "2005-05-31T11:35:13Z" , "customer_id" : "356" , "customer_name" : "GERALD" }
+{ "index" : { "_index" : "rental", "_id" : "1089" } }
+{ "rental_id" : "1089" , "rental_date" : "2005-05-31T11:38:29Z" , "customer_id" : "367" , "customer_name" : "ADAM" }
+{ "index" : { "_index" : "rental", "_id" : "1090" } }
+{ "rental_id" : "1090" , "rental_date" : "2005-05-31T12:03:44Z" , "customer_id" : "23" , "customer_name" : "SARAH" }
+{ "index" : { "_index" : "rental", "_id" : "1091" } }
+{ "rental_id" : "1091" , "rental_date" : "2005-05-31T12:11:04Z" , "customer_id" : "251" , "customer_name" : "VICKIE" }
+{ "index" : { "_index" : "rental", "_id" : "1092" } }
+{ "rental_id" : "1092" , "rental_date" : "2005-05-31T12:15:57Z" , "customer_id" : "278" , "customer_name" : "BILLIE" }
+{ "index" : { "_index" : "rental", "_id" : "1093" } }
+{ "rental_id" : "1093" , "rental_date" : "2005-05-31T12:32:26Z" , "customer_id" : "214" , "customer_name" : "KRISTIN" }
+{ "index" : { "_index" : "rental", "_id" : "1094" } }
+{ "rental_id" : "1094" , "rental_date" : "2005-05-31T13:03:49Z" , "customer_id" : "547" , "customer_name" : "KURT" }
+{ "index" : { "_index" : "rental", "_id" : "1095" } }
+{ "rental_id" : "1095" , "rental_date" : "2005-05-31T13:15:41Z" , "customer_id" : "252" , "customer_name" : "MATTIE" }
+{ "index" : { "_index" : "rental", "_id" : "1096" } }
+{ "rental_id" : "1096" , "rental_date" : "2005-05-31T13:30:49Z" , "customer_id" : "271" , "customer_name" : "PENNY" }
+{ "index" : { "_index" : "rental", "_id" : "1097" } }
+{ "rental_id" : "1097" , "rental_date" : "2005-05-31T13:38:42Z" , "customer_id" : "491" , "customer_name" : "RICK" }
+{ "index" : { "_index" : "rental", "_id" : "1098" } }
+{ "rental_id" : "1098" , "rental_date" : "2005-05-31T13:51:48Z" , "customer_id" : "425" , "customer_name" : "FRANCIS" }
+{ "index" : { "_index" : "rental", "_id" : "1099" } }
+{ "rental_id" : "1099" , "rental_date" : "2005-05-31T13:54:48Z" , "customer_id" : "269" , "customer_name" : "CASSANDRA" }
+{ "index" : { "_index" : "rental", "_id" : "1100" } }
+{ "rental_id" : "1100" , "rental_date" : "2005-05-31T14:03:21Z" , "customer_id" : "497" , "customer_name" : "GILBERT" }
+{ "index" : { "_index" : "rental", "_id" : "1101" } }
+{ "rental_id" : "1101" , "rental_date" : "2005-05-31T14:13:59Z" , "customer_id" : "260" , "customer_name" : "CHRISTY" }
+{ "index" : { "_index" : "rental", "_id" : "1102" } }
+{ "rental_id" : "1102" , "rental_date" : "2005-05-31T14:20:29Z" , "customer_id" : "115" , "customer_name" : "WENDY" }
+{ "index" : { "_index" : "rental", "_id" : "1103" } }
+{ "rental_id" : "1103" , "rental_date" : "2005-05-31T14:24:18Z" , "customer_id" : "353" , "customer_name" : "JONATHAN" }
+{ "index" : { "_index" : "rental", "_id" : "1104" } }
+{ "rental_id" : "1104" , "rental_date" : "2005-05-31T14:30:01Z" , "customer_id" : "466" , "customer_name" : "LEO" }
+{ "index" : { "_index" : "rental", "_id" : "1105" } }
+{ "rental_id" : "1105" , "rental_date" : "2005-05-31T14:33:56Z" , "customer_id" : "26" , "customer_name" : "JESSICA" }
+{ "index" : { "_index" : "rental", "_id" : "1106" } }
+{ "rental_id" : "1106" , "rental_date" : "2005-05-31T14:36:52Z" , "customer_id" : "109" , "customer_name" : "EDNA" }
+{ "index" : { "_index" : "rental", "_id" : "1107" } }
+{ "rental_id" : "1107" , "rental_date" : "2005-05-31T15:04:05Z" , "customer_id" : "53" , "customer_name" : "HEATHER" }
+{ "index" : { "_index" : "rental", "_id" : "1108" } }
+{ "rental_id" : "1108" , "rental_date" : "2005-05-31T15:05:12Z" , "customer_id" : "254" , "customer_name" : "MAXINE" }
+{ "index" : { "_index" : "rental", "_id" : "1109" } }
+{ "rental_id" : "1109" , "rental_date" : "2005-05-31T15:12:15Z" , "customer_id" : "481" , "customer_name" : "HERMAN" }
+{ "index" : { "_index" : "rental", "_id" : "1110" } }
+{ "rental_id" : "1110" , "rental_date" : "2005-05-31T15:22:51Z" , "customer_id" : "355" , "customer_name" : "TERRY" }
+{ "index" : { "_index" : "rental", "_id" : "1111" } }
+{ "rental_id" : "1111" , "rental_date" : "2005-05-31T15:24:19Z" , "customer_id" : "300" , "customer_name" : "JOHN" }
+{ "index" : { "_index" : "rental", "_id" : "1112" } }
+{ "rental_id" : "1112" , "rental_date" : "2005-05-31T15:51:39Z" , "customer_id" : "214" , "customer_name" : "KRISTIN" }
+{ "index" : { "_index" : "rental", "_id" : "1113" } }
+{ "rental_id" : "1113" , "rental_date" : "2005-05-31T15:58:44Z" , "customer_id" : "451" , "customer_name" : "JIM" }
+{ "index" : { "_index" : "rental", "_id" : "1114" } }
+{ "rental_id" : "1114" , "rental_date" : "2005-05-31T16:00:33Z" , "customer_id" : "117" , "customer_name" : "EDITH" }
+{ "index" : { "_index" : "rental", "_id" : "1115" } }
+{ "rental_id" : "1115" , "rental_date" : "2005-05-31T16:07:09Z" , "customer_id" : "109" , "customer_name" : "EDNA" }
+{ "index" : { "_index" : "rental", "_id" : "1116" } }
+{ "rental_id" : "1116" , "rental_date" : "2005-05-31T16:10:46Z" , "customer_id" : "256" , "customer_name" : "MABEL" }
+{ "index" : { "_index" : "rental", "_id" : "1117" } }
+{ "rental_id" : "1117" , "rental_date" : "2005-05-31T16:15:31Z" , "customer_id" : "189" , "customer_name" : "LORETTA" }
+{ "index" : { "_index" : "rental", "_id" : "1118" } }
+{ "rental_id" : "1118" , "rental_date" : "2005-05-31T16:23:02Z" , "customer_id" : "510" , "customer_name" : "BEN" }
+{ "index" : { "_index" : "rental", "_id" : "1119" } }
+{ "rental_id" : "1119" , "rental_date" : "2005-05-31T16:34:27Z" , "customer_id" : "469" , "customer_name" : "WESLEY" }
+{ "index" : { "_index" : "rental", "_id" : "1120" } }
+{ "rental_id" : "1120" , "rental_date" : "2005-05-31T16:37:14Z" , "customer_id" : "361" , "customer_name" : "LAWRENCE" }
+{ "index" : { "_index" : "rental", "_id" : "1121" } }
+{ "rental_id" : "1121" , "rental_date" : "2005-05-31T16:37:36Z" , "customer_id" : "74" , "customer_name" : "DENISE" }
+{ "index" : { "_index" : "rental", "_id" : "1122" } }
+{ "rental_id" : "1122" , "rental_date" : "2005-05-31T16:39:33Z" , "customer_id" : "180" , "customer_name" : "STACY" }
+{ "index" : { "_index" : "rental", "_id" : "1123" } }
+{ "rental_id" : "1123" , "rental_date" : "2005-05-31T16:48:43Z" , "customer_id" : "448" , "customer_name" : "MIGUEL" }
+{ "index" : { "_index" : "rental", "_id" : "1124" } }
+{ "rental_id" : "1124" , "rental_date" : "2005-05-31T16:49:34Z" , "customer_id" : "134" , "customer_name" : "EMMA" }
+{ "index" : { "_index" : "rental", "_id" : "1125" } }
+{ "rental_id" : "1125" , "rental_date" : "2005-05-31T17:23:44Z" , "customer_id" : "234" , "customer_name" : "CLAUDIA" }
+{ "index" : { "_index" : "rental", "_id" : "1126" } }
+{ "rental_id" : "1126" , "rental_date" : "2005-05-31T17:27:45Z" , "customer_id" : "431" , "customer_name" : "JOEL" }
+{ "index" : { "_index" : "rental", "_id" : "1127" } }
+{ "rental_id" : "1127" , "rental_date" : "2005-05-31T17:45:49Z" , "customer_id" : "387" , "customer_name" : "JESSE" }
+{ "index" : { "_index" : "rental", "_id" : "1128" } }
+{ "rental_id" : "1128" , "rental_date" : "2005-05-31T17:49:26Z" , "customer_id" : "311" , "customer_name" : "PAUL" }
+{ "index" : { "_index" : "rental", "_id" : "1129" } }
+{ "rental_id" : "1129" , "rental_date" : "2005-05-31T18:00:48Z" , "customer_id" : "486" , "customer_name" : "GLEN" }
+{ "index" : { "_index" : "rental", "_id" : "1130" } }
+{ "rental_id" : "1130" , "rental_date" : "2005-05-31T18:13:57Z" , "customer_id" : "124" , "customer_name" : "SHEILA" }
+{ "index" : { "_index" : "rental", "_id" : "1131" } }
+{ "rental_id" : "1131" , "rental_date" : "2005-05-31T18:44:19Z" , "customer_id" : "128" , "customer_name" : "MARJORIE" }
+{ "index" : { "_index" : "rental", "_id" : "1132" } }
+{ "rental_id" : "1132" , "rental_date" : "2005-05-31T18:44:53Z" , "customer_id" : "198" , "customer_name" : "ELSIE" }
+{ "index" : { "_index" : "rental", "_id" : "1133" } }
+{ "rental_id" : "1133" , "rental_date" : "2005-05-31T19:12:21Z" , "customer_id" : "73" , "customer_name" : "BEVERLY" }
+{ "index" : { "_index" : "rental", "_id" : "1134" } }
+{ "rental_id" : "1134" , "rental_date" : "2005-05-31T19:14:15Z" , "customer_id" : "191" , "customer_name" : "JEANETTE" }
+{ "index" : { "_index" : "rental", "_id" : "1135" } }
+{ "rental_id" : "1135" , "rental_date" : "2005-05-31T19:15:11Z" , "customer_id" : "122" , "customer_name" : "THELMA" }
+{ "index" : { "_index" : "rental", "_id" : "1136" } }
+{ "rental_id" : "1136" , "rental_date" : "2005-05-31T19:19:36Z" , "customer_id" : "50" , "customer_name" : "DIANE" }
+{ "index" : { "_index" : "rental", "_id" : "1137" } }
+{ "rental_id" : "1137" , "rental_date" : "2005-05-31T19:20:14Z" , "customer_id" : "351" , "customer_name" : "JACK" }
+{ "index" : { "_index" : "rental", "_id" : "1138" } }
+{ "rental_id" : "1138" , "rental_date" : "2005-05-31T19:30:27Z" , "customer_id" : "438" , "customer_name" : "BARRY" }
+{ "index" : { "_index" : "rental", "_id" : "1139" } }
+{ "rental_id" : "1139" , "rental_date" : "2005-05-31T19:34:52Z" , "customer_id" : "562" , "customer_name" : "WALLACE" }
+{ "index" : { "_index" : "rental", "_id" : "1140" } }
+{ "rental_id" : "1140" , "rental_date" : "2005-05-31T19:36:30Z" , "customer_id" : "10" , "customer_name" : "DOROTHY" }
+{ "index" : { "_index" : "rental", "_id" : "1141" } }
+{ "rental_id" : "1141" , "rental_date" : "2005-05-31T19:42:02Z" , "customer_id" : "217" , "customer_name" : "AGNES" }
+{ "index" : { "_index" : "rental", "_id" : "1142" } }
+{ "rental_id" : "1142" , "rental_date" : "2005-05-31T19:46:38Z" , "customer_id" : "5" , "customer_name" : "ELIZABETH" }
+{ "index" : { "_index" : "rental", "_id" : "1143" } }
+{ "rental_id" : "1143" , "rental_date" : "2005-05-31T19:53:03Z" , "customer_id" : "209" , "customer_name" : "TONYA" }
+{ "index" : { "_index" : "rental", "_id" : "1144" } }
+{ "rental_id" : "1144" , "rental_date" : "2005-05-31T20:04:10Z" , "customer_id" : "207" , "customer_name" : "GERTRUDE" }
+{ "index" : { "_index" : "rental", "_id" : "1145" } }
+{ "rental_id" : "1145" , "rental_date" : "2005-05-31T20:13:45Z" , "customer_id" : "284" , "customer_name" : "SONIA" }
+{ "index" : { "_index" : "rental", "_id" : "1146" } }
+{ "rental_id" : "1146" , "rental_date" : "2005-05-31T20:34:45Z" , "customer_id" : "250" , "customer_name" : "JO" }
+{ "index" : { "_index" : "rental", "_id" : "1147" } }
+{ "rental_id" : "1147" , "rental_date" : "2005-05-31T20:37:52Z" , "customer_id" : "259" , "customer_name" : "LENA" }
+{ "index" : { "_index" : "rental", "_id" : "1148" } }
+{ "rental_id" : "1148" , "rental_date" : "2005-05-31T20:38:40Z" , "customer_id" : "235" , "customer_name" : "JACKIE" }
+{ "index" : { "_index" : "rental", "_id" : "1149" } }
+{ "rental_id" : "1149" , "rental_date" : "2005-05-31T21:03:17Z" , "customer_id" : "326" , "customer_name" : "JOSE" }
+{ "index" : { "_index" : "rental", "_id" : "1150" } }
+{ "rental_id" : "1150" , "rental_date" : "2005-05-31T21:20:09Z" , "customer_id" : "136" , "customer_name" : "ANITA" }
+{ "index" : { "_index" : "rental", "_id" : "1151" } }
+{ "rental_id" : "1151" , "rental_date" : "2005-05-31T21:29:00Z" , "customer_id" : "581" , "customer_name" : "VIRGIL" }
+{ "index" : { "_index" : "rental", "_id" : "1152" } }
+{ "rental_id" : "1152" , "rental_date" : "2005-05-31T21:32:17Z" , "customer_id" : "191" , "customer_name" : "JEANETTE" }
+{ "index" : { "_index" : "rental", "_id" : "1153" } }
+{ "rental_id" : "1153" , "rental_date" : "2005-05-31T21:36:44Z" , "customer_id" : "506" , "customer_name" : "LESLIE" }
+{ "index" : { "_index" : "rental", "_id" : "1154" } }
+{ "rental_id" : "1154" , "rental_date" : "2005-05-31T21:42:09Z" , "customer_id" : "59" , "customer_name" : "CHERYL" }
+{ "index" : { "_index" : "rental", "_id" : "1155" } }
+{ "rental_id" : "1155" , "rental_date" : "2005-05-31T22:17:11Z" , "customer_id" : "251" , "customer_name" : "VICKIE" }
+{ "index" : { "_index" : "rental", "_id" : "1156" } }
+{ "rental_id" : "1156" , "rental_date" : "2005-05-31T22:37:34Z" , "customer_id" : "106" , "customer_name" : "CONNIE" }
+{ "index" : { "_index" : "rental", "_id" : "1157" } }
+{ "rental_id" : "1157" , "rental_date" : "2005-05-31T22:47:45Z" , "customer_id" : "61" , "customer_name" : "KATHERINE" }
