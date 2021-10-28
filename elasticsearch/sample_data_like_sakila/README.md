@@ -23,5 +23,5 @@ curl -s -XPOST -H 'Content-Type: application/json' http://localhost:9200/_bulk -
 Search data
 
 ```
-curl -i -H "Content-Type: application/json" -XGET http://localhost:9200/rental/_search\? -d '{"query": {"match_all": {}} }'
+curl -H "Content-Type: application/json" -XGET http://localhost:9200/rental/_search\? -d '{"query": {"match_all": {}} }' | jq
 ```
