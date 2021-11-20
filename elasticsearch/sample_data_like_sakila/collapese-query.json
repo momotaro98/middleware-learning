@@ -1,0 +1,27 @@
+{
+    "size": 5,
+    "query": {
+        "term": {
+            "customer_id": [
+                "1",
+                "3",
+                "5"
+            ]
+        }
+    },
+    "sort": [
+        "customer_id"
+    ],
+    "collapse": {
+        "field": "customer_id",
+        "inner_hits": {
+            "name": "order by rental_date",
+            "size": 10000,
+            "sort": [
+                {
+                    "rental_date": "asc"
+                }
+            ]
+        }
+    }
+}
