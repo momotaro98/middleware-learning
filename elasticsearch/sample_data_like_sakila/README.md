@@ -9,7 +9,7 @@ docker-compose up -d --build
 Create index
 
 ```
-curl -XPUT -H 'Content-Type: application/json' http://localhost:9200/rental --data "@test.json"
+curl -XPUT -H 'Content-Type: application/json' http://localhost:9200/rental --data "@rental.json"
 
 curl -XGET http://localhost:9200/rental
 ```
