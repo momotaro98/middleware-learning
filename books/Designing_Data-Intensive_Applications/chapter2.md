@@ -185,3 +185,19 @@ li.selected > p {
 **MapReduce**は、大量のデータを多くのマシンにまたがってまとめて処理するためのプログラミングモデル。
 
 MapReduceは、宣言的なクエリと命令的なクエリAPIの中間に位置する。
+
+---
+
+**例**
+
+海洋生物学者が海洋生物を見るたびにデータベースに観測レコードを追加するとする。
+
+SQS
+
+```sql
+select date_trunc('month', observation timestamp) as observation_month,
+       sum(num_animals) as total_animals
+from observations
+where family = 'Sharks'
+group by observation month;
+```
