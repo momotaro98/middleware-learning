@@ -201,3 +201,51 @@ from observations
 where family = 'Sharks'
 group by observation month;
 ```
+
+---
+
+MongoDBのMapReduce機能
+
+```javascript
+db.observations.mapReduce(
+  function () { // ②フィルタリングされたレコードをMapしていく
+    var year = this.observationTimestamp.getFullYear();
+    var month = this.observationTimestamp.getMonth() + 1;
+    emit(year + "-" + month, this.numAnimals); // ③ [{"2022-01", 145}, {"2022-02", 118}] のようなkey=valueMap結果を返す
+  },
+  function reduce(key, values) { // ④ Keyごとに合計を算出する
+    return Array.sum(values);
+  },
+  {
+    query: { family: "Sharks" }, // ①はじめにフィルタリングする
+    out: "monthlySharkReport" // ⑤reduceされた結果を出す
+  }
+);
+```
+
+---
+
+上述のようにJavaScriptで宣言的にmap,reduce内を記述する場合はリスクがある。
+
+MongoDB 2.2 では aggregation pipelineと呼ばれる宣言的なクエリ言語のサポートが追加された。
+
+[これはSQLでの宣言的記述とほぼ同じ意味になる]
+
+```javascript
+db.observations.aggregate([
+  { $match: { family: "Sharks" } },
+  { $group: {
+    id: {
+      year: {$year: "$observationTimestamp"},
+      month: {$year: "$observationTimestamp"}
+    },
+    totalAminals: {$sum: "$numAnimals"}
+  }}
+]);
+```
+
+------
+
+## 2.3 グラフ型のデータモデル
+
+<記述をスキップする>
