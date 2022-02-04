@@ -29,14 +29,14 @@
 
 ---
 
-TODO: 図
+![External Image](assets/chapter3_3-1.jpg)
 
 ---
 
 - コンパクション処理をする。
   - ログ中で重複しているキーを捨て、それぞれのキーに対する最新の情報だけを残す処理
 
-TODO: 図
+![External Image](assets/chapter3_3-2.jpg)
 
 ---
 
@@ -44,7 +44,7 @@ TODO: 図
   - 複数のセグメントを1つにする。
   - 古いセグメントを参照させながらバックグラウンドで処理ができ、完了したら切り替えて古い方は削除する。
 
-TODO: 図
+![External Image](assets/chapter3_3-3.jpg)
 
 ---
 
@@ -230,7 +230,7 @@ Luceneのメモリインデックスは、**TRIE木(トライ木)**に似たキ�
 
 **列指向ストレージ**は、それぞれの列に含まれるすべての値をまとめて保存する。
 
-TODO: 図
+![External Image](assets/chapter3_3-10.jpg)
 
 列指向のストレージレイアウトでは、それぞれの列のファイルが同じ順序で行を保持していなければならない。
 
@@ -238,7 +238,7 @@ TODO: 図
 
 列指向ストレージは圧縮に適していることが多い。
 
-TODO: 図
+![External Image](assets/chapter3_3-11.jpg)
 
 ---
 
