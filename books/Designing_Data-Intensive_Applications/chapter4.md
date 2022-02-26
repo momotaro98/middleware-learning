@@ -1,4 +1,4 @@
-# Chapter 3
+# Chapter 4
 
 エンコーディングと進化
 
@@ -57,7 +57,7 @@ struct Person {
 
 ---
 
-TODO: pic1
+![External Image](assets/chapter4-3.jpg)
 
 ---
 
@@ -73,7 +73,7 @@ message Person {
 
 ---
 
-TODO: pic2
+![External Image](assets/chapter4-4.jpg)
 
 ---
 
@@ -111,7 +111,7 @@ record Person {
 
 ---
 
-TODO: pic3
+![External Image](assets/chapter4-5.jpg)
 
 ---
 
