@@ -1,0 +1,8 @@
+# [tbls](https://github.com/k1LoW/tbls) is a tool to generate a schema of databases
+
+# DSN (Database Source Name) to connect database
+dsn: mysql://root:mysql@localhost:33060/sakila
+
+# Path to generate document
+# Default is `dbdoc`
+docPath: doc/schema
