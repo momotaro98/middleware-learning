@@ -2,7 +2,7 @@
 
 # # Overview
 
-## ## K8sのコンポーネント
+## ## [K8sのコンポーネント](https://kubernetes.io/docs/concepts/overview/components/)
 
 ![image](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 
@@ -76,7 +76,7 @@ K8sは [containerd](https://containerd.io/), [CRI-O](https://cri-o.io/) など�
 
 [Note:C](https://kubernetes.io/docs/concepts/overview/components/#addons)
 
-## ## The K8s API
+## ## [The K8s API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
 
 API serverはK8sのコントロールプレーンの中で最も重要である。エンドユーザーやクラスターや外部コンポーネントがK8sリソースと通信する上で必要なAPIを提供している。
 
@@ -101,4 +101,58 @@ K8s APIは以下の2つの方法で拡張することができる。
 1. [Custom resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 2. [Aggregation Layer](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/)
 
-__ここから__
+## ## Working with Kubernetes Objects
+
+* Understanding Kubernetes Objects
+* Kubernetes Object Management
+* Object Names and IDs
+* Labels and Selectors
+* Namespaces
+* Annotations
+* Field Selectors
+* Finalizers
+* Owners and Dependents
+* Recommended Labels
+
+### ### [Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/#kubernetes-objects)
+
+オブジェクトにはspecとstatusがありそれぞれがdesired statusとactual statusの意味。コントロールプレーンが常にactual statusをdesired statusにしようと試みる。
+
+### ### [Kubernetes Object Management](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
+
+#### #### Management techniques
+
+3種類ある。普通は*Declarative object configuration*で管理するはず。2つ目の*Imperative object configuration*がどういう用途なのか理解があまりできていない(2023年1月17日時点)
+
+*Imperative commands* → ファイル無しでリソースを作る
+
+`kubectl create deployment nginx --image nginx`
+
+*Imperative object configuration* → 1つのファイルベースでリソース管理
+
+`kubectl create -f one-file.yaml`, `kubectl replace -f one-file.yaml`, `kubectl delete -f one-file.yaml`
+
+*Declarative object configuration* → ディレクトリ内の部分ごとのファイルでリソース管理可能
+
+`kubectl diff -f configs/`, `kubectl apply -f configs/`
+
+
+### ### [Object Names and IDs](https://kubernetes.io/docs/concepts/overview/working-with-objects/names/)
+
+#### #### Names
+
+同じネームスペースでは同じ名前を"各リソース"では持てない。→ 同じネームスペースで`myapp-1234`という名前のPodは1つだけしか持てないが、Deploymentなどでそれぞれ同じ名前でも良い。
+
+ユニークでは無い"文字列"を持たせるならば名前ではなくラベルとアノテーションが使える。
+
+**K8sの"名前"はURLやDNSのサブドメインになり得るので各RFCの規格に沿うような文字を使う必要があるので注意**
+
+#### #### UIDs
+
+K8sが同様なリソースのライフサイクルを追えるように都度生成しているID。
+
+K8sのUIDはUUIDsの一般的な規格に則っている。
+
+### ### [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
+
+ここから
