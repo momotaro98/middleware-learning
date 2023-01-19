@@ -156,3 +156,47 @@ K8sのUIDはUUIDsの一般的な規格に則っている。
 ### ### [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 
 ここから
+
+#### #### Syntax and character set
+
+ラベルにはPrefixを`/`区切りでつけることができる。Prefixが無いときはそのラベルはユーザーにとってプライベートなものとみなされる。
+PrefixはDNSのサブドメインに関わる(2023-01-20:理解できていない)。
+`kubernetes.io/` と `k8s.io/` はK8sが予約語としているので使えない。
+
+* ラベルの制限として以下がある
+  * must be 63 characters or less (can be empty),
+  * unless empty, must begin and end with an alphanumeric character ([a-z0-9A-Z]),
+  * could contain dashes (-), underscores (_), dots (.), and alphanumerics between.
+
+#### #### Label selectors 
+
+ラベルセレクターによってユーザーはオブジェクトをSetとして扱うことができる。ラベルセレクターはK8sにとってコアなグルーピング機能である。
+
+ラベルセレクターには以下の2つのタイプがある。
+
+* equality-based (`=`, `!=` の演算子)
+* set-based (`in`,`notin` and `exists` の演算子)
+
+__【注意】equality-basedとset-basedの両方とも、カンマ区切りでの複数指定の場合、常にAND(&&)条件であり、OR(||)条件になることは無い。__
+
+ラベルセレクターを空で指定したり指定しなかった場合の挙動はContextによって異なる。APIのタイプごとのドキュメントに記載があるので確認しておくこと。
+
+##### ##### Equality-based requirement
+
+ここから
+
+##### ##### Set-based requirement
+
+#### #### API
+
+##### ##### LIST and WATCH filtering
+
+##### ##### Set references in API objects
+
+_Service and ReplicationController_
+
+_Resources that support set-based requirements_
+
+_Selecting sets of nodes_
+
+## ## [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
