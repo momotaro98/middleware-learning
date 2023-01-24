@@ -175,7 +175,14 @@ PrefixはDNSのサブドメインに関わる(2023-01-20:理解できていな�
 ラベルセレクターには以下の2つのタイプがある。
 
 * equality-based (`=`, `!=` の演算子, `==`も使えて`=`と全く同じ意味)
-* set-based (`in`,`notin` and `exists` の演算子)
+* set-based (`in`,`notin` の演算子。 キー名だけを指定する"exists")
+
+```
+environment in (production, qa)
+tier notin (frontend, backend)
+partition      # exists
+!partition     # Not exists
+```
 
 __【注意】equality-basedとset-basedの両方とも、カンマ区切りでの複数指定の場合、常にAND(&&)条件であり、OR(||)条件になることは無い。__
 
@@ -185,12 +192,32 @@ __【注意】equality-basedとset-basedの両方とも、カンマ区切りで�
 
 ##### ##### LIST and WATCH filtering
 
+```
+kubectl get pods -l environment=production,tier=frontend              # equality-basedでの検索 
+kubectl get pods -l 'environment in (production),tier in (frontend)'  # set-basedでの検索 
+kubectl get pods -l 'environment in (production, qa)'                 # set-basedではこのようにOR条件で検索可能
+kubectl get pods -l 'environment,environment notin (frontend)'        # existsとnotinの合わせ技
+```
+
 ##### ##### Set references in API objects
 
-_Service and ReplicationController_
+[services](https://kubernetes.io/docs/concepts/services-networking/service/) と [replicationcontrollers](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) はPodのリソースをLabel Selectorで指定する。__このとき、ラベル指定はequality-basedのみがサポートされている。__
 
-_Resources that support set-based requirements_
+一方で、より最近登場した, Job, Deployment, ReplicaSet, DaemonSet, のオブジェクトらは、set-based の検索もサポートしている。以下のように指定できる。
 
-_Selecting sets of nodes_
+```
+selector:
+  matchLabels:
+    component: redis
+  matchExpressions:
+    - {key: tier, operator: In, values: [cache]}
+    - {key: environment, operator: NotIn, values: [dev]}
+```
+
+上述の条件において`matchLabels`と`matchExpressions`はAND条件で結ばれる。
+
+また、ラベルは特定条件のPodを特定のノードにデプロイさせるようにする[ノード選定](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)にも利用される。
 
 ## ## [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+
+ここから
