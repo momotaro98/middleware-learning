@@ -218,6 +218,62 @@ selector:
 
 また、ラベルは特定条件のPodを特定のノードにデプロイさせるようにする[ノード選定](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)にも利用される。
 
-## ## [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+### ### [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
+
+* ネームスペース対象オブジェクト → (e.g. Deployments, Services, etc)
+* ネームスペース対象外(cluster-wide) オブジェクト → (e.g. StorageClass, Nodes, PersistentVolumes, etc)
+
+> Note: 本番環境クラスターでは、`default`ネームスペースを使わないようにしてください。その代わり別のネームスペースを作成しそれを利用するようにしましょう。(My Note: 理由が書いてない。おそらくdefaultネームスペースはK8sが作るリソースも存在して問題になる可能性があるからだと思われる)
+
+#### #### Initial namespaces
+
+K8sが初めから提供するネームスペースが以下の4つ
+
+* `default`
+  * デフォルトネームスペース
+* `kube-node-lease`
+  * このネームスペースは各ノードにひもづく`Lease`オブジェクトを持つ。ノードLeaseによってkubeletがハートビートをコントロールプレーンへ送る。それによりノードの異常を検知できる。
+* `kube-public`
+  * クラスター全体で情報を読めるように持っている慣習的な？ネームスペース、とのこと。My Note:用途の意味が理解できてない(2023/01/26)
+* `kube-system`
+  * K8sシステムが作成したオブジェクトが存在するネームスペース
+
+#### #### Working with Namespaces
+
+> Note: `kube-`から始まるネームスペースはK8sの持ち物オブジェクトと被る可能性があるので避けましょう。
+
+以下のように設定することでkubectlをする際の`--namespace XXX`を固定できる。
+
+```
+kubectl config set-context --current --namespace=<insert-namespace-name-here>
+# Validate it
+kubectl config view --minify | grep namespace:
+```
+
+#### #### Namespaces and DNS
+
+Serviceが作られるとき、対応するDNS entryが作成される。 このときのドメインのフォームが `<service-name>.<namespace-name>.svc.cluster.local` になる。
+
+そのため、ネームスペース名はDNS名称の規格であるRFC 1123 Label Namesにしたがうことが望ましい。
+
+#### #### Not all objects are in a namespace
+
+K8sにはネームスペース外のオブジェクトも存在する。どのオブジェクトがネームスペース外か内かを確認するコマンドが以下になる。
+
+```
+# In a namespace
+kubectl api-resources --namespaced=true
+
+# Not in a namespace
+kubectl api-resources --namespaced=false
+```
+
+#### #### Automatic labelling
+
+__FEATURE STATE: Kubernetes 1.22 [stable]__
+
+コントロールプレーンがすべてのネームスペースに対して`kubernetes.io/metadata.name`というイミュータブルなラベルを貼り付ける機能が出た。ただし、NamespaceDefaultLabelName [Feature Gate](https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/)がenanbledになっている場合である。
+
+### ### [Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/)
 
 ここから
