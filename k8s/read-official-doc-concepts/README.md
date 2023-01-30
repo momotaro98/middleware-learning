@@ -276,4 +276,54 @@ __FEATURE STATE: Kubernetes 1.22 [stable]__
 
 ### ### [Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/)
 
-ここから
+K8sのアノテーションの機能により、Non-identifyingなメタデータをオブジェクトにアタッチすることができる。__ツールやライブラリがアノテーションのメタデータを取得することが主な目的である__。
+
+```json
+"metadata": {
+  "annotations": {
+    "key1" : "value1",
+    "key2" : "value2"
+  }
+}
+```
+
+> Note: アノテーションはKeyもValueもStringのみでBooleanやNumericなどを指定することはできない。
+
+アノテーションの __用途例__ が以下である。
+
+* オートスケーリングシステムによる見分けに利用するフィールド設定
+* アプリケーションのビルド時におけるリリースIDやコミット/DockerImageハッシュなどを付与する
+* モニタリングシステムに飛ぶURL
+* クライアントライブラリやツールが利用するバージョンを埋め込むメタデータ
+* リソースが存在している由来となっているツールのURL
+* configやcheckpointsなどの軽量なロールアウトツール用のメタデータ(2023年1月30日時点で不明)
+* 情報をどこで確認できるかを示すためのもの。例えばチームのウェブサイト、責任者の電話番号や、ページャー番号やディレクトリエンティティなど。
+* システムのふるまいの変更や、標準ではない機能を利用可能にするために、エンドユーザーがシステムに対して指定する値(2023年1月30日時点で不明)
+
+### ### [Field Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/)
+
+フィールドセレクタはリソースフィルタである。以下のような指定ができる。
+
+* metadata.name=my-service
+* metadata.namespace!=default
+* status.phase=Pending
+
+```
+kubectl get pods --field-selector status.phase=Running
+```
+
+#### #### Chained selectors
+
+以下のように検索条件をカンマ区切りにしてAnd条件で検索ができる。
+
+```
+kubectl get pods --field-selector=status.phase!=Running,spec.restartPolicy=Always
+```
+
+#### #### Multiple resource types 
+
+以下のように複数のリソースをカンマ区切りで指定している場合でかつ、`--all-namespaces`と指定しても`metadata.namespace!=default`の条件で検索できる。
+
+```
+kubectl get statefulsets,services --all-namespaces --field-selector metadata.namespace!=default
+```
