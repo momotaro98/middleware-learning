@@ -327,3 +327,23 @@ kubectl get pods --field-selector=status.phase!=Running,spec.restartPolicy=Alway
 ```
 kubectl get statefulsets,services --all-namespaces --field-selector metadata.namespace!=default
 ```
+
+### ### [Finalizers](https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/)(難。再勉強必要)
+
+Finalizersはあるオブジェクト削除時のPre-Hookとして対象オブジェクト削除を指定条件を満たすまで削除させない状態にする機能。
+
+オブジェクトの削除命令がK8s APIに来たとき、K8sは削除命令が来た時刻で`.metadata.deletionTimestamp`を設定する。
+
+Finalizers(デフォルト実装があったりコーディングでカスタムしたりできるっぽい)での削除時用処理によって`metadata.finalizers`が削除されたことをK8sが検知した後に、対象オブジェクトは削除される。
+
+デフォルト実装でよく使われるFinalizerが`kubernetes.io/pv-protection`である。pvはPermanent Volumeの略である。
+
+#### #### Owner references, labels, and finalizers
+
+[owner reference](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)の概念においても、finalizersが関係してくる。削除対象のオブジェクトがOwnerであり子がいる場合は、それも削除しようとし子が削除できない状況の場合はOwnerである対象オブジェクトを削除できない場合がある。
+
+> Note: Finalizers起因で削除ができないとき、手動でFinalizersを削除する操作は控えましょう。(FinalizersはK8sが内部で削除するもの)。Finalizersが設定されている理由を突き止め、依存しているオブジェクトを手動で削除するなど別の方法を検討しましょう。
+
+### ### [Owners and Dependents](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)
+
+ここから
