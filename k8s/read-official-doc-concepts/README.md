@@ -346,4 +346,34 @@ Finalizers(デフォルト実装があったりコーディングでカスタム
 
 ### ### [Owners and Dependents](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)
 
-ここから
+いくつかのオブジェクトは他のオブジェクトのオーナーである。例えば、ReplicaSetはPodの集合のOwnerである。
+
+オーナーシップの概念はラベルとセレクターとは異なる。例として、EndpointSliceオブジェクトを作成するServiceにおいて、ラベルにプラスしてEndpointSliceはowner referenceを持っている。Owner referenceは無関係のオブジェクトが干渉しないようにすることを助ける。
+
+#### #### Owner references in object specifications
+
+Dependant側のオブジェクトが`metadata.ownerReferences`データを持ちこれはオーナー側のオブジェクトを参照している。Dependant側のオブジェクトは`ownerReferences.blockOwnerDeletion`のBooleanなデータを持っており、K8sのガベージコレクションがオーナー側のオブジェクトを削除できるかを制御できる。
+
+> Note: __ネームスペースを跨いだowner referenceは設計上許されていません__。
+
+#### #### Ownership and finalizers
+
+[foreground or orphan cascading deletion](https://kubernetes.io/docs/concepts/architecture/garbage-collection/#cascading-deletion)を利用すると、K8sはfinalizerをオーナーオブジェクトに追加する。foreground deletionでは、foreground finalizerを付与し、オーナー側を削除する前にコントローラーはDependant側のリソースを削除する。このときDependant側は`ownerReferences.blockOwnerDeletion=true`になっている。orphan deletion policyを設定している場合は、K8sはorphan finalizerを付与し、それによってコントローラーはオーナーオブジェクトを削除した後もDependant側のリソースを無視して削除をしない。
+
+### ### [Recommended Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/)
+
+アプリケーションを実際に運用する際に設定しておくことでツールが参照し機能に利用できる、推奨されるラベルが以下である。
+
+```yaml
+# This is an excerpt
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    app.kubernetes.io/name: mysql
+    app.kubernetes.io/instance: mysql-abcxzy
+    app.kubernetes.io/version: "5.7.21"
+    app.kubernetes.io/component: database
+    app.kubernetes.io/part-of: wordpress
+    app.kubernetes.io/managed-by: helm
+```
