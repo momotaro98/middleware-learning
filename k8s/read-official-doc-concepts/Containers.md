@@ -1,4 +1,4 @@
-## [Containers](https://kubernetes.io/docs/concepts/containers/)
+## [Images](https://kubernetes.io/docs/concepts/containers/images/)
 
 ### ### Updating images
 
@@ -51,6 +51,95 @@ amdとかarmとかコンピュータアーキテクチャの差異を隠せる�
 
 ### ### Using a private registry 
 
-プライベートレポジトリからPullするにあたってCredentialsを設定する方法はいくつかある。以下がそれである
+プライベートレジストリからPullするにあたってCredentialsを設定する方法はいくつかある。以下がそれである
 
-ここから
+1. プライベートレジストリへの認証するノードを設定する
+2. プライベートレジストリ用のクレデンシャルを動的にfetchするKubeletクレデンシャルプロバイダー
+3. Pre-pulled images
+4. ImagePullSecretsをPodに指定する(__推奨アプローチ__)
+5. Vendor指定またはローカル拡張
+
+#### #### 1. プライベートレジストリへの認証するノードを設定する
+
+(My Note)ノード設定の話ではなく、なぜかレジストリ側の設定をしている。意味が不明なのでSkip。
+
+#### #### 2. プライベートレジストリ用のクレデンシャルを動的にfetchするKubeletクレデンシャルプロバイダー
+
+> Note: このアプローチはkubeletが動的にレジストリのクレデンシャルをfetchする必要があるときに有効である。多くの一般的なのは、クラウドサービスが提供しているレジストリでその認証トークンの寿命が短いケースである。
+
+この方法では kubelet に対してPluginバイナリを適用する設定をkubeletにする必要がある。
+
+See [Configure a kubelet image credential provider](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/) for more details.
+
+#### #### `config.json` の解釈
+
+DockerとKubernetesでは設定ファイル(config.json)でのプライベートレジストリ認証設定である`auths`で仕様が異なる。Dockerではレジストリのroot URLは完全一致が条件であるが、Kubernetesではワイルドカード的に指定ができる。
+
+```json
+{
+    "auths": {
+        "*my-registry.io/images": {
+            "auth": "…"
+        }
+    }
+}
+```
+
+#### #### 3. Pre-pulled images
+
+ノードに対して認証情報を予め設定しておくやり方である。
+
+> Note: このアプローチはあなたがノード設定ができる権限があれば有効である。逆にクラウドプロバイダーがノードを扱っており勝手にノードをreplaceするような場合は不向きである。
+
+#### #### 4. ImagePullSecretsをPodに指定する
+
+> Note: このアプローチはプライベートレポジトリを使う場合の推奨アプローチである。
+
+KubernetesはPod上のコンテナイメージレジストリキーを指定することをサポートする。`imagePullSecrets`は必ず同じネームスペース上に存在する必要がある。参照するSecretは必ず`kubernetes.io/dockercfg` or `kubernetes.io/dockerconfigjson`になる必要がある。
+
+```
+kubectl create secret docker-registry <name> \
+  --docker-server=DOCKER_REGISTRY_SERVER \
+  --docker-username=DOCKER_USER \
+  --docker-password=DOCKER_PASSWORD \
+  --docker-email=DOCKER_EMAIL
+```
+
+> Note: Podは自身のネームスペース上のSecretしか参照できない。そのためネームスペースごとに処理される必要がある。
+
+以下が例である。
+
+```
+cat <<EOF > pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: foo
+  namespace: awesomeapps
+spec:
+  containers:
+    - name: foo
+      image: janedoe/awesomeapp:v1
+  imagePullSecrets:
+    - name: myregistrykey
+EOF
+
+cat <<EOF >> ./kustomization.yaml
+resources:
+- pod.yaml
+EOF
+```
+
+しかし、上述の`imagePullSecrets`設定は[ServiceAccountリソース](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)上で設定することでPodごとに指定しなくても良くなる。
+
+Check [Add ImagePullSecrets to a Service Account](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account) for detailed instructions。
+
+### ### Use cases
+
+プライベートレポジトリがinternalなものでinternal内でアクセス制限されているならばそれで良い、という感じのことが書いてある。
+
+## [Container Environment](https://kubernetes.io/docs/concepts/containers/container-environment/)
+
+## [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
+
+## [Container Lifecycle Hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/)

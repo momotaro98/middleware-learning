@@ -1,5 +1,3 @@
-# [K8s Concepts](https://kubernetes.io/docs/concepts/)
-
 # # Overview
 
 ## ## [K8sのコンポーネント](https://kubernetes.io/docs/concepts/overview/components/)
