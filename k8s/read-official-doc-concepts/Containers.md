@@ -163,4 +163,14 @@ FOO_SERVICE_PORT=<the port the service is running on>
 
 ## [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
 
+> FEATURE STATE: Kubernetes v1.20 [stable]
+
+RuntimeClass はコンテナランタイムの設定を**選択する**際に使われる機能である。
+
+RuntimeClassを利用するモチベーション・理由として、パフォーマンスとセキュリティのトレードオフなバランスを取るために、同一のK8sクラスターにてPodごとにことなるコンテナランタイムを設定できるようにすることである。
+
+上述のようにRuntimeClassのそもそもの概念と存在理由がわかり、かつ、かなり高度な設定なので現状(2023年2月時点)では Note:C とする。
+
 ## [Container Lifecycle Hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/)
+
+ここから
