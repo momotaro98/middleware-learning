@@ -138,7 +138,28 @@ Check [Add ImagePullSecrets to a Service Account](https://kubernetes.io/docs/tas
 
 プライベートレポジトリがinternalなものでinternal内でアクセス制限されているならばそれで良い、という感じのことが書いてある。
 
-## [Container Environment](https://kubernetes.io/docs/concepts/containers/container-environment/)
+## ## [Container Environment](https://kubernetes.io/docs/concepts/containers/container-environment/)
+
+### ### Container environment
+
+K8sはimageとvolumesのコンビネーションで実現するfilesystemを環境としてコンテナへ提供する。
+
+#### #### Container information
+
+コンテナの _hostname_ はPodの名前になる。それは`hostname`コマンドで取得できる。
+
+Pod名とネームスペース名はコンテナ上の環境変数としてK8sが提供する[Downward API](https://kubernetes.io/docs/concepts/workloads/pods/downward-api/)を通して得られる。
+
+#### #### Cluster information
+
+Serviceの情報もコンテナの環境変数として得られる。
+
+`foo`という名前のServiceが存在するとき、コンテナ上の環境変数として以下が定義された状態でコンテナは立ち上がる。
+
+```
+FOO_SERVICE_HOST=<the host the service is running on>
+FOO_SERVICE_PORT=<the port the service is running on>
+```
 
 ## [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
 
