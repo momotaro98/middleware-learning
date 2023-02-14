@@ -161,7 +161,7 @@ FOO_SERVICE_HOST=<the host the service is running on>
 FOO_SERVICE_PORT=<the port the service is running on>
 ```
 
-## [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
+## ## [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
 
 > FEATURE STATE: Kubernetes v1.20 [stable]
 
@@ -171,6 +171,31 @@ RuntimeClassを利用するモチベーション・理由として、パフォ�
 
 上述のようにRuntimeClassのそもそもの概念と存在理由がわかり、かつ、かなり高度な設定なので現状(2023年2月時点)では Note:C とする。
 
-## [Container Lifecycle Hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/)
+## ## [Container Lifecycle Hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/)
+
+### ### Overview
+
+この章では kubelet managed Containers が Container lifecycle hook framework をどのように利用するかを説明する。lifecycle hookはEventsによってTriggerされるコードを実行するために利用される。
+
+AngularJSなどのプログラミング言語のフレームワークがコンポーネントのlifecycle hookを提供しているように、K8sもコンテナに対してlifecycle hookを提供する。HookというのはというのはコンテナがEventを認知できるようにし、かつ、対応するHookがExecuteされるときハンドラのコードを実行できるようにする。
+
+### ### Container hooks
+
+コンテナに対してExposeされているのは以下の2つのHookである。
+
+* `PostStart`
+  * このHookはコンテナが作成されてすぐに実行されます。しかし、コンテナの`ENTRYPOINT`の前に実行されるという保証はありません。
+* `PreStop`
+  * このHookはK8sのAPIへPodの削除に関わる命令が来たときに実行されます。しかし、PodのTerminationの仕組みは特に`PreStop`のハンドラの処理を気にかけたりはせずに勝手に終了してしまうことがあります。
+  * [Termination of Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination)にてtermination behaviorの詳細があります。
+
+#### #### Hook handler implementations
+
+コンテナはHookに対して以下の2つのパターンでアクセスすることができる。
+
+* Exec - Executes a specific command, such as pre-stop.sh, inside the cgroups and namespaces of the Container. Resources consumed by the command are counted against the Container.
+* HTTP - Executes an HTTP request against a specific endpoint on the Container.
+
+#### #### Hook handler execution
 
 ここから
