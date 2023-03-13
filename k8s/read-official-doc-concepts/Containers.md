@@ -198,4 +198,37 @@ AngularJSなどのプログラミング言語のフレームワークがコン�
 
 #### #### Hook handler execution
 
-ここから
+ハンドラが起動するとき `httpGet` と `tcpSocket` は kubeletプロセスによって起動する。`exec` はコンテナ内で実行される。
+
+`PostStart`とコンテナの`ENTRYPOINT`は非同期で実行される。しかし、PostStartのフックが失敗した場合はコンテナは`running`ステータスにはならない。
+
+`PreStop`において、`terminationGracePeriodSeconds` の時間制限よりもオーバーした場合、KILLのシグナルによりコンテナは終了する。
+
+> `PostStart` or `PreStop` hook fails, it kills the Container.
+
+ユーザーはHookの処理をできるだけ小さくすることが望ましい。
+
+#### #### [Hook delivery guarantees](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#hook-delivery-guarantees)
+
+よく理解できていない。フックが複数回実行される状況とは。
+
+#### #### Debugging Hook handlers
+
+Hook handlerはPod Eventにexposedしていない。ハンドラで問題が発生したときEventを飛ばします、PostStartに対応するのが`FailedPostStartHook`イベントでPreStopに対応するのが`FailedPreStopHook`イベントです。
+
+意図的にFailedPostStartHookを発生させる場合、[lifecycle-events.yaml](https://raw.githubusercontent.com/kubernetes/website/main/content/en/examples/pods/lifecycle-events.yaml)にあるpostStartコマンドを"badcommand"という存在しないコマンドにすることで以下の例のようなEventが生成されます。
+
+```
+Events:
+  Type     Reason               Age              From               Message
+  ----     ------               ----             ----               -------
+  Normal   Scheduled            7s               default-scheduler  Successfully assigned default/lifecycle-demo to ip-XXX-XXX-XX-XX.us-east-2...
+  Normal   Pulled               6s               kubelet            Successfully pulled image "nginx" in 229.604315ms
+  Normal   Pulling              4s (x2 over 6s)  kubelet            Pulling image "nginx"
+  Normal   Created              4s (x2 over 5s)  kubelet            Created container lifecycle-demo-container
+  Normal   Started              4s (x2 over 5s)  kubelet            Started container lifecycle-demo-container
+  Warning  FailedPostStartHook  4s (x2 over 5s)  kubelet            Exec lifecycle hook ([badcommand]) for Container "lifecycle-demo-container" in Pod "lifecycle-demo_default(30229739-9651-4e5a-9a32-a8f1688862db)" failed - error: command 'badcommand' exited with 126: , message: "OCI runtime exec failed: exec failed: container_linux.go:380: starting container process caused: exec: \"badcommand\": executable file not found in $PATH: unknown\r\n"
+  Normal   Killing              4s (x2 over 5s)  kubelet            FailedPostStartHook
+  Normal   Pulled               4s               kubelet            Successfully pulled image "nginx" in 215.66395ms
+  Warning  BackOff              2s (x2 over 3s)  kubelet            Back-off restarting failed container
+```
