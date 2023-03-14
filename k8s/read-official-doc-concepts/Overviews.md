@@ -153,8 +153,6 @@ K8sのUIDはUUIDsの一般的な規格に則っている。
 
 ### ### [Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 
-ここから
-
 #### #### Syntax and character set
 
 ラベルにはPrefixを`/`区切りでつけることができる。Prefixが無いときはそのラベルはユーザーにとってプライベートなものとみなされる。
