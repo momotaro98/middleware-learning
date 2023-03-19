@@ -40,6 +40,33 @@ Workloadのリソースとして以下が存在する
 
 ### ### Components
 
+```
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: nginx #
+      .
+      .
+      .
+        volumeMounts:
+        - name: www
+          mountPath: /usr/share/nginx/html
+  volumeClaimTemplates:
+  - metadata:
+      name: www
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "my-storage-class"
+      resources:
+        requests:
+          storage: 1Gi
+```
+
 __重要↓__ → PersistentVolumes というStorageの機能と組み合わせて StatefulSets は使われる。
 
 > The `volumeClaimTemplates` will provide stable storage using [PersistentVolumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) provisioned by a PersistentVolume Provisioner.
@@ -70,7 +97,40 @@ StatefulSets のPodがN個あるとき、0からN-1の番号がPodに振られ�
 
 #### #### Stable Storage
 
-ここから
+上述のnginxの例において、__各Podは単一のPersistentVolumeを取得する。__ `my-storage-class`と1GitのプロビジョニングストレージのStorageClassを利用する。
+
+PersistentVolumesはPod、StatefulSetsが削除されても残り続けるので削除する場合は手動で削除する必要がある。
+
+#### #### Pod Name Label
+
+StatefulSetのPodが作成されるとき、`statefulset.kubernetes.io/pod-name`のラベルがPodに付く。このラベルによりServiceをStatefulSetのPodにアタッチすることができる。
+
+### ### Deployment and Scaling Guarantees
+
+_Note:C_
+
+### ### Update Strategies
+
+`.spec.updateStrategy`によって、Rolling Updateを自動でするかしないかを設定できる。以下の2つだけがセットできる値である。
+
+* `OnDelete`
+  * 古いPodは自動で削除されない。手動でPodを削除した際に新しいPodが作られる。
+* `RollingUpdate`
+  * Rolling Updateを自動でする
+
+### ### Rolling Updates
+
+_Note:C_ Rolling Update の詳細を紹介。以下の設定がある。
+
+`.spec.updateStrategy.rollingUpdate.partition`
+
+`.spec.updateStrategy.rollingUpdate.maxUnavailable`
+
+### PersistentVolumeClaim retention (FEATURE STATE: Kubernetes v1.23 [alpha])
+
+_Note:C_ StatefulSetが利用する PersistentVolume の主に削除におけるライフサイクルを設定する。
+
+設定したい場合は、[Feature Gates](https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/)をEnabledにしておく必要がある。
 
 ## ## [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)
 
