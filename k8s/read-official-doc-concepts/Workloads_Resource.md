@@ -148,6 +148,74 @@ __DaemonSetの典型的なユースケースは以下である。__
 
 #### #### Create a DaemonSet
 
+以下はfluentd-elasticsearch Docker imageを実行するDaemonSetのマニフェストである。
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluentd-elasticsearch
+  namespace: kube-system
+  labels:
+    k8s-app: fluentd-logging
+spec:
+  selector:
+    matchLabels:
+      name: fluentd-elasticsearch
+  template:
+    metadata:
+      labels:
+        name: fluentd-elasticsearch
+    spec:
+      tolerations:
+      # these tolerations are to have the daemonset runnable on control plane nodes
+      # remove them if your control plane nodes should not run pods
+      - key: node-role.kubernetes.io/control-plane
+        operator: Exists
+        effect: NoSchedule
+      - key: node-role.kubernetes.io/master
+        operator: Exists
+        effect: NoSchedule
+      containers:
+      - name: fluentd-elasticsearch
+        image: quay.io/fluentd_elasticsearch/fluentd:v2.5.2
+        resources:
+        .
+        .
+        .
+```
+
+### ### How Daemon Pods are scheduled
+
+DaemonSetは適任のノードがPodのcopyを実行させることを保証する。DaemonSetコントローラは`spec.affinity.nodeAffinity`を作成したPodに付与して適切なノード上で動作させるようにする事前準備をする。その後のPodの管理はdefault schedulerが引き継ぎ、`.spec.nodeName`をPodに付与することでPodを具体なノードで動作させるようにする。もしPodにフィットするノードが見つからない場合、[PodのPriority](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority)に基づいて既存のPodが"preempt(evict)"される場合がある。
+
+`.spec.template.spec.schedulerName`を指定することで異なったDaemonSetのスケジューラを選択することができる。
+
+`.spec.template.spec.affinity.nodeAffinity`フィールドで事前に指定された内容はコントローラによって考慮され、実際にPodが対象ノードで動くときにフィールドの値は実際のノード名に置き換わる。
+
+#### #### Taints and tolerations
+
+DaemonSetコントローラは自動で以下のような"[tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)"をPodに付与することで制御を行う。
+
+| Toleration key                       | Effect     | Details                                                                                                                                                           |
+| ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| node.kubernetes.io/not-ready         | NoExecute  | DaemonSet Pods can be scheduled onto nodes that are not healthy or ready to accept Pods. Any DaemonSet Pods running on such nodes will not be evicted.             |
+| node.kubernetes.io/unreachable       | NoExecute  | DaemonSet Pods can be scheduled onto nodes that are unreachable from the node controller. Any DaemonSet Pods running on such nodes will not be evicted.           |
+| node.kubernetes.io/disk-pressure     | NoSchedule | DaemonSet Pods can be scheduled onto nodes with disk pressure issues.                                                                                               |
+| node.kubernetes.io/memory-pressure   | NoSchedule | DaemonSet Pods can be scheduled onto nodes with memory pressure issues.                                                                                             |
+| node.kubernetes.io/pid-pressure      | NoSchedule | DaemonSet Pods can be scheduled onto nodes with process pressure issues.                                                                                            |
+| node.kubernetes.io/unschedulable     | NoSchedule | DaemonSet Pods can be scheduled onto nodes that are unschedulable.                                                                                                  |
+| node.kubernetes.io/network-unavailable | NoSchedule | Only added for DaemonSet Pods that request host networking, i.e., Pods having spec.hostNetwork: true. Such DaemonSet Pods can be scheduled onto nodes with unavailable network. |
+
+
+また、カスタマイズなtolerationsを定義することができる。
+
+DaemonSetコントローラが`node.kubernetes.io/unschedulable:NoSchedule`を付与しているため、Kubernetes can run DaemonSet Pods on nodes that are marked as unschedulable.
+
+もし、DaemonSetを[cluster networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/)のようなノードレベルの重要な機能に利用するような場合、ノードへのtolerationsを利用することで、ノードの準備とネットワークの準備の互いのデッドロックを防ぎ、ネットワークがセットされてからノードがセットされることを保証するようにできる。
+
+### ### Communicating with Daemon Pods
+
 ここから
 
 ## ## [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
