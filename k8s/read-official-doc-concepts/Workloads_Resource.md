@@ -216,7 +216,27 @@ DaemonSetコントローラが`node.kubernetes.io/unschedulable:NoSchedule`を�
 
 ### ### Communicating with Daemon Pods
 
+DaemonSetのPodとやり取りするパターンとして以下がある。
+
+詳細はよくわからなかったので _Node:C_
+
+* Push: Pods in the DaemonSet are configured to send updates to another service, such as a stats database.
+* NodeIP and Known Port
+* DNS: Create a [headless service](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services) with the same pod selector
+* Service
+
+### ### Updating a DaemonSet
+
+ノードのラベルが変更されれば、DaemonSetはPodをノードから外したり追加したりをすぐに実行する。
+
+DaemonSetは削除可能である。kubectlにて`--cascade=orphan`を指定してDaemonSetを削除した場合、Podはノードに残ったままになる。この状態で新しいDaemonSetを同様な設定で作成した場合、DaemonSetはその __既存のPodを再利用する__。もしPodのリプレースが必要ならば`updateStrategy`を使って更新ができる。
+
+> You can [perform a rolling update](https://kubernetes.io/docs/tasks/manage-daemon/update-daemon-set/) on a DaemonSet.
+
+### ### Alternatives to DaemonSet (DaemonSetの長所特徴)
+
 ここから
+
 
 ## ## [Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 
