@@ -13,6 +13,49 @@ Workloadのリソースとして以下が存在する
 
 ## ## [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
+### ### [Writing a Deployment Spec](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#writing-a-deployment-spec)
+
+#### #### Strategy
+
+`.spec.strategy`は古いPodを新しいPodにリプレースするストラテジーのこと。
+
+`.spec.strategy.type` のタイプは"Recreate"と"RollingUpdate"の2つがあるが"RollingUpdate"がデフォルトである。
+
+**Recreate Deployment** → Recreateでは新しいPodらが作られる"前"に既存のPodらをKillする。
+
+**Rolling Update Deployment** → RollingUpdateのスタイル。 `maxUnavailable`と`maxSurge`を指定することでRollingUpdateのプロセスを制御できる。
+
+* Max Unavailable
+  * `.spec.strategy.rollingUpdate.maxUnavailable` にてUpdate中の利用不可なPod数、割合を指定する。単位は個数か、割合。
+  * 例えば、30%に設定したら、開始時点で70%にスケールし、最小70%の利用率で古いPodと新しいPodが取り替えられる。
+* Max Surge
+  * `.spec.strategy.rollingUpdate.maxSurge` にてUpdate中の"desired"な数を超えて作成できるPodの数を指定する。単位は個数か、割合。
+  * 例えば、30%に設定したら、開始時点で130%にスケールし、最大130%の利用率で古いPodと新しいPodが取り替えられる。
+
+#### #### Progress Deadline Seconds
+
+TODO
+
+`.spec.progressDeadlineSeconds`
+
+#### #### Min Ready Seconds
+
+TODO
+
+`.spec.minReadySeconds`
+
+#### #### Revision History Limit
+
+TODO
+
+`.spec.revisionHistoryLimit`
+
+#### #### Paused
+
+TODO
+
+`.spec.paused`
+
 ## ## [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
 
 ## ## [StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
