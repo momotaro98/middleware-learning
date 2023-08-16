@@ -1,7 +1,13 @@
 
+# [Assign Memory Resources to Containers and Pods](https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/)
 
+この章では、memory request, memory limitをどのようにコンテナに割り当てるかを説明する。コンテナはrequest以上のメモリを持つことができlimit以上を持つことは許可されない。
 
-## [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+## Specify a memory request and a memory limit
+
+todo
+
+# [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
 [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)は __liveness probe__ を使ってコンテナをRestartさせるべきタイミングを知ることができる。例えば、アプリケーションがデッドロックになっていることを liveness probe は検知でき、それによってコンテナは動いているが処理が進まないといった状況をRestartによって打破できる。
 
@@ -15,14 +21,14 @@ kubeletは __startup probe__ をつかってコンテナアプリケーション
 
 [解説] → Liveness probe での失敗トリガーを緩くすると頻繁に再起動されてしまうのでトリガー設定には注意すること。パフォーマンス劣化の原因になるぞ。
 
-### ### [Define a liveness command](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-liveness-command)
+## ## [Define a liveness command](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-liveness-command)
 
 todo
 
-### ### Define a liveness HTTP request 
+## ## Define a liveness HTTP request 
 
 todo
 
-### ### Protect slow starting containers with startup probes
+## ## Protect slow starting containers with startup probes
 
 todo
