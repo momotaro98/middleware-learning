@@ -1,6 +1,10 @@
 
 # # [Services, Load Balancing, and Networking](https://kubernetes.io/docs/concepts/services-networking/)
 
+## ## [The Kubernetes network model](https://kubernetes.io/docs/concepts/services-networking/#the-kubernetes-network-model)
+
+Note: [CNI(Container Network Interface)](https://github.com/containernetworking/cni)での仕様になっている。
+
 Kubernetesのネットワーキングは4つの懸念事項に対処します。
 
 * Pod内のコンテナは、ネットワーキングを利用してループバック経由の通信を行います。
