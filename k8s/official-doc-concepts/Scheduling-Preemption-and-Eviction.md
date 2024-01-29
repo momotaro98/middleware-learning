@@ -77,3 +77,8 @@ Note:
 > nodeAffinityタイプに関連付けられた __nodeSelectorTerms内に複数の条件__ を指定した場合、Podは指定した条件のいずれかを満たしたNodeへスケジュールされます(__条件はORされます__)。
 
 > nodeSelectorTerms内の条件に関連付けられた1つの __matchExpressionsフィールド内に複数の条件__ を指定した場合、Podは全ての条件を満たしたNodeへスケジュールされます(__条件はANDされます__)。
+
+
+## ## [Pod Priority and Preemption](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/)
+
+TODO: このページの内容を理解して書いていきたい。
