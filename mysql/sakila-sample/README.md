@@ -1,4 +1,4 @@
-# how to download
+# how to download (初回のときのみで不要だがメモとして残し)
 
 ```
 mysql -u root -p < <( \
@@ -8,3 +8,15 @@ mysql -u root -p < <( \
   )
 ```
 
+# Run sakila DB with docker compose in local
+
+```
+docker-compose -f docker-compose.my80.yml up -d
+```
+
+# Access to the DB
+
+```
+direnv allow
+mysql -u${MYSQL_USER} -p${MYSQL_PASS} -P${MYSQL_PORT} -h${MYSQL_HOST} -D${MYSQL_DBNAME}
+```

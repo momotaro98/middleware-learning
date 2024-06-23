@@ -3,6 +3,7 @@ services:
   db:
     container_name: sakila-db
     image: mysql:8.0.27
+    platform: linux/x86_64
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci
     restart: always
     volumes:
