@@ -13,6 +13,8 @@ todo
 
 kubeletは __readiness probe__ を使ってコンテナがトラフィックを受け付ける準備ができているかを知ることができる。Pod内のすべてのコンテナがReadyのとき、そのPodはReadyとみなされる。readiness probeのシグナルはServiceのバックエンドとしてどのPodが使われているかをコントロールするために用いられる。PodがReadyではないとき、そのPodはServiceロードバランサの対象から外される。
 
+readinessProbe と livenessProbe はそれぞれコンテナ稼働中に一定間隔でチェックしている上記のようにそれぞれ違った観点のヘルスチェックである。下記の startupProbe はPodを立ち上げるときのチェックである。
+
 kubeletは __startup probe__ をつかってコンテナアプリケーションがスタートしたことを知ることができる。 Startup Probe が設定されているとき、 liveness と readiness Probe は Startup Probe が成功するまでスタートしない。つまり、liveness, readiness probe はアプリケーションのスタートアップを邪魔しない。この挙動は、Slow Startなコンテナに対してliveness probeのチェックを使わせるのに用いられる。これにより、コンテナが立ち上がる前に liveness probe 起因でコンテナがkillされてしまうことを避けることができる。
 
 > __Caution__ : Liveness probes can be a powerful way to recover from application failures, but they should be used with caution. Liveness probes must be configured carefully to ensure that they truly indicate unrecoverable application failure, for example a deadlock.  
