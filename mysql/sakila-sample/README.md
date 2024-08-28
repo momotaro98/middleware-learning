@@ -11,7 +11,7 @@ mysql -u root -p < <( \
 # Run sakila DB with docker compose in local
 
 ```
-docker-compose -f docker-compose.my80.yml up -d
+docker compose -f docker-compose.my80.yml up -d
 ```
 
 # Access to the DB
