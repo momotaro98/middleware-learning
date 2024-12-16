@@ -7,6 +7,7 @@ services:
     restart: always
     volumes:
       - ./sakila-db:/docker-entrypoint-initdb.d
+      - ./my.cnf:/etc/mysql/conf.d/docker.cnf
     environment:
       MYSQL_ROOT_PASSWORD: "mysql"
       MYSQL_USER: "momotaro98"
