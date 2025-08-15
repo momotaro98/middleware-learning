@@ -25,9 +25,9 @@ kubeletのフラグである`--register-node`がtrueのとき(デフォルトが
 > ノード設定がkubelet再起動時に変更されているならば、ノード上で既存でスケジュールされたPodは問題を引き起こす可能性がある。
 > (2023年1月31日時点で理解できない) For example, already running Pod may be tainted against the new labels assigned to the Node, while other Pods, that are incompatible with that Pod will be scheduled based on this new label. Node re-registration ensures all Pods will be drained and properly re-scheduled.
 
-#### #### Manual Node administration (非推奨)
+#### #### Manual Node administration
 
-kubectlを使ってNodeを作成することができる。(非推奨)
+kubectlを使ってNodeを作成することができる。
 
 手動でNodeを作成したい場合は _kubelet_ の設定フラグで`--register-node=false`にしておくこと。
 
@@ -35,17 +35,29 @@ _kubelet_ の`--register-node`設定に関わらず既存のNodeの更新はで�
 
 Nodeオブジェクトに付いたラベルを使ってPodのNode Selectorの機能によってスケジューリングを制御することができる。例えば、特定のPodが特定のNode群でしかRunしないようにすることができる。
 
-Nodeを"unschedulable"に設定することはK8sのスケジューラが新しいPodをそのNodeに配置することを防ぎ、一方でそのノードの既存のPodには影響を与えない。"unschedulable"への設定はノードをRebootしたりメンテナンスモードにする前の準備ステップとして便利である。
+Nodeを"unschedulable"に設定することはK8sのスケジューラが新しいPodをそのNodeに配置することを防ぎ __一方でそのノードの既存のPodには影響を与えない__ 。"unschedulable"への設定はノードをRebootしたりメンテナンスモードにする前の準備ステップとして便利である。
 
-"unschedulable"に設定するには以下を実行する。
+"unschedulable"に設定するには以下の cordon を実行する。
 
 ```
 kubectl cordon $NODENAME
 ```
 
+My Note:  
+unschedulable のラベルを対象ノードから外す場合は以下の uncordon を実行する。 ref: https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/  
+
+```
+kubectl uncordon <node name>
+```
+
 [Safely Drain a Node](https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/)のタスクページにて上記の操作の詳細を確認できる。
 
-> Note: [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)の一部であるPodは"unschedulable"設定に関係なくそのノードで動く。たとえあるノードがWorkloadからdrainedされていてもDaemonSetは"node-local services"を提供することでそのノード上で動作するべきであるように設計されている。
+> Note: [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/)の一部であるPodは"unschedulable"設定に関係なくそのノードで動く。たとえあるノードがdraine中でもDaemonSetは"node-local services"を提供することでそのノード上で動作するように設計されている。
+
+__My Note__ :  kubectl drain では はじめに kubectl cordon と同じ操作、つまり unschedulable をノードに設定する
+ref: [kubectl drain Synopsis](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_drain/#:~:text=The%20given%20node%20will%20be%20marked%20unschedulable%20to%20prevent%20new%20pods%20from%20arriving.%20%27drain%27%20evicts%20the%20pods%20if%20the%20API%20server%20supports)
+
+__My Note__:  cordon は effect: NoSchedule の状態で、どのPodも Tolerations を持つことができない unschedulable という Taints をノードに設定する操作と言える。ref: [Taints and Tolerations](./Scheduling-Preemption-and-Eviction.md#-taints-and-tolerations)
 
 ### ### Node status
 
