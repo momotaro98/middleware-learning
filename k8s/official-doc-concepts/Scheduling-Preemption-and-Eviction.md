@@ -82,3 +82,42 @@ Note:
 ## ## [Pod Priority and Preemption](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/)
 
 TODO: このページの内容を理解して書いていきたい。
+
+## ## [Taints and Tolerations](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
+
+Note: __<ざっくり理解>__
+
+* __Taints__      → __汚れたノード__
+* __Tolerations__ → __汚れたノードに耐性があるPod__
+
+→ 耐性を持ったPodのみ汚れたノードにスケジュールされる
+
+### Concept
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  tolerations:
+  - key: "example-key"
+    operator: "Exists"
+    effect: "NoSchedule"
+```
+
+effectについて
+
+NoExecute ↓  
+* Podがtolerationsが適用され、今のNodeが耐性がないNodeになった場合、ただちにEvictされる。
+  * このとき、 tolerationSeconds が設定されていれば、その時間はEvictまでの猶予がある。
+
+NoSchedule ↓  
+* 新規のPodで耐性が無いものはNodeにスケジュールされない。既存で耐性が無いことになったPodに適用された場合はEvictされ __ない__ 。
+
